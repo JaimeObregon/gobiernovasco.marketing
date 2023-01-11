@@ -1,0 +1,42 @@
+{
+  "name": "gobiernovasco.marketing",
+  "version": "1.0.0",
+  "description": "Explora cómo se reparte el dinero público a los medios de comunicación en el País Vasco.",
+  "keywords": [
+    "gobierno",
+    "vasco",
+    "publicidad",
+    "comunicación",
+    "medios",
+    "prensa",
+    "campañas",
+    "marketing"
+  ],
+  "homepage": "https://gobiernovasco.marketing",
+  "bugs": {
+    "url": "https://github.com/JaimeObregon/gobiernovasco.marketing/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaimeObregon/gobiernovasco.marketing.git"
+  },
+  "license": "AGPL-3.0-or-later",
+  "author": "Jaime Gómez-Obregón",
+  "main": "httpdocs/index.html",
+  "scripts": {
+    "build": "npm install && ./bin/build.js",
+    "dev": "live-server httpdocs",
+    "parse": "node bin/parse.js",
+    "test": "jest"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "devDependencies": {
+    "esbuild": "^0.16.16",
+    "jest": "^29.3.1",
+    "live-server": "^1.2.2",
+    "prettier": "^2.8.2"
+  }
+}
