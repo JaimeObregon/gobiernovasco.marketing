@@ -34,7 +34,7 @@ Se hace automáticamente en Netlify con cada `push` a la rama `main`.
 
 No es necesario porque el documento JSON con todos los datos requeridos por el proyecto está incorporado al repositorio.
 
-Pero para reprocesar los ficheros originales PDF del Gobierno Vasco, instala `pdftohtml` en tu sistema y conviértelos a su versión HTML aproximada:
+Pero para reprocesar los ficheros originales PDF del Gobierno Vasco, instala `pdftohtml` 0.40 en tu sistema y conviértelos a su versión HTML aproximada:
 
 ```console
 ./bin/convert.sh
