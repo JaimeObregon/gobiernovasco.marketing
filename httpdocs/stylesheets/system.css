@@ -1,0 +1,42 @@
+:root {
+  --type-xxx-small: 55%;
+  --type-xx-small: 65%;
+  --type-x-small: 75%;
+  --type-small: 85%;
+  --type-medium: 100%;
+  --type-large: 125%;
+  --type-x-large: 150%;
+  --type-xx-large: 200%;
+  --type-xxx-large: 275%;
+
+  --space-xx-small: 0.125em;
+  --space-x-small: 0.25em;
+  --space-small: 0.5em;
+  --space-medium: 1em;
+  --space-large: 2em;
+  --space-x-large: 3em;
+  --space-xx-large: 4em;
+  --space-xxx-large: 6em;
+
+  --font-serif: 'Merriweather', serif;
+  --font-sans: 'Inter var', sans-serif;
+  --font-mono: monospace;
+
+  --line-height-condensed: 1.3;
+  --line-height-normal: 1.6;
+
+  --line-width-normal: 50rem;
+  --line-width-wide: 70rem;
+  --line-width-x-wide: 80rem;
+
+  --delay-small: 150ms;
+  --delay-medium: 250ms;
+  --delay-large: 350ms;
+  --delay-x-large: 500ms;
+
+  /* Parte de https://unpkg.com/open-props/easings.min.css */
+  --ease-3: cubic-bezier(0.25, 0, 0.3, 1);
+  --ease-out-5: cubic-bezier(0, 0, 0, 1);
+  --ease-elastic-3: cubic-bezier(0.5, 1.25, 0.75, 1.25);
+  --ease-elastic-4: cubic-bezier(0.5, 1.5, 0.75, 1.25);
+}

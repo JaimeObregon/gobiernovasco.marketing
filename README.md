@@ -19,12 +19,12 @@ yarn install
 Y lanza finalmente el entorno de desarrollo:
 
 ```console
-npm run dev
+npm run serve
 ```
 
 El proyecto se abrirá en una nueva pestaña en tu navegador.
 
-En Visual Studio Code el comando `npm run dev` se lanzará automáticamente al abrir la carpeta del proyecto.
+En Visual Studio Code el comando `npm run serve` se lanzará automáticamente al abrir la carpeta del proyecto.
 
 ### Despliegue en producción
 

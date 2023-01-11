@@ -1,3 +1,41 @@
+@import 'stylesheets/typography.css';
+@import 'stylesheets/system.css';
+
+:root {
+  font-size: 16px;
+  font-variant-numeric: oldstyle-nums;
+  line-height: var(--line-height-normal);
+  color: var(--color-text);
+  cursor: default;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --color-accent: #c71585;
+  --color-background: #fbf8e1;
+  --color-heading: #0d1a26;
+  --color-highlight: #222222;
+  --color-highlight-inverted: white;
+  --color-text: #274059;
+  --color-text-pale: #707f8d;
+  --color-line: #e3dedc;
+  --color-warning: #fdba74;
+}
+
 body {
-  background: #fbf8e1;
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: calc(0.75em + 0.5vw);
+  letter-spacing: 0.025em;
+  background: var(--color-background);
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  font-size: var(--type-x-large);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

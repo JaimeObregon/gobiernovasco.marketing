@@ -1,1 +1,2 @@
-console.log('Kaixo, mundua!')
+const greeting = 'Kaixo, mundua!'
+console.log(greeting)
