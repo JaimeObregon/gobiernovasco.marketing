@@ -26,9 +26,9 @@
   "main": "httpdocs/index.html",
   "scripts": {
     "build": "bin/build.sh",
-    "serve": "bin/serve.js",
     "parse": "bin/parse.js",
-    "test": "jest"
+    "serve": "bin/serve.js",
+    "test": "NODE_OPTIONS='--experimental-vm-modules' jest"
   },
   "prettier": {
     "semi": false,
