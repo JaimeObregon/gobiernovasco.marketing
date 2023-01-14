@@ -11,4 +11,27 @@ const parseEuros = (string) => {
   return Number(number)
 }
 
-export { parseEuros }
+// Como `Regexp.prototype.split()`, pero para *arrays*.
+const splitArrayByKeywords = (items, keywords) => {
+  let result = []
+
+  const indices = items.flatMap((item, i) =>
+    keywords.includes(item) ? [i] : []
+  )
+  const breaks = [0, ...indices, items.length]
+
+  const results = breaks.reduce((results, value, index) => {
+    if (!index) {
+      return results
+    }
+
+    const chunk = items.slice(breaks[index - 1], value)
+    results.push(chunk)
+
+    return results
+  }, [])
+
+  return results
+}
+
+export { parseEuros, splitArrayByKeywords }
