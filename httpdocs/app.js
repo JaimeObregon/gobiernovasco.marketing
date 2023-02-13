@@ -1,2 +1,1 @@
-const greeting = 'Kaixo, mundua!'
-console.log(greeting)
+import { Logo } from './components/logo.js'
