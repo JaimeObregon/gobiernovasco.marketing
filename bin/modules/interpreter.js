@@ -20,6 +20,13 @@ class Interpreter {
       'CAMPAÑA<br>\nNombre<br>\nVARIOS ANUNCIOS OFICIALES<br>\n'
     )
 
+    // La página 36 del PDF de 2019, tiene una campaña con un nombre ambiguo
+    // que se confunde con una _keyword_.
+    this.html = this.html.replaceAll(
+      /ANUNCIO OFICIAL<br>\nNombre<br>\nANUNCIOS OFICIALES<br>\n/g,
+      'ANUNCIO OFICIAL<br>\nNombre<br>\nVARIOS ANUNCIOS OFICIALES<br>\n'
+    )
+
     this.year = year
   }
 

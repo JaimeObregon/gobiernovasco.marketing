@@ -169,10 +169,10 @@ const rules = [
       })
     },
   },
-  {
-    name: 'debug',
-    rule: (items) => items,
-  },
+  // {
+  //   name: 'debug',
+  //   rule: (items) => items,
+  // },
 ]
 
 const definitions = {
