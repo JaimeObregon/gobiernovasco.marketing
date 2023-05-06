@@ -1,9 +1,10 @@
 // Convierte una cadena como 11.850,21€ en un número como 11850.21.
+// Omite todos los caracteres después de '€', pues en ocasiones hay sufijos
+// como `€ (2021)` (en 2022.pdf) o `€,` (en 2021.pdf).
 const parseEuros = (string) => {
-  const pattern = /-?[\d\.]+(,\d{1,2})?(\s?€)?/g
-
   const number = string
     .replace(/<\/?(br|b)>/g, '')
+    .replace(/€.+/g, '')
     .replace(/[\.€]/g, '')
     .replace(',', '.')
     .trim()

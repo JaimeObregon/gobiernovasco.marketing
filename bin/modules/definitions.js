@@ -1,55 +1,177 @@
 import { parseEuros } from './parsers.js'
 
-const campaigns = ['CAMPAÑA', 'COLABORACIÓN PUBLICITARIA', 'ANUNCIO OFICIAL']
+const notOutlets = [
+  'Inversión',
+  'TOTAL',
+  'Inversión TOTAL',
+  'TOTAL PRENSA',
+  'TOTAL RADIO',
+  'TOTAL RADIOS',
+  'TOTAL REVISTAS',
+  'TOTAL DIGITALES',
+  'TOTAL TELEVISIÓN',
+  'TOTAL TV',
+  'TOTAL MARKETING ONLINE',
+  'MARKETING ON LINE',
+  'TOTAL EXTERIORES',
+  'TOTAL REDES SOCIALES',
+  'GUZTIRA',
+  'PRENTSA GUZTIRA',
+  'REDES SOCIALES',
+  'IRRATIA GUZTIRA',
+  'IRRATIAK GUZTIRA',
+  'ALDIZKARIAK GUZTIRA',
+  'DIGITALAK GUZTIRA',
+  'TELEBISTA GUZTIRA',
+  'MARKETING ONLINE GUZTIRA',
+  'SARE SOZIALAK GUZTIRA',
+]
+
+const campaigns = [
+  'CAMPAÑA',
+  'CAMPAÑAS',
+  'KANPAINA',
+  'KANPAINAK',
+  'COLABORACIÓN PUBLICITARIA',
+  'COLABORACIONES PUBLICITARIAS',
+  'ANUNCIO',
+  'ANUNCIOS',
+  'ANUNCIO OFICIAL',
+  'ANUNCIOS OFICIALES',
+  'PUBLIZITATE-LANKIDETZA',
+  'IRAGARKIA',
+  'IRAGARKIAK',
+  'PATROCINIOS',
+]
 
 const keywords = [
   'Nombre',
+  'Izena',
   'Objetivo',
+  'Objetivo (descripción)',
+  'Objeto',
+  'Helburua',
+  'Fecha /',
   'Fecha / Periodo',
   'Periodo',
+  'Aldia',
   'Personas',
+  'Destinado a:',
+  'Destinada a',
+  'Hartzaileak',
   'Soportes',
+  'Soportes utilizados',
   'Inversión',
+  'Inversión TOTAL',
+  'INVERSIÓN TOTAL',
   'TOTAL',
+  'GUZTIRA',
   'DESGLOSE',
+  'BANAKAPENA',
+  '</BODY>',
 ]
 
 const rules = [
   {
+    name: 'type',
+    rule: (items) => items[0][0],
+  },
+  {
     name: 'name',
-    rule: (items) => items.find((item) => item[0] === 'Nombre')[1],
+    rule: (items) => {
+      return [
+        ...items[0].slice(1),
+        ...items.find((item) => ['Nombre', 'Izena'].includes(item[0])).slice(1),
+      ].join(' ')
+    },
   },
   {
     name: 'description',
-    rule: (items) =>
-      items
-        .find((item) => item[0] === 'Objetivo')
-        .filter((item) => item !== '(descripción)')
+    rule: (items) => {
+      return items
+        .find((item) =>
+          ['Objetivo', 'Objetivo (descripción)', 'Objeto', 'Helburua'].includes(
+            item[0]
+          )
+        )
+        .filter((item) => !['(descripción)', '(deskribapena)'].includes(item))
         .slice(1)
-        .join(' '),
+        .join(' ')
+    },
   },
   {
     name: 'date',
     rule: (items) =>
-      items.find((item) => item[0].match(/(Fecha \/ )?Periodo/))[1],
+      items.find((item) =>
+        item[0].match(/(Fecha \/|(Fecha \/ )?Periodo|Aldia)/)
+      )?.[1],
   },
   {
     name: 'target',
-    rule: (items) => items.find((item) => item[0] === 'Personas')[1],
+    rule: (items) =>
+      items.find((item) => item[0].match(/(Personas|Destinado a:)/))?.[1],
   },
   {
     name: 'channels',
-    rule: (items) => items.find((item) => item[0] === 'Soportes')[1],
+    rule: (items) =>
+      items
+        .find((item) => item[0].match(/Soportes( utilizados)?/))
+        ?.filter((item) => !['utilizados'].includes(item))
+        .slice(1)
+        .join(' '),
   },
   {
     name: 'euros',
     rule: (items) => {
-      const euros = items.find((item) =>
-        ['Inversión', 'TOTAL'].includes(item[0])
-      )[1]
-
-      return parseEuros(euros)
+      const euros = items.find(
+        (item) => /(Inversión|TOTAL|GUZTIRA)/.test(item) && item.length > 1
+      )
+      return parseEuros(euros[1])
     },
+  },
+  {
+    name: 'outlets',
+    rule: (items) => {
+      const details = items
+        .filter((item) =>
+          [
+            'DESGLOSE',
+            'BANAKAPENA',
+            'Inversión',
+            'Inversión TOTAL',
+            'TOTAL',
+            'GUZTIRA',
+          ].includes(item[0])
+        )
+        .flatMap((item) => [...item])
+
+      if (details[0] === 'TOTAL' && details[1] === 'Medio') {
+        const outlet = details[2]
+        return [outlet]
+      } else if (details[0] === 'Inversión' && details[2] === 'Medio') {
+        const outlet = details[3]
+        return [outlet]
+      } else if (details[0] === 'Inversión TOTAL' && details[2] === 'Medio') {
+        const outlet = details[3]
+        return [outlet]
+      } else if (details[0] === 'GUZTIRA' && details[2] === 'Komunikabidea') {
+        const outlet = details[3]
+        return [outlet]
+      }
+
+      return details.flatMap((value, i) => {
+        const outlet = details[i - 1]
+        const euros = parseEuros(value)
+
+        return isNaN(euros) || notOutlets.includes(outlet)
+          ? []
+          : { outlet, euros }
+      })
+    },
+  },
+  {
+    name: 'debug',
+    rule: (items) => items,
   },
 ]
 
@@ -117,6 +239,18 @@ const definitions = {
       /<A name=\d{1,3}><\/a>Eusko Jaurlaritzaren Publizitate eta Komunikazio Instituzionalari buruzko Memoria<br>\n2021eko urtea<br>/,
     ],
     footer: /\d{1,3}\. or\. 181etik<br>\n<hr>/g,
+    campaigns,
+    keywords,
+    rules,
+  },
+  2022: {
+    pageSeparators: [
+      /<A name=\d{1,3}><\/a>Memoria de Publicidad y Comunicación Institucional del Gobierno Vasco<br>\nAño 2022<br>/,
+    ],
+    footer: /Pág\. \d{1,3} de 216<br>\n<hr>/g,
+    campaigns,
+    keywords,
+    rules,
   },
 }
 

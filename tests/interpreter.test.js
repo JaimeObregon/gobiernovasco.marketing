@@ -1,5 +1,131 @@
 import { Interpreter } from '../bin/modules/interpreter.js'
 
+describe('Año 2022', () => {
+  const interpreter = new Interpreter('2022', 'converted/2022.html')
+
+  test('Número de páginas', () => {
+    expect(interpreter.pages.length).toBe(217)
+  })
+
+  test('Departamentos', () => {
+    const departments = interpreter.departments
+
+    expect(departments.length).toBe(12)
+
+    expect(departments[0]).toMatchObject({
+      department: 'LEHENDAKARITZA',
+      page: 4,
+    })
+
+    expect(departments[1]).toMatchObject({
+      department: 'SEGURIDAD',
+      page: 22,
+    })
+
+    expect(departments[2]).toMatchObject({
+      department: 'TRABAJO Y EMPLEO',
+      page: 36,
+    })
+
+    expect(departments[3]).toMatchObject({
+      department: 'GOBERNANZA PÚBLICA Y AUTOGOBIERNO',
+      page: 57,
+    })
+
+    expect(departments[4]).toMatchObject({
+      department: 'DESARROLLO ECONÓMICO, SOSTENIBILIDAD Y MEDIO AMBIENTE',
+      page: 59,
+    })
+
+    expect(departments[5]).toMatchObject({
+      department: 'ECONOMÍA Y HACIENDA',
+      page: 95,
+    })
+
+    expect(departments[6]).toMatchObject({
+      department: 'EDUCACIÓN',
+      page: 103,
+    })
+
+    expect(departments[7]).toMatchObject({
+      department: 'PLANIFICACIÓN TERRITORIAL, VIVIENDA Y TRANSPORTES',
+      page: 118,
+    })
+
+    expect(departments[8]).toMatchObject({
+      department: 'SALUD',
+      page: 141,
+    })
+
+    expect(departments[9]).toMatchObject({
+      department: 'IGUALDAD, JUSTICIA Y POLÍTICAS SOCIALES',
+      page: 154,
+    })
+
+    expect(departments[10]).toMatchObject({
+      department: 'CULTURA Y POLÍTICA LINGÜÍSTICA',
+      page: 182,
+    })
+
+    expect(departments[11]).toMatchObject({
+      department: 'TURISMO, COMERCIO Y CONSUMO',
+      page: 192,
+    })
+  })
+
+  describe('Lehendakaritza', () => {
+    test('Número de campañas', () => {
+      const department = interpreter.departments[0]
+      const campaigns = interpreter.getCampaigns(department)
+      expect(campaigns.length).toBe(41)
+    })
+  })
+
+  describe('Desarrollo Económico, Sostenibilidad y Medio Ambiente', () => {
+    test('Número de campañas', () => {
+      const department = interpreter.departments[4]
+      const campaigns = interpreter.getCampaigns(department)
+      expect(campaigns.length).toBe(39)
+    })
+
+    test('Campaña de BRTA', () => {
+      const department = interpreter.departments[4]
+      const campaigns = interpreter.getCampaigns(department)
+      const campaign = interpreter.parseCampaign(campaigns[38])
+
+      expect(campaign).toMatchObject({
+        type: 'CAMPAÑA',
+        name: 'Promoción del Consorcio Científico-Tecnológico Vasco',
+        description:
+          'Dar a conocer la existencia y actividad del Consorcio Científico- Tecnológico Vasco',
+        date: 'Enero-diciembre',
+        target: 'Sociedad e Industria Vasca',
+        channels: 'Prensa y Radio',
+        euros: 70800,
+        outlets: [
+          { outlet: 'Berria', euros: 4500 },
+          { outlet: 'Noticias de Gipuzkoa', euros: 23900 },
+          { outlet: 'El País', euros: 2760 },
+          { outlet: 'El Diario Vasco', euros: 18210 },
+          { outlet: 'El Correo', euros: 9250 },
+          { outlet: 'Expansión', euros: 4000 },
+          { outlet: 'Empresa XXI', euros: 1980 },
+          { outlet: 'Estrategia Empresarial', euros: 2200 },
+          { outlet: 'Cadena Ser', euros: 4000 },
+        ],
+      })
+    })
+  })
+
+  describe('Planificación Territorial, Vivienda y Transportes', () => {
+    test('Número de campañas', () => {
+      const department = interpreter.departments[7]
+      const campaigns = interpreter.getCampaigns(department)
+      expect(campaigns.length).toBe(37)
+    })
+  })
+})
+
 describe('Año 2021', () => {
   const interpreter = new Interpreter('2021', 'converted/2021.html')
 
@@ -204,6 +330,14 @@ describe('Año 2020', () => {
     expect(departments[23]).toMatchObject({
       department: 'TRABAJO Y EMPLEO',
       page: 199,
+    })
+  })
+
+  describe('Salud', () => {
+    test('Número de campañas', () => {
+      const department = interpreter.departments[7]
+      const campaigns = interpreter.getCampaigns(department)
+      expect(campaigns.length).toBe(8)
     })
   })
 })

@@ -3,19 +3,33 @@
 import util from 'util'
 import { Interpreter } from './modules/interpreter.js'
 
-// const interpreter = new Interpreter('2021', 'converted/2021.html')
-const interpreter = new Interpreter('2020', 'converted/2020.html')
-// const interpreter = new Interpreter('2019', 'converted/2019.html')
-// const interpreter = new Interpreter('2018', 'converted/2018.html')
+// const years = [2022, 2021, 2020, 2019, 2018]
+const years = [2018]
 
-const department = interpreter.departments[0]
-const campaigns = interpreter.getCampaigns(department)
+const results = []
 
-const campaign = campaigns[0]
-const details = interpreter.parseCampaign(campaign)
+years.forEach((year) => {
+  const interpreter = new Interpreter(year, `converted/${year}.html`)
 
-campaigns.forEach((campaign) => {
-  console.log(interpreter.parseCampaign(campaign))
+  interpreter.departments.forEach((department) => {
+    const campaigns = interpreter.getCampaigns(department)
+    campaigns.forEach((campaign) => {
+      results.push(interpreter.parseCampaign(campaign))
+    })
+  })
 })
+
+const json = JSON.stringify(results, null, 2)
+
+console.log(json)
+
+// const interpreter = new Interpreter(2022, 'converted/2022.html')
+// const department = interpreter.departments[2]
+// const campaigns = interpreter.getCampaigns(department)
+// const details = interpreter.parseCampaign(campaigns[0])
+
+// campaigns.forEach((campaign) => {
+//   console.log(interpreter.parseCampaign(campaign))
+// })
 
 // console.log(util.inspect(details, { maxArrayLength: null }))

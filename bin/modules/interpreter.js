@@ -1,8 +1,28 @@
 import fs from 'fs'
+import util from 'util'
 import { definitions } from './definitions.js'
 import { parseEuros, splitArrayByKeywords } from './parsers.js'
 
 class Interpreter {
+  constructor(year, file) {
+    this.definitions = definitions[year]
+    this.html = fs.readFileSync(file, { encoding: 'utf8' })
+    this.html = this.html.replaceAll(
+      // / <\/span><span class="ft(671|0|3736)">/g,
+      / <\/span><span class="ft(\d+)">/g,
+      '<br>\n'
+    )
+
+    // La página 19 del PDF de 2020, tiene una campaña con un nombre ambiguo
+    // que se confunde con una _keyword_.
+    this.html = this.html.replaceAll(
+      /CAMPAÑA<br>\nNombre<br>\nANUNCIOS OFICIALES<br>\n/g,
+      'CAMPAÑA<br>\nNombre<br>\nVARIOS ANUNCIOS OFICIALES<br>\n'
+    )
+
+    this.year = year
+  }
+
   get pages() {
     const { pageSeparators, footer } = this.definitions
 
@@ -61,39 +81,59 @@ class Interpreter {
       .slice(firstPage - 1, lastPage)
       .flatMap((page) => page.lines)
 
-    const { campaigns } = this.definitions
+    const campaigns = splitArrayByKeywords(lines, this.definitions.campaigns)
+      .filter(
+        (item) => item.length > 1 // TODO Mejorable
+      )
+      .map((items) => ({ items, department }))
 
-    const items = splitArrayByKeywords(lines, campaigns).filter(
-      (item) => item.length > 1 // TODO Mejorable
-    )
-
-    return items
+    return campaigns
   }
 
   parseCampaign(campaign) {
     const { keywords, rules } = this.definitions
 
-    const items = splitArrayByKeywords(campaign, keywords)
+    const items = splitArrayByKeywords(campaign.items, keywords)
 
     const result = {
-      type: items[0][0],
+      ...campaign.department,
+      year: this.year,
     }
 
-    console.log(items)
+    if (!items[0].length) {
+      return result
+    }
+
+    if (/no ha llevado a cabo/.test(items[0][1])) {
+      return result
+    }
 
     rules.forEach((definition) => {
-      result[definition.name] = definition.rule(items)
+      const value = definition.rule(items)
+      if (value) {
+        result[definition.name] = value
+      }
     })
 
-    result.debug = items
+    if (typeof result.outlets[0] === 'object') {
+      const sum =
+        Math.round(
+          100 *
+            result.outlets.reduce(
+              (previous, current) => (previous += current.euros),
+              0
+            )
+        ) / 100
+
+      if (Math.abs(result.euros - sum) > 1) {
+        /*console.error(
+          `La suma de importes (${sum}) interpretados no coincide con el total interpretado ${result.euros}:`,
+          util.inspect(result, { maxArrayLength: null })
+        )*/
+      }
+    }
 
     return result
-  }
-
-  constructor(year, file) {
-    this.definitions = definitions[year]
-    this.html = fs.readFileSync(file, { encoding: 'utf8' })
-    this.year = year
   }
 }
 
