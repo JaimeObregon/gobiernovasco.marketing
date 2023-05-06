@@ -12,13 +12,13 @@ Clona el proyecto desde GitHub e instala `node` 18 o superior y `yarn` en tu sis
 
 Si es la primera vez que arrancas el proyecto, instala antes sus dependencias:
 
-```console
+```shell
 yarn install
 ```
 
 Y lanza finalmente el entorno de desarrollo:
 
-```console
+```shell
 npm run serve
 ```
 
@@ -36,13 +36,13 @@ No es necesario porque el documento JSON con todos los datos requeridos por el p
 
 Pero para reprocesar los ficheros originales PDF del Gobierno Vasco, instala `pdftohtml` 0.40 en tu sistema y conviértelos a su versión HTML aproximada:
 
-```console
+```shell
 ./bin/convert.sh
 ```
 
 Después, corre el intérprete que los toma y emite por `stdout` la estructura de datos JSON resultante:
 
-```console
+```shell
 npm run parse > /httpdocs/datasource.json
 ```
 
