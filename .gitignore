@@ -1,5 +1,6 @@
 .DS_Store
 .netlify
+/temp
 httpdocs/build
 JAIME.md
 node_modules
