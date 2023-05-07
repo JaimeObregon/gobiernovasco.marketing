@@ -8,23 +8,15 @@ class Interpreter {
     this.definitions = definitions[year]
     this.html = fs.readFileSync(file, { encoding: 'utf8' })
     this.html = this.html.replaceAll(
-      // / <\/span><span class="ft(671|0|3736)">/g,
       / <\/span><span class="ft(\d+)">/g,
       '<br>\n'
     )
 
-    // La página 19 del PDF de 2020, tiene una campaña con un nombre ambiguo
-    // que se confunde con una _keyword_.
+    // Las páginas 19 del PDF de 2020 y 36 del PDF de 2019, tienen sendas
+    // campañas con un nombre ambiguo que se confunde con una _keyword_.
     this.html = this.html.replaceAll(
-      /CAMPAÑA<br>\nNombre<br>\nANUNCIOS OFICIALES<br>\n/g,
-      'CAMPAÑA<br>\nNombre<br>\nVARIOS ANUNCIOS OFICIALES<br>\n'
-    )
-
-    // La página 36 del PDF de 2019, tiene una campaña con un nombre ambiguo
-    // que se confunde con una _keyword_.
-    this.html = this.html.replaceAll(
-      /ANUNCIO OFICIAL<br>\nNombre<br>\nANUNCIOS OFICIALES<br>\n/g,
-      'ANUNCIO OFICIAL<br>\nNombre<br>\nVARIOS ANUNCIOS OFICIALES<br>\n'
+      /(CAMPAÑA|ANUNCIO OFICIAL)<br>\nNombre<br>\nANUNCIOS OFICIALES<br>\n/g,
+      '$1<br>\nNombre<br>\nANUNCIOS OFICIALES VARIOS<br>\n'
     )
 
     this.year = year
@@ -132,11 +124,12 @@ class Interpreter {
             )
         ) / 100
 
-      if (Math.abs(result.euros - sum) > 1) {
-        /*console.error(
-          `La suma de importes (${sum}) interpretados no coincide con el total interpretado ${result.euros}:`,
-          util.inspect(result, { maxArrayLength: null })
-        )*/
+      const difference = Math.round(Math.abs(result.euros - sum))
+      if (difference > 1) {
+        console.error(
+          `La suma de importes (${sum}) no coincide con el total ${result.euros} por ${difference} €:`
+        )
+        console.error(util.inspect(result, { maxArrayLength: null }))
       }
     }
 

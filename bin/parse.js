@@ -19,16 +19,4 @@ years.forEach((year) => {
 })
 
 const json = JSON.stringify(results)
-
-console.log(json)
-
-// const interpreter = new Interpreter(2022, 'converted/2022.html')
-// const department = interpreter.departments[2]
-// const campaigns = interpreter.getCampaigns(department)
-// const details = interpreter.parseCampaign(campaigns[0])
-
-// campaigns.forEach((campaign) => {
-//   console.log(interpreter.parseCampaign(campaign))
-// })
-
-// console.log(util.inspect(details, { maxArrayLength: null }))
+process.stdout.write(json)
