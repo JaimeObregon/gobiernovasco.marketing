@@ -173,25 +173,21 @@ const rules = [
         )
         .flatMap((item) => [...item])
 
-      if (details[0] === 'TOTAL' && details[1] === 'Medio') {
+      if (details[1] === 'Medio' && details[0] === 'TOTAL') {
         const outlet = details[2]
         return [outlet]
-      } else if (details[0] === 'TOTAL' && details[2] === 'Medio') {
-        const outlet = details[3]
-        return [outlet]
-      } else if (details[0] === 'Inversión' && details[2] === 'Medio') {
-        const outlet = details[3]
-        return [outlet]
-      } else if (details[0] === 'Inversión TOTAL' && details[2] === 'Medio') {
-        const outlet = details[3]
-        return [outlet]
-      } else if (details[0] === 'GUZTIRA' && details[2] === 'Komunikabidea') {
+      } else if (
+        (details[2] === 'Medio' && details[0] === 'TOTAL') ||
+        (details[2] === 'Medio' && details[0] === 'Inversión') ||
+        (details[2] === 'Medio' && details[0] === 'Inversión TOTAL') ||
+        (details[2] === 'Komunikabidea' && details[0] === 'GUZTIRA')
+      ) {
         const outlet = details[3]
         return [outlet]
       } else if (
+        details[3] === 'Medio' &&
         details[0] === 'Inversión' &&
-        details[2] === 'TOTAL' &&
-        details[3] === 'Medio'
+        details[2] === 'TOTAL'
       ) {
         const outlet = details[4]
         return [outlet]

@@ -78,19 +78,15 @@ class Interpreter {
   }
 
   getCampaigns(department) {
-    const pages = this.pages
-
     const { range } = department
     const [firstPage, lastPage] = range
 
-    const lines = pages
+    const lines = this.pages
       .slice(firstPage - 1, lastPage)
       .flatMap((page) => page.lines)
 
     const campaigns = splitArrayByKeywords(lines, this.definitions.campaigns)
-      .filter(
-        (item) => item.length > 1 // TODO Mejorable
-      )
+      .filter((item) => item.length > 1)
       .map((items) => ({ items, department }))
 
     return campaigns
@@ -134,7 +130,7 @@ class Interpreter {
       const difference = Math.round(Math.abs(result.euros - sum))
       if (difference > 1) {
         console.error(
-          `La suma de importes (${sum}) no coincide con el total ${result.euros} por ${difference} €:`
+          `La suma de importes (${sum}) no coincide con el total ${result.euros} por ${difference} €.`
         )
         // console.error(util.inspect(result, { maxArrayLength: null }))
       }
