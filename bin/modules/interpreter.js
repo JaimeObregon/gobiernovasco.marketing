@@ -19,6 +19,13 @@ class Interpreter {
       '$1<br>\nNombre<br>\nANUNCIOS OFICIALES VARIOS<br>\n'
     )
 
+    if (year === 2018) {
+      this.html = this.html.replaceAll(
+        /40(<br>\n4\.628,00€<br>\n)/g,
+        '40 Principales$1'
+      )
+    }
+
     this.year = year
   }
 
@@ -129,7 +136,7 @@ class Interpreter {
         console.error(
           `La suma de importes (${sum}) no coincide con el total ${result.euros} por ${difference} €:`
         )
-        console.error(util.inspect(result, { maxArrayLength: null }))
+        // console.error(util.inspect(result, { maxArrayLength: null }))
       }
     }
 

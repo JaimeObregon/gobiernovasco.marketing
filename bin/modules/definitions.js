@@ -29,6 +29,7 @@ const notOutlets = [
   'TOTAL TV',
   'TOTAL MARKETING ONLINE',
   'MARKETING ON LINE',
+  'MARKETING ON LINE GUZTIRA',
   'MARKETING ONLINE',
   'TOTAL EXTERIORES',
   'TOTAL EXTERIOR',
@@ -55,6 +56,7 @@ const notOutlets = [
 const campaigns = [
   'CAMPAÑA',
   'CAMPAÑAS',
+  'OTROS',
   'KANPAINA',
   'KANPAINAK',
   'COLABORACIÓN PUBLICITARIA',
@@ -174,6 +176,9 @@ const rules = [
       if (details[0] === 'TOTAL' && details[1] === 'Medio') {
         const outlet = details[2]
         return [outlet]
+      } else if (details[0] === 'TOTAL' && details[2] === 'Medio') {
+        const outlet = details[3]
+        return [outlet]
       } else if (details[0] === 'Inversión' && details[2] === 'Medio') {
         const outlet = details[3]
         return [outlet]
@@ -182,6 +187,13 @@ const rules = [
         return [outlet]
       } else if (details[0] === 'GUZTIRA' && details[2] === 'Komunikabidea') {
         const outlet = details[3]
+        return [outlet]
+      } else if (
+        details[0] === 'Inversión' &&
+        details[2] === 'TOTAL' &&
+        details[3] === 'Medio'
+      ) {
+        const outlet = details[4]
         return [outlet]
       }
 
