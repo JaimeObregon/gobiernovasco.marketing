@@ -42,6 +42,7 @@ const notOutlets = [
   'IRRATIA GUZTIRA',
   'IRRATIAK GUZTIRA',
   'ALDIZKARIAK GUZTIRA',
+  'ALDIZAKARIAK GUZTIRA',
   'DIGITALAK GUZTIRA',
   'TELEBISTA GUZTIRA',
   'MARKETING ONLINE GUZTIRA',
@@ -173,9 +174,11 @@ const rules = [
         )
         .flatMap((item) => [...item])
 
+      const euros = rules.find(({ name, rule }) => name === 'euros').rule(items)
+
       if (details[1] === 'Medio' && details[0] === 'TOTAL') {
         const outlet = details[2]
-        return [outlet]
+        return [{ outlet, euros }]
       } else if (
         (details[2] === 'Medio' && details[0] === 'TOTAL') ||
         (details[2] === 'Medio' && details[0] === 'Inversión') ||
@@ -183,14 +186,14 @@ const rules = [
         (details[2] === 'Komunikabidea' && details[0] === 'GUZTIRA')
       ) {
         const outlet = details[3]
-        return [outlet]
+        return [{ outlet, euros }]
       } else if (
         details[3] === 'Medio' &&
         details[0] === 'Inversión' &&
         details[2] === 'TOTAL'
       ) {
         const outlet = details[4]
-        return [outlet]
+        return [{ outlet, euros }]
       }
 
       return details.flatMap((value, i) => {
