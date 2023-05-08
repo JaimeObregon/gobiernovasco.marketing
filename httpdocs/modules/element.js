@@ -4,7 +4,6 @@ const identity = (strings, ...values) => {
 }
 
 const html = identity
-
 const css = identity
 
 class MyElement extends HTMLElement {
@@ -21,8 +20,8 @@ class MyElement extends HTMLElement {
         stylesheet,
       ]
       shadowRoot.innerHTML = this.constructor.html
-    } catch (error) {
-      // Fallback for Safari
+    } catch {
+      // Para Safari. Véase https://caniuse.com/?search=adoptedStyleSheets
       const styles = document.head.querySelector('style')?.innerHTML
       shadowRoot.innerHTML = html`
         <style>
