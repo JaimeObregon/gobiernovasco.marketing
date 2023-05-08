@@ -1,7 +1,7 @@
-import { MyElement, html, css } from '../modules/element.js'
-import { Campaign } from '../components/campaign.js'
+import { MyElement, html, css } from './modules/element.js'
+import { Campaign } from './components/campaign.js'
 import { database } from './modules/database.js'
-import { Search } from '../components/search.js'
+import { Search } from './components/search.js'
 import { escape } from './modules/strings.js'
 import { Logo } from './components/logo.js'
 
@@ -43,7 +43,7 @@ const app = {
 
     clearTimeout(this.timeout)
     this.timeout = setTimeout(() => {
-      if (0) {
+      if (this.results.length || this.query.length) {
         this.$main.innerHTML = this.results
           .map((result) => `<x-campaign data-id="${result.id}"></x-campaign>`)
           .join('')

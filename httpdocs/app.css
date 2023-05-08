@@ -31,11 +31,11 @@ body {
   background: var(--color-background);
 }
 
-main {
+/* main {
   width: 100vw;
   height: 100vh;
   font-size: var(--type-x-large);
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */

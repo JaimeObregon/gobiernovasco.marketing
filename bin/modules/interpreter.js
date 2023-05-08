@@ -132,7 +132,7 @@ class Interpreter {
         console.error(
           `La suma de importes (${sum}) no coincide con el total ${result.euros} por ${difference} €.`
         )
-        // console.error(util.inspect(result, { maxArrayLength: null }))
+        console.error(util.inspect(result, { maxArrayLength: null }))
       }
     }
 
