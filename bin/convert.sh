@@ -1,7 +1,7 @@
 #!/bin/bash
 
-for file in pdf/*.pdf; do
+for file in httpdocs/reports/*.pdf; do
   pdftohtml -noframes -i -p -hidden -enc UTF-8 $file
 done
 
-mv pdf/*html converted
+mv httpdocs/reports/*html converted
