@@ -8,10 +8,11 @@ import { Logo } from './components/logo.js'
 const app = {
   $search: document.querySelector('x-search'),
   $main: document.querySelector('main'),
+  $footer: document.querySelector('footer'),
 
   translations: {},
 
-  debounceDelay: 350,
+  debounceDelay: 150,
 
   results: [],
 
@@ -43,7 +44,13 @@ const app = {
 
     clearTimeout(this.timeout)
     this.timeout = setTimeout(() => {
-      if (this.results.length || this.query.length) {
+      this.$footer.style.display = this.query.length ? 'none' : 'block'
+      this.$main.innerHTML = ''
+      if (!this.query.length) {
+        return
+      }
+
+      if (this.results.length) {
         this.$main.innerHTML = this.results
           .map((result) => `<x-campaign data-id="${result.id}"></x-campaign>`)
           .join('')
@@ -54,6 +61,8 @@ const app = {
     }, this.debounceDelay)
   },
 }
+
+app.search()
 
 customElements.define('x-search', Search)
 customElements.define('x-campaign', Campaign)
