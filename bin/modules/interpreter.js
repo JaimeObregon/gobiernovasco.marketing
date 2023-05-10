@@ -1,6 +1,7 @@
 import fs from 'fs'
 import util from 'util'
 import { definitions } from './definitions.js'
+import { catalog } from './catalog.js'
 import { parseEuros, splitArrayByKeywords } from './parsers.js'
 
 class Interpreter {
@@ -69,8 +70,10 @@ class Interpreter {
         end -= 1
       }
 
+      const department = catalog.departments[page.lines[0]]
+
       return {
-        department: page.lines[0],
+        department,
         page: page.page,
         range: [start, end],
       }

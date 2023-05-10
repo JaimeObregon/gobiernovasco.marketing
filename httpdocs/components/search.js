@@ -16,7 +16,7 @@ class Search extends MyElement {
       position: relative;
       display: flex;
       font-size: 16px;
-      width: 15em;
+      width: 20em;
       align-items: center;
       transition: width 350ms ease;
     }
