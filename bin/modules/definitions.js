@@ -1,4 +1,5 @@
 import { parseEuros } from './parsers.js'
+import { catalog } from './catalog.js'
 
 const notOutlets = [
   'Inversión',
@@ -176,31 +177,49 @@ const rules = [
 
       const euros = rules.find(({ name, rule }) => name === 'euros').rule(items)
 
+      let name
       if (details[1] === 'Medio' && details[0] === 'TOTAL') {
-        const name = details[2]
-        return [{ name, euros }]
+        name = details[2]
       } else if (
         (details[2] === 'Medio' && details[0] === 'TOTAL') ||
         (details[2] === 'Medio' && details[0] === 'Inversión') ||
         (details[2] === 'Medio' && details[0] === 'Inversión TOTAL') ||
         (details[2] === 'Komunikabidea' && details[0] === 'GUZTIRA')
       ) {
-        const name = details[3]
-        return [{ name, euros }]
+        name = details[3]
       } else if (
         details[3] === 'Medio' &&
         details[0] === 'Inversión' &&
         details[2] === 'TOTAL'
       ) {
-        const name = details[4]
-        return [{ name, euros }]
+        name = details[4]
+      }
+
+      if (name) {
+        const canonical = catalog.outlets.find(({ synonyms }) =>
+          synonyms.includes(name)
+        )?.name
+
+        return [
+          {
+            name,
+            euros,
+            ...(canonical && { canonical }),
+          },
+        ]
       }
 
       return details.flatMap((value, i) => {
         const name = details[i - 1]
         const euros = parseEuros(value)
 
-        return isNaN(euros) || notOutlets.includes(name) ? [] : { name, euros }
+        const canonical = catalog.outlets.find(({ synonyms }) =>
+          synonyms.includes(name)
+        )?.name
+
+        return isNaN(euros) || notOutlets.includes(name)
+          ? []
+          : { name, euros, ...(canonical && { canonical }) }
       })
     },
   },
