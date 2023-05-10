@@ -22,7 +22,7 @@ const database = {
           record.name,
           record.target,
           record.type,
-          record.outlets.map(({ outlet }) => outlet).join(),
+          record.outlets.map(({ name }) => name).join(),
         ].join(' ')
       ),
     }))

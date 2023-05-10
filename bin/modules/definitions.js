@@ -1073,32 +1073,30 @@ const rules = [
       const euros = rules.find(({ name, rule }) => name === 'euros').rule(items)
 
       if (details[1] === 'Medio' && details[0] === 'TOTAL') {
-        const outlet = details[2]
-        return [{ outlet, euros }]
+        const name = details[2]
+        return [{ name, euros }]
       } else if (
         (details[2] === 'Medio' && details[0] === 'TOTAL') ||
         (details[2] === 'Medio' && details[0] === 'Inversión') ||
         (details[2] === 'Medio' && details[0] === 'Inversión TOTAL') ||
         (details[2] === 'Komunikabidea' && details[0] === 'GUZTIRA')
       ) {
-        const outlet = details[3]
-        return [{ outlet, euros }]
+        const name = details[3]
+        return [{ name, euros }]
       } else if (
         details[3] === 'Medio' &&
         details[0] === 'Inversión' &&
         details[2] === 'TOTAL'
       ) {
-        const outlet = details[4]
-        return [{ outlet, euros }]
+        const name = details[4]
+        return [{ name, euros }]
       }
 
       return details.flatMap((value, i) => {
-        const outlet = details[i - 1]
+        const name = details[i - 1]
         const euros = parseEuros(value)
 
-        return isNaN(euros) || notOutlets.includes(outlet)
-          ? []
-          : { outlet, euros }
+        return isNaN(euros) || notOutlets.includes(name) ? [] : { name, euros }
       })
     },
   },
