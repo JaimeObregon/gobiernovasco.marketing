@@ -10,6 +10,14 @@ describe('Utilidades', () => {
     expect(parseEuros('-0,00 €')).toBe(-0)
     expect(parseEuros('12.345,6 €')).toBe(12345.6)
     expect(parseEuros('1.234 €')).toBe(1234)
+    expect(parseEuros('1.234 € y 567 €')).toBe(1234)
+    expect(parseEuros('14,715,12')).toBe(14715.12)
+    expect(parseEuros('800,000 €')).toBe(800)
+    expect(parseEuros('750,000€')).toBe(750)
+    expect(parseEuros('50,000€')).toBe(50)
+    expect(parseEuros('50,000,00€')).toBe(50000)
+    expect(parseEuros('50,000,00 €')).toBe(50000)
+    expect(parseEuros('1.750,000€')).toBe(1750)
   })
 
   test('splitArrayByKeywords()', () => {
