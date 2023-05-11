@@ -15,20 +15,18 @@ class Search extends MyElement {
     label {
       position: relative;
       display: flex;
-      font-size: 16px;
-      width: 20em;
+      font-size: 1.35em;
+      width: 30em;
       align-items: center;
       transition: width 350ms ease;
     }
 
-    label:focus-within {
-      width: 22em;
-    }
-
     label svg {
       position: absolute;
-      width: 1em;
-      left: 0.65em;
+      width: 0.75em;
+      margin-top: 0.15em;
+      left: var(--space-x-small);
+      margin-left: var(--space-medium);
       fill: var(--color-text-pale);
       pointer-events: none;
     }
@@ -39,7 +37,7 @@ class Search extends MyElement {
       width: 100%;
       border: none;
       border-radius: 1rem;
-      padding: 0.35em 0.25em 0.35em 2.25em;
+      padding: 0.35em 0.25em 0.35em var(--space-large);
       outline: none;
       background: var(--color-highlight-inverted);
       transition: background 350ms ease;
@@ -48,6 +46,13 @@ class Search extends MyElement {
       cursor: pointer;
       appearance: none;
       -webkit-appearance: none;
+      max-width: calc(100% - var(--space-medium));
+      margin: auto;
+    }
+
+    label input::placeholder {
+      color: var(--color-text-pale);
+      font-weight: 300;
     }
 
     label input:hover,
@@ -64,10 +69,10 @@ class Search extends MyElement {
       display: none;
       position: absolute;
       z-index: 1;
-      top: 29px;
-      left: 0;
-      width: 100%;
-      max-height: 70vh;
+      top: calc(2em - 2px);
+      left: var(--space-small);
+      width: calc(100% - 2 * var(--space-small));
+      max-height: 50vh;
       box-sizing: border-box;
       margin: 0;
       padding: 0;
@@ -89,18 +94,19 @@ class Search extends MyElement {
 
     label ul li a {
       display: block;
-      padding: 8px var(--gap) 8px 35px;
+      padding: 4px var(--space-small) 4px var(--space-large);
       text-decoration: none;
       color: inherit;
     }
 
     label ul li a.selected {
-      background: var(--color-background);
-      color: var(--color-accent);
+      background: var(--color-warning);
     }
 
     label ul li a svg {
       position: absolute;
+      left: calc(-1 * var(--space-x-small));
+      margin-top: 0.45em;
     }
 
     label ul li a mark {
@@ -109,51 +115,17 @@ class Search extends MyElement {
       text-decoration: underline;
       text-decoration-style: dotted;
       text-decoration-thickness: 2px;
-    }
-
-    @media (max-width: 1280px) {
-      label {
-        font-size: 15px;
-      }
-
-      label:focus-within {
-        width: 18rem;
-      }
-    }
-
-    @media (max-width: 1024px) {
-      label {
-        width: 12rem;
-      }
-
-      label:focus-within {
-        width: 15rem;
-      }
-    }
-
-    @media (max-width: 768px) {
-      label {
-        font-size: 14px;
-        width: 8rem;
-      }
-
-      label:focus-within {
-        width: 12rem;
-      }
-    }
-
-    @media (max-width: 640px) {
-      label {
-        font-size: 13px;
-        width: 2rem;
-      }
+      color: var(--color-accent);
     }
   `
 
   static html = html`
     <label>
       ${icon}
-      <input type="search" placeholder="Medio, departamento o campaña" />
+      <input
+        type="search"
+        placeholder="Medio, departamento, campaña, anuncio…"
+      />
       <ul></ul>
     </label>
   `
@@ -210,6 +182,11 @@ class Search extends MyElement {
 
     this.input.addEventListener('input', () => {
       this.query = this.input.value
+
+      this.scrollIntoView({
+        top: 0,
+        behavior: 'smooth',
+      })
     })
 
     this.input.addEventListener('focus', () => {
@@ -225,7 +202,7 @@ class Search extends MyElement {
   }
 
   get query() {
-    return this.value
+    return this.value ?? ''
   }
 
   set query(value) {

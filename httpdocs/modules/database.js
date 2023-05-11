@@ -1,7 +1,7 @@
 import { normalize } from './strings.js'
 
 // Cuántas sugerencias de búsqueda mostrar al buscar.
-const maxSuggestions = 100
+const maxSuggestions = 25
 
 const database = {
   records: [],
@@ -22,7 +22,9 @@ const database = {
           record.name,
           record.target,
           record.type,
-          record.outlets.map(({ name }) => name).join(),
+          record.outlets
+            .map(({ name, canonical }) => [name, canonical].join())
+            .join(),
         ].join(' ')
       ),
     }))

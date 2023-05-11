@@ -31,6 +31,78 @@ body {
   background: var(--color-background);
 }
 
+a {
+  color: var(--color-accent);
+  text-decoration-line: underline;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  text-decoration-style: double;
+}
+
+header {
+  margin: var(--space-medium) auto;
+  padding: 0 var(--space-medium);
+  max-width: 75ch;
+  text-align: center;
+}
+
+header x-logo {
+  margin: var(--space-x-large);
+}
+
+header h1 {
+  font-family: 'Fira Sans Condensed';
+  font-weight: 500;
+  margin: 0;
+  color: var(--color-text);
+}
+
+header h1 em {
+  font-style: normal;
+  background: var(--color-accent);
+  color: var(--color-highlight-inverted);
+  padding: 0 var(--space-x-small);
+}
+
+header hr {
+  width: 25em;
+  margin: var(--space-large) auto;
+  border-top: 2px dotted var(--color-text-pale);
+  border-bottom: none;
+}
+
+header h2 {
+  font-size: 1.45em;
+}
+
+header h1,
+header h2 {
+  line-height: var(--line-height-condensed);
+}
+
+header > p {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+x-search {
+  display: flex;
+  justify-content: center;
+  background: var(--color-accent);
+  width: 100%;
+  position: sticky;
+  top: 0px;
+  margin-top: var(--space-xx-large);
+  padding: var(--space-medium) 0;
+}
+
+main {
+  min-height: 100vh;
+  background: white;
+}
+
 /* main {
   width: 100vw;
   height: 100vh;
@@ -39,7 +111,3 @@ body {
   justify-content: center;
   align-items: center;
 } */
-
-footer {
-  text-align: center;
-}
