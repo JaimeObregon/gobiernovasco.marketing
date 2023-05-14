@@ -7,14 +7,14 @@ class Logo extends MyElement {
       align-items: flex-end;
       aspect-ratio: 1 / 1;
       box-sizing: border-box;
-      padding: var(--space-x-large) var(--space-medium) var(--space-medium)
+      padding: var(--space-x-large) var(--space-small) var(--space-small)
         var(--space-medium);
       text-align: right;
       text-transform: uppercase;
       line-height: var(--line-height-condensed);
       font-weight: bold;
       font-family: var(--font-sans);
-      transform: rotate(-2deg);
+      transform: rotate(-3deg);
       background: var(--color-heading);
       color: var(--color-highlight-inverted);
       user-select: none;

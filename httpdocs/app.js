@@ -2,8 +2,10 @@ import { MyElement, html, css } from './modules/element.js'
 import { Campaign } from './components/campaign.js'
 import { database } from './modules/database.js'
 import { Search } from './components/search.js'
+import { Details } from './components/details.js'
 import { normalize, escape } from './modules/strings.js'
 import { Logo } from './components/logo.js'
+import { Masonry } from './modules/masonry.js'
 
 const app = {
   $search: document.querySelector('x-search'),
@@ -66,20 +68,20 @@ const app = {
 
         this.$main.innerHTML = `
           <!--${uniqueOutlets}-->
-          <h1>${this.results.length} campañas <!--sobre <q>${escape(
+          <!--<h1>${this.results.length} campañas sobre <q>${escape(
           this.query
-        )}</q>--></h1>
-          ${campaigns}
+        )}</q></h1>-->
+          <section id="masonry">${campaigns}</section>
         `
       } else {
-        const string = `No hay resultados sobre <q>${escape(this.query)}</q>.`
-        this.$main.innerHTML = string
+        this.$main.innerHTML = `<div>No hay resultados.</div>`
       }
     }, this.debounceDelay)
   },
 }
 
 customElements.define('x-search', Search)
+customElements.define('x-details', Details)
 customElements.define('x-campaign', Campaign)
 
 await database.load('/data/campaigns.json')
@@ -87,6 +89,24 @@ await database.load('/data/campaigns.json')
 const counter = document.querySelector('#counter')
 counter.innerText = database.count
 
+const url = new URL(document.location.href)
+const q = url.searchParams.get('q')
+app.query = q
+
+history.pushState(null, '', q ? `/?q=${q}` : '/')
+
 app.search()
+
+setTimeout(() => {
+  const masonry = new Masonry({
+    container: 'section#masonry',
+    static: true,
+    gutter: 16,
+    maxColumns: 3,
+    useMin: true,
+  })
+
+  masonry.listen()
+}, 400)
 
 export { app }

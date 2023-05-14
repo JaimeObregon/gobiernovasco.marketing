@@ -48,37 +48,36 @@ header {
   text-align: center;
 }
 
-header x-logo {
+header > x-logo {
   margin: var(--space-x-large);
 }
 
-header h1 {
+header > h1 {
   font-family: 'Fira Sans Condensed';
   font-weight: 500;
   margin: 0;
   color: var(--color-text);
 }
 
-header h1 em {
+header > h1 em {
   font-style: normal;
   background: var(--color-accent);
   color: var(--color-highlight-inverted);
   padding: 0 var(--space-x-small);
 }
 
-header hr {
+header > hr {
   width: 25em;
   margin: var(--space-large) auto;
   border-top: 2px dotted var(--color-text-pale);
   border-bottom: none;
 }
 
-header h2 {
+header > h2 {
   font-size: 1.45em;
 }
 
-header h1,
-header h2 {
+header > :is(h1, h2) {
   line-height: var(--line-height-condensed);
 }
 
@@ -93,21 +92,64 @@ x-search {
   background: var(--color-accent);
   width: 100%;
   position: sticky;
+  z-index: 1;
   top: 0px;
   margin-top: var(--space-xx-large);
   padding: var(--space-medium) 0;
 }
 
-main {
-  min-height: 100vh;
+main > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: var(--type-xx-large);
+  padding: var(--space-xxx-large) 0;
+}
+
+main > h1 {
+  margin: 0;
+}
+
+section {
+  margin: var(--space-medium) 0;
+}
+
+x-details {
+  max-width: var(--line-width-normal);
+  padding: var(--space-medium);
+  margin: 0 auto;
+}
+
+x-details div[slot='summary'] {
+  font-style: italic;
+  color: var(--color-accent);
+  margin-left: var(--space-large);
+}
+
+x-details div[slot='summary'] :is(i, em) {
+  font-style: normal;
+}
+
+x-details div[slot='contents'] {
+  margin-left: var(--space-large);
+  text-align: justify;
+  hyphens: auto;
+}
+
+footer {
   background: white;
 }
 
-/* main {
-  width: 100vw;
-  height: 100vh;
-  font-size: var(--type-x-large);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
+footer h1 {
+  margin: 0;
+  text-align: center;
+  font-size: var(--type-large);
+  letter-spacing: var(--space-xx-small);
+  font-variant: small-caps;
+  padding: var(--space-medium) 0;
+}
+
+footer x-details abbr {
+  font-variant: all-small-caps;
+}

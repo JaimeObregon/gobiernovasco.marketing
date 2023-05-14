@@ -32,12 +32,13 @@ class Search extends MyElement {
     }
 
     label input {
+      font-family: var(--font-sans);
       font-size: inherit;
       font-weight: 500;
       width: 100%;
       border: none;
       border-radius: 1rem;
-      padding: 0.35em 0.25em 0.35em var(--space-large);
+      padding: 0 0.25em 0 var(--space-large);
       outline: none;
       background: var(--color-highlight-inverted);
       transition: background 350ms ease;
@@ -47,6 +48,7 @@ class Search extends MyElement {
       appearance: none;
       -webkit-appearance: none;
       max-width: calc(100% - var(--space-medium));
+      height: var(--space-large);
       margin: auto;
     }
 
@@ -66,6 +68,7 @@ class Search extends MyElement {
     }
 
     label ul {
+      font-family: var(--font-sans);
       display: none;
       position: absolute;
       z-index: 1;
@@ -125,6 +128,7 @@ class Search extends MyElement {
       <input
         type="search"
         placeholder="Medio, departamento, campaña, anuncio…"
+        autofocus
       />
       <ul></ul>
     </label>
@@ -182,11 +186,6 @@ class Search extends MyElement {
 
     this.input.addEventListener('input', () => {
       this.query = this.input.value
-
-      this.scrollIntoView({
-        top: 0,
-        behavior: 'smooth',
-      })
     })
 
     this.input.addEventListener('focus', () => {
@@ -208,6 +207,17 @@ class Search extends MyElement {
   set query(value) {
     this.value = this.input.value = value ?? ''
     app.search()
+
+    const scrollIntoView = () =>
+      this.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      })
+
+    // Chrome no hace this.scrollIntoView() sin este setTimeout()
+    if (value) {
+      setTimeout(scrollIntoView, 100)
+    }
   }
 
   get selected() {
