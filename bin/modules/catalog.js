@@ -41,11 +41,12 @@ const catalog = {
   outlets: [
     {
       name: 'I Love You',
-      synonyms: ['I love you', 'I love You'],
+      synonyms: ['I Love You', 'I love you', 'I love You'],
     },
     {
       name: 'Goiena',
       synonyms: [
+        'Goiena',
         'Goiena (Tokikom)',
         'Goiena TB-Tokikom tb',
         'Goiena Tb.',
@@ -60,6 +61,7 @@ const catalog = {
     {
       name: 'Radio Vitoria',
       synonyms: [
+        'Radio Vitoria',
         'Radio vitoria',
         'Radio Vitoria (12 cuñas)',
         'Radio Vitoria (junio)',
@@ -69,6 +71,7 @@ const catalog = {
     {
       name: 'Cadena Dial',
       synonyms: [
+        'Cadena Dial',
         'Cadena DIAL',
         'Dial Bilbao',
         'Dial Euskadi',
@@ -82,6 +85,7 @@ const catalog = {
     {
       name: 'Cadena 100',
       synonyms: [
+        'Cadena 100',
         'C100 Euskadi',
         'C100',
         'Cadena 100 Bilbao',
@@ -92,6 +96,7 @@ const catalog = {
     {
       name: 'Euskadi Irratia',
       synonyms: [
+        'Euskadi Irratia',
         'Euskadi Irratia (12 cuñas)',
         'Euskadi Irratia. Acción Astigarraga.',
         'Euskadi Irratia. Acción Hernani.',
@@ -102,15 +107,18 @@ const catalog = {
     {
       name: 'Radio Euskadi',
       synonyms: [
+        'Radio Euskadi',
         'R a d i o Euskadi',
+        'Radio Euskadi (12 cuñas)',
         'Radio Euskadi. Acción Barakaldo.',
         'Radio Vitoria (Radio Euskadi)',
-        'Radio Euskadi (12 cuñas)',
+        'RadioEuskadi',
       ],
     },
     {
       name: 'LinkedIn',
       synonyms: [
+        'LinkedIn',
         'LinkedIn (jóvenes en el extranjero)',
         'LinkedIn (jóvenes fuera de la CAV - España)',
         'LinkedIn (post patrocinado empresas)',
@@ -123,6 +131,7 @@ const catalog = {
       name: 'Noticias de Gipuzkoa',
       synonyms: [
         '<A href="http://www.noticiasdegipuzkoa.eus/">noticiasdegipuzkoa.eus</a>',
+        'N. de Gipuzkoa',
         'Noticias de Gipúzkoa (Apertura Milán)',
         'Noticias de Gipuzkoa (Brexit) / (USA)',
         'Noticias De Gipuzkoa (Julio)',
@@ -144,6 +153,7 @@ const catalog = {
         'Noticias de Gipuzkoa. Supl. Servicios sociales',
         'Noticias de gipuzkoa.eus',
         'noticias de gipuzkoa',
+        'Noticias de Gipuzkoa',
         'Noticias De Gipuzkoa',
         'Noticias De Gipúzkoa',
         'Noticias Gipuzkoa',
@@ -163,6 +173,7 @@ const catalog = {
     {
       name: 'Diario de Noticias de Álava',
       synonyms: [
+        'Diario de Noticias de Álava',
         '<A href="http://www.noticiasdealava.eus/">noticiasdealava.eus</a>',
         'Diario Noticias Álava',
         'Diario Noticias de Álava (Brexit) / (USA)',
@@ -214,11 +225,13 @@ const catalog = {
         'Noticiasdelava.com',
         'noticiasdelava.eus',
         'ON (suplemento Noticias Álava)',
+        'N. de Álava',
       ],
     },
     {
       name: 'ETB',
       synonyms: [
+        'ETB',
         'Convenio Eitb',
         'Eitb 1',
         'EITB TELEBISTA',
@@ -261,6 +274,7 @@ const catalog = {
     {
       name: 'El País',
       synonyms: [
+        'El País',
         '<A href="http://www.elpais.es/">elpais.es</a>',
         'El País (Apertura Milán)',
         'El País (Brexit)',
@@ -291,6 +305,7 @@ const catalog = {
     {
       name: 'Cadena SER',
       synonyms: [
+        'Cadena SER',
         'Cadena Ser (14 cuñas)',
         'Cadena Ser (4 cuñas)',
         'Cadena Ser (8 cuñas)',
@@ -339,6 +354,7 @@ const catalog = {
     {
       name: 'El Correo',
       synonyms: [
+        'El Correo',
         '<A href="http://www.elcorreo.com/">elcorreo.com</a>',
         'Correo Digital',
         'correo.com',
@@ -407,6 +423,7 @@ const catalog = {
     {
       name: 'Radio Popular de Bilbao – Bilbo Herri Irratia',
       synonyms: [
+        'Radio Popular de Bilbao – Bilbo Herri Irratia',
         'Bilbo Herri Irratia – Radio Popular de Bilbao',
         'Bilbo Herri Irratia- Radio Popular de Bilbao',
         'Bilbo herri irratia-Radio Popular de Bilbao',
@@ -436,7 +453,16 @@ const catalog = {
     {
       name: 'eldiario.es',
       synonyms: [
+        'eldiario.es',
         '<A href="http://www.eldiario.es/euskadi">eldiario.es</a>',
+        'diario norte',
+        'Diario Norte',
+        'diario.es',
+        'Diario.es',
+        'diario.es/euskadi',
+        'diarionorte.es',
+        'diarionorte',
+        'DiarioNorte',
         'El Diario Norte',
         'el diario.es',
         'el diario.es/norte',
@@ -460,6 +486,7 @@ const catalog = {
     {
       name: 'El Mundo',
       synonyms: [
+        'El Mundo',
         '<A href="http://www.elmundo.es/">elmundo.es</a>',
         'El Mundo (Apertura Milán)',
         'El Mundo (Supl. Innovación y Tecnología)',
@@ -486,6 +513,7 @@ const catalog = {
     {
       name: 'La ría del ocio',
       synonyms: [
+        'La ría del ocio',
         'La Ria del Ocio',
         'La ría del Ocio',
         'La Ría del ocio',
@@ -499,6 +527,7 @@ const catalog = {
     {
       name: 'Crónica Vasca',
       synonyms: [
+        'Crónica Vasca',
         '<A href="http://www.cronicavasca.com/">cronicavasca.com</a>',
         'Cronica vasca-branded content',
         'cronica vasca',
@@ -512,6 +541,7 @@ const catalog = {
     {
       name: 'Hamaika Telebista',
       synonyms: [
+        'Hamaika Telebista',
         '11 TB',
         '11 telebista',
         'H a m a i k a telebista',
@@ -540,6 +570,7 @@ const catalog = {
     {
       name: 'Los 40',
       synonyms: [
+        'Los 40',
         '40 euskadi app digital',
         '40 Euskadi App Digital',
         '40 euskadi app',
@@ -581,6 +612,7 @@ const catalog = {
     {
       name: 'Onda Cero',
       synonyms: [
+        'Onda Cero',
         'Onda Cero (Pre-Roll)',
         'onda cero app digital',
         'Onda Cero App Digital',
@@ -603,11 +635,17 @@ const catalog = {
     },
     {
       name: 'Oizmendi Telebista',
-      synonyms: ['Oizmendi Tb.', 'Oizmendi TB', 'Oizmendi'],
+      synonyms: [
+        'Oizmendi Telebista',
+        'Oizmendi Tb.',
+        'Oizmendi TB',
+        'Oizmendi',
+      ],
     },
     {
       name: 'Tele 7',
       synonyms: [
+        'Tele 7',
         'Tele 7 Barakaldo',
         'Tele 7 Tb.',
         'TELE 7',
@@ -618,6 +656,7 @@ const catalog = {
     {
       name: 'Deia',
       synonyms: [
+        'Deia',
         '<A href="http://www.deia.eus/">deia.eus</a>',
         'Deia (Apertura Milán)',
         'Deia (Brexit) / (USA)',
@@ -643,11 +682,17 @@ const catalog = {
     },
     {
       name: 'Elhuyar',
-      synonyms: ['Elhuyar aldizkaria', 'elhuyar.eus', 'Revista Elhuyar'],
+      synonyms: [
+        'Elhuyar',
+        'Elhuyar aldizkaria',
+        'elhuyar.eus',
+        'Revista Elhuyar',
+      ],
     },
     {
       name: 'Argia',
       synonyms: [
+        'Argia',
         'Anuario ARGIA',
         'argia internet',
         'Argia internet',
@@ -664,21 +709,29 @@ const catalog = {
     },
     {
       name: 'Twitter',
-      synonyms: ['twiter', 'Twiter', 'Twitter Ads'],
+      synonyms: ['Twitter', 'twiter', 'Twiter', 'Twitter Ads'],
     },
     {
       name: 'Facebook',
-      synonyms: ['Faceboock', 'Facebook ads', 'Facebook+Instagram'],
+      synonyms: ['Facebook', 'Faceboock', 'Facebook ads', 'Facebook+Instagram'],
     },
     {
       name: 'Instagram',
-      synonyms: ['FB/ instagram', 'instagram', 'Instagran', 'Instragram'],
+      synonyms: [
+        'Instagram',
+        'FB/ instagram',
+        'instagram',
+        'Instagran',
+        'Instragram',
+      ],
     },
     {
       name: 'YouTube',
       synonyms: [
+        'YouTube',
         'Campaña Youtube (display)',
         'Compra Programática Youtube',
+        'ETAou Tube',
         'Google Sites (YouTube)',
         'Google Youtube',
         'You Tube',
@@ -688,6 +741,7 @@ const catalog = {
     {
       name: 'Google',
       synonyms: [
+        'Google',
         'Display Google',
         'DV360',
         'Google (display)',
@@ -715,6 +769,7 @@ const catalog = {
     {
       name: 'Gara',
       synonyms: [
+        'Gara',
         '<A href="http://www.naiz.eus/">naiz.eus</a>',
         'Anuario de Gara',
         'Anuario Gara 2021',
@@ -767,6 +822,7 @@ const catalog = {
     {
       name: 'Berria',
       synonyms: [
+        'Berria',
         '<A href="http://www.berria.eus/">berria.eus</a>',
         'Anuario Berria 2021',
         'Anuario de Berria',
@@ -800,6 +856,7 @@ const catalog = {
     {
       name: 'El Diario Vasco',
       synonyms: [
+        'El Diario Vasco',
         '<A href="http://www.diariovasco.com/">diariovasco.com</a>',
         'Diario Vasco – Cm Gipuzkoa',
         'Diario Vasco – Sud Ouest',
@@ -849,6 +906,7 @@ const catalog = {
     {
       name: 'Onda Vasca',
       synonyms: [
+        'Onda Vasca',
         'Onda Vasca (10 cuñas)',
         'Onda Vasca (4 cuñas)',
         'Onda Vasca (Grupo Noticias)',
@@ -865,6 +923,7 @@ const catalog = {
     {
       name: 'COPE',
       synonyms: [
+        'COPE',
         'Cadena Cope',
         'Cope Bilbao',
         'Cope Euskadi',
@@ -876,11 +935,12 @@ const catalog = {
     },
     {
       name: 'TikTok',
-      synonyms: ['Tik Tok'],
+      synonyms: ['TikTok', 'Tik Tok'],
     },
     {
       name: 'Gaztea',
       synonyms: [
+        'Gaztea',
         'Euskadi gaztea',
         'Euskadi Gaztea',
         'Gaztea Irratia',
