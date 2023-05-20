@@ -71,9 +71,9 @@ const database = {
 
     const regexp = new RegExp(query)
 
-    const results = database.records.filter((record) =>
-      record.index.match(regexp)
-    )
+    const results = database.records
+      .filter((record) => record.index.match(regexp))
+      .sort((a, b) => (a.euros < b.euros ? +1 : -1))
 
     const suggestions = results
       .flatMap((item) =>
