@@ -40,6 +40,92 @@ const catalog = {
   },
   outlets: [
     {
+      name: 'Estrategia Empresarial',
+      synonyms: [
+        'Anuario Estrategia Empresarial',
+        'Estrategia Empresarial (Cuaderno Energía)',
+        'Estrategia Empresarial anuario.',
+        'Estrategia Empresarial',
+        'Estrategia Empresarial, Especial 25 aniversario.',
+        'Estrategia Enpresarial',
+        'Estrategia empresarial',
+        'Revista Estrategia Empresarial',
+        'estrategia empresarial',
+        'estrategia.net',
+        'estrategiaempresarial.net',
+        'Estrategia Topagunea',
+      ],
+    },
+    {
+      name: 'La Vanguardia',
+      synonyms: ['La Vanguardia', 'lavanguardia.com', 'lavanguardia.es'],
+    },
+    {
+      name: 'OCR Branding & Digital Agency',
+      synonyms: [
+        'OCR Branding & Digital Agency',
+        'OCR BRANDING',
+        'OCR Branding',
+        'OCR',
+      ],
+    },
+    {
+      name: 'Very Bilbao',
+      synonyms: ['Very Bilbao', 'verybilbao.es'],
+    },
+    {
+      name: 'Europa FM',
+      synonyms: [
+        'Europa FM App digital',
+        'Europa FM Euskadi',
+        'Europa FM',
+        'Europa Fm Euskadi',
+        'Europa Fm',
+      ],
+    },
+    {
+      name: 'Basque Tribune',
+      synonyms: ['Basque Tribune', 'Basque tribune', 'basquetribune.eus'],
+    },
+    {
+      name: 'Vinilo FM',
+      synonyms: ['Vinilo FM', 'Vinilo Fm'],
+    },
+    {
+      name: 'Europa Azul',
+      synonyms: [
+        'Europa Azul',
+        'Europa azul (agosto)',
+        'Europa azul (junio)',
+        'Europa azul',
+      ],
+    },
+    {
+      name: 'Íñigo Fernández Ostolaza',
+      synonyms: [
+        'Iñigo Fdez. Ostolaza',
+        'Iñigo Fernández Ostolaza y Mónica Arostegui',
+        'Iñigo Fernandez Ostolaza',
+        'Iñigo Fernández Ostolaza',
+        'Iñigo Fernandez de Ostolaza',
+        'Iñigo Fernández de Ostolaza',
+      ],
+    },
+    {
+      name: 'Irutxuloko Hitza',
+      synonyms: [
+        'Irutxuloko Hitza -Bandera de la Concha',
+        'Irutxuloko Hitza online',
+        'Irutxuloko Hitza',
+        'Irutxuluko Hitza',
+      ],
+    },
+    {
+      name: 'Mundo Deportivo',
+      synonyms: ['Mundo Deportivo', 'Mundo deportivo', 'mundo deportivo'],
+    },
+
+    {
       name: 'I Love You',
       synonyms: ['I Love You', 'I love you', 'I love You'],
     },
