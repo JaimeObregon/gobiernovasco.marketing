@@ -1,6 +1,15 @@
 @import 'stylesheets/typography.css';
 @import 'stylesheets/system.css';
 
+@keyframes highlight {
+  from {
+    color: var(--color-accent);
+  }
+
+  to {
+    color: inherit;
+  }
+}
 :root {
   font-size: 16px;
   font-variant-numeric: oldstyle-nums;
@@ -53,7 +62,7 @@ header > x-logo {
 }
 
 header > h1 {
-  font-family: 'Fira Sans Condensed';
+  font-family: var(--font-display);
   font-weight: 500;
   margin: 0;
   color: var(--color-text);
@@ -108,7 +117,11 @@ main > div {
 }
 
 main > h1 {
+  font-family: var(--font-display);
+  font-weight: 500;
   margin: 0;
+  padding: var(--space-medium) 0;
+  text-align: center;
 }
 
 section {
@@ -117,14 +130,20 @@ section {
 
 x-details {
   max-width: var(--line-width-normal);
-  padding: var(--space-medium);
+  padding: var(--space-small);
   margin: 0 auto;
 }
 
 x-details div[slot='summary'] {
   font-style: italic;
+  font-weight: 700;
   color: var(--color-accent);
   margin-left: var(--space-large);
+}
+
+x-details div[slot='summary']:hover {
+  text-decoration-line: underline;
+  text-underline-offset: 3px;
 }
 
 x-details div[slot='summary'] :is(i, em) {
@@ -147,7 +166,12 @@ footer h1 {
   font-size: var(--type-large);
   letter-spacing: var(--space-xx-small);
   font-variant: small-caps;
-  padding: var(--space-medium) 0;
+  padding: var(--space-large) 0;
+}
+
+cite {
+  font-variant: small-caps;
+  hyphens: none;
 }
 
 footer x-details abbr {

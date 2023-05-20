@@ -19,6 +19,7 @@
   --space-xxx-large: 6em;
 
   --font-serif: 'Merriweather', serif;
+  --font-display: 'Fira Sans Condensed', system-ui;
   --font-sans: 'Inter var', sans-serif;
   --font-mono: monospace;
 
@@ -33,6 +34,8 @@
   --delay-medium: 250ms;
   --delay-large: 350ms;
   --delay-x-large: 500ms;
+  --delay-xx-large: 1000ms;
+  --delay-xxx-large: 2000ms;
 
   /* Parte de https://unpkg.com/open-props/easings.min.css */
   --ease-3: cubic-bezier(0.25, 0, 0.3, 1);
