@@ -147,6 +147,10 @@ class Search extends MyElement {
     this.ul = this.shadowRoot.querySelector('ul')
 
     document.addEventListener('keydown', (event) => {
+      if (event.metaKey || event.ctrlKey) {
+        return
+      }
+
       if (event.key.length === 1 || event.key === 'Backspace') {
         this.input.focus()
       }
