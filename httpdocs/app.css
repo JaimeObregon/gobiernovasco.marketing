@@ -124,8 +124,88 @@ main > h1 {
   text-align: center;
 }
 
-section {
+section:first-of-type {
   margin: var(--space-medium) 0;
+}
+
+section#summary {
+  display: flex;
+  margin: 0 var(--space-medium);
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+section#summary :is(ol, figure) {
+  width: 50%;
+  flex-shrink: 0;
+  flex-grow: 0;
+  box-sizing: border-box;
+}
+
+section#summary ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+section#summary ol label {
+  cursor: pointer;
+}
+
+section#summary figure {
+  position: sticky;
+  top: calc(2 * var(--space-medium) + var(--space-large) + var(--space-large));
+  margin: 0;
+  padding: var(--space-medium) var(--space-large);
+  background: var(--color-highlight-inverted);
+}
+
+section#summary table {
+  width: 100%;
+  font-size: var(--type-small);
+  font-variant-numeric: tabular-nums;
+  border-collapse: collapse;
+}
+
+section#summary table thead th:nth-child(1) {
+  width: 30%;
+}
+
+section#summary table thead th:nth-child(1) {
+  width: 30%;
+}
+
+section#summary table thead th:nth-child(1) {
+  width: 40%;
+}
+
+section#summary table,
+section#summary table :is(td, th) {
+  padding: var(--space-small);
+}
+
+section#summary table td {
+  animation: highlight var(--delay-xxx-large);
+}
+
+section#summary table thead {
+  border-bottom: 1px solid var(--color-line);
+}
+
+section#summary table tbody tr:nth-child(odd) {
+  background: var(--color-background);
+}
+
+section#summary table tfoot {
+  border-top: 1px solid var(--color-line);
+}
+
+section#summary table th {
+  text-align: left;
+}
+
+section#summary table :is(td, th):not(:nth-child(1)) {
+  text-align: right;
 }
 
 x-details {

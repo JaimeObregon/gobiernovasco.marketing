@@ -44,6 +44,7 @@ const app = {
     this.results = results
 
     clearTimeout(this.timeout)
+
     this.timeout = setTimeout(() => {
       this.$main.innerHTML = ''
 
@@ -51,31 +52,218 @@ const app = {
         return
       }
 
-      if (this.results.length) {
-        const query = normalize(this.query)
-        const regexp = new RegExp(query, 'i')
-
-        const campaigns = this.results
-          .map((result) => `<x-campaign data-id="${result.id}"></x-campaign>`)
-          .join('')
-
-        const outlets = this.results
-          .flatMap(({ outlets }) => outlets)
-          .filter(({ name }) => name.match(regexp))
-          .map(({ name }) => escape(name))
-
-        const uniqueOutlets = [...new Set(outlets)]
-
-        this.$main.innerHTML = `
-          <!--${uniqueOutlets}-->
-          <!--<h1>${this.results.length} campañas sobre <q>${escape(
-          this.query
-        )}</q></h1>-->
-          <section id="masonry">${campaigns}</section>
-        `
-      } else {
+      if (!this.results.length) {
         this.$main.innerHTML = `<div>No hay resultados.</div>`
+        return
       }
+
+      const query = normalize(this.query)
+      const regexp = new RegExp(query, 'i')
+
+      const campaigns = this.results
+        .map((result) => `<x-campaign data-id="${result.id}"></x-campaign>`)
+        .join('')
+
+      const matches = this.results
+        .flatMap(({ outlets }) => outlets)
+        .filter(
+          ({ name, canonical }) =>
+            normalize(name).match(regexp) ||
+            (canonical && normalize(canonical).match(regexp))
+        )
+
+      const outlets = [
+        ...new Set(
+          matches
+            .map(({ name }) => escape(name))
+            .sort((a, b) => a.localeCompare(b))
+        ),
+      ]
+
+      if (outlets.length) {
+        this.$main.innerHTML = html`
+          <h1>
+            La inversión en los ${outlets.length} medios que coinciden con
+            <q>${escape(query)}</q>
+          </h1>
+          <section id="summary">
+            <ol>
+              ${outlets
+                .map(
+                  (outlet, i) => html`
+                    <li>
+                      <label>
+                        <input checked type="checkbox" value="${i}" />
+                        ${outlet}
+                      </label>
+                    </li>
+                  `
+                )
+                .join('')}
+            </ol>
+
+            <figure>
+              <table></table>
+            </figure>
+          </section>
+        `
+      }
+
+      this.$main.innerHTML += html`
+        <h1>Hay ${this.results.length} campañas con <q>${escape(query)}</q></h1>
+        <section id="masonry">${campaigns}</section>
+      `
+
+      const recalculate = () => {
+        const selected = [...document.querySelectorAll('input:checked')].map(
+          (input) => input.parentNode.innerText.trim()
+        )
+
+        const euros = this.results.reduce(
+          (accumulator, previous) => {
+            const { year } = previous
+
+            const matches = previous.outlets.filter(({ name, canonical }) =>
+              selected.includes(name)
+            )
+
+            const euros = matches.reduce(
+              (accumulator, previous) => accumulator + previous.euros,
+              0
+            )
+
+            const count = matches.length ? 1 : 0
+
+            accumulator[year].euros += euros
+            accumulator[year].count += count
+
+            return accumulator
+          },
+          {
+            2018: { euros: 0, count: 0 },
+            2019: { euros: 0, count: 0 },
+            2020: { euros: 0, count: 0 },
+            2021: { euros: 0, count: 0 },
+            2022: { euros: 0, count: 0 },
+          }
+        )
+
+        console.log(euros)
+
+        const total =
+          euros[2018].euros +
+          euros[2019].euros +
+          euros[2020].euros +
+          euros[2021].euros +
+          euros[2022].euros
+
+        const total2 =
+          euros[2018].count +
+          euros[2019].count +
+          euros[2020].count +
+          euros[2021].count +
+          euros[2022].count
+
+        const table = document.querySelector('table')
+
+        table.innerHTML = html`
+        <thead>
+          <tr>
+            <th>Año</th>
+            <th>Contrataciones</th>
+            <th>Inversión</th>
+          </tr>
+        </thead>
+        <tbody>
+      <tr>
+        <th>2018</th>
+        <td>${euros[2018].count}</td>
+        <td>
+        ${Intl.NumberFormat('es-ES', {
+          style: 'currency',
+          currency: 'EUR',
+          maximumFractionDigits: 0,
+        })
+          .format(Math.round(euros[2018].euros))
+          .replaceAll(/\./g, '&#8239;')}</td>
+      </tr>
+      <tr>
+        <th>2019</th>
+        <td>${euros[2019].count}</td>
+        <td>
+        ${Intl.NumberFormat('es-ES', {
+          style: 'currency',
+          currency: 'EUR',
+          maximumFractionDigits: 0,
+        })
+          .format(Math.round(euros[2019].euros))
+          .replaceAll(/\./g, '&#8239;')}</td>
+      </tr>
+      <tr>
+        <th>2020</th>
+        <td>${euros[2020].count}</td>
+        <td>
+        ${Intl.NumberFormat('es-ES', {
+          style: 'currency',
+          currency: 'EUR',
+          maximumFractionDigits: 0,
+        })
+          .format(Math.round(euros[2020].euros))
+          .replaceAll(/\./g, '&#8239;')}</td>
+      </tr>
+      <tr>
+        <th>2021</th>
+        <td>${euros[2021].count}</td>
+        <td>
+        ${Intl.NumberFormat('es-ES', {
+          style: 'currency',
+          currency: 'EUR',
+          maximumFractionDigits: 0,
+        })
+          .format(Math.round(euros[2021].euros))
+          .replaceAll(/\./g, '&#8239;')}</td>
+      </tr>
+      <tr>
+        <th>2022</th>
+        <td>${euros[2022].count}</td>
+        <td>
+        ${Intl.NumberFormat('es-ES', {
+          style: 'currency',
+          currency: 'EUR',
+          maximumFractionDigits: 0,
+        })
+          .format(Math.round(euros[2022].euros))
+          .replaceAll(/\./g, '&#8239;')}</td>
+      </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>Total quinquenio</td>
+          <td>${total2}</td>
+          <td>${Intl.NumberFormat('es-ES', {
+            style: 'currency',
+            currency: 'EUR',
+            maximumFractionDigits: 0,
+          })
+            .format(Math.round(total))
+            .replaceAll(/\./g, '&#8239;')}</th>
+        </td>
+      </tfoot>
+        `
+      }
+
+      recalculate()
+
+      this.$main.addEventListener('click', ({ target }) => {
+        const inputClicked =
+          target.localName === 'input' && typeof target.checked !== 'undefined'
+
+        if (!inputClicked) {
+          return
+        }
+
+        recalculate()
+      })
     }, this.debounceDelay)
   },
 }

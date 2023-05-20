@@ -13,14 +13,32 @@ const database = {
 
     database.records = json.map((record) => ({
       ...record,
+      outlets: record.outlets
+        .reduce((accumulator, current) => {
+          const found = accumulator.find(({ name, canonical }) => {
+            if (current.canonical && canonical) {
+              return canonical === current.canonical
+            } else {
+              return name === current.name
+            }
+          })
+
+          if (found) {
+            found.euros += current.euros
+          } else {
+            accumulator.push(current)
+          }
+          return accumulator
+        }, [])
+        .sort((a, b) => (a.euros < b.euros ? 1 : -1)),
       index: normalize(
         [
-          record.channels,
+          // record.channels,
           record.date,
           record.department,
           record.description,
           record.name,
-          record.target,
+          // record.target,
           record.type,
           record.outlets
             .map(({ name, canonical }) => [name, canonical].join())
@@ -53,12 +71,9 @@ const database = {
 
     const regexp = new RegExp(query)
 
-    const results = database.records
-      .filter((record) => record.index.match(regexp))
-      .map((result) => ({
-        ...result,
-        outlets: result.outlets.sort((a, b) => (a.euros < b.euros ? 1 : -1)),
-      }))
+    const results = database.records.filter((record) =>
+      record.index.match(regexp)
+    )
 
     const suggestions = results
       .flatMap((item) =>
