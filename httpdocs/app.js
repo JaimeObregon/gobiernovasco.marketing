@@ -272,7 +272,7 @@ customElements.define('x-search', Search)
 customElements.define('x-details', Details)
 customElements.define('x-campaign', Campaign)
 
-await database.load('/data/campaigns.json')
+await database.load('/datos/campañas.json')
 
 const counter = document.querySelector('#counter')
 counter.innerText = database.count

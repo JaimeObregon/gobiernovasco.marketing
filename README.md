@@ -43,7 +43,7 @@ Pero para reprocesar los ficheros originales PDF del Gobierno Vasco, instala `pd
 Después, corre el intérprete que los toma y emite por `stdout` la estructura de datos JSON resultante:
 
 ```shell
-npm run parse > /httpdocs/data/campaigns.json
+npm run parse > /httpdocs/datos/campañas.json
 ```
 
 Por último, es recomendable revisar que todos los tests pasan satisfactoriamente:
