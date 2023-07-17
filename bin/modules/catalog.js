@@ -40,6 +40,54 @@ const catalog = {
   },
   outlets: [
     {
+      name: 'Entre Mayores',
+      synonyms: [
+        'Entre Maetaores',
+        'Entre mayores',
+        'Entre Mayores',
+        'Entremayores anuario',
+        'Entremayores',
+      ],
+    },
+    {
+      name: 'Arrate Irratia',
+      synonyms: ['Arrate irratia', 'Arrate Irratia', 'Irratia Arrate'],
+    },
+    {
+      name: 'Segura Irratia',
+      synonyms: [
+        'Irratia Segura',
+        'Radio Segura',
+        'Segura irratia',
+        'Segura Irratia',
+        'Sergura Irratia',
+      ],
+    },
+    {
+      name: 'Radio Nervión',
+      synonyms: [
+        'Radio Nervión (10 cuñas)',
+        'Radio Nervión (4 cuñas)',
+        'Radio Nervión. Acción Barakaldo',
+        'Radio Nervión',
+        'Radio Nervión',
+      ],
+    },
+    {
+      name: 'Expansión',
+      synonyms: [
+        'Expansión (USA)',
+        'Expansión y Expasión.com',
+        'Expansión–Especial Infraestructuras-',
+        'expansion.com (Brexit) / (USA)',
+        'expansion.com',
+        'expansión.com',
+        'expansión',
+        'Expansión',
+        'Expansión',
+      ],
+    },
+    {
       name: 'Estrategia Empresarial',
       synonyms: [
         'Anuario Estrategia Empresarial',
