@@ -257,3 +257,11 @@ cite {
 footer x-details abbr {
   font-variant: all-small-caps;
 }
+
+footer blockquote {
+  font-style: italic;
+}
+
+footer blockquote :is(i, em) {
+  font-style: normal;
+}
