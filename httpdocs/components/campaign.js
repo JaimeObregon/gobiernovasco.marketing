@@ -222,7 +222,7 @@ class Campaign extends MyElement {
     const campaign = database.find(id)
 
     a.innerHTML += campaign.year
-    const href = `/reports/${campaign.year}.pdf#page=${campaign.page}`
+    const href = `/documentos/memorias/${campaign.year}.pdf#page=${campaign.page}`
     a.setAttribute('href', href)
 
     h1.innerText = campaign.name
