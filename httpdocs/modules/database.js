@@ -53,13 +53,13 @@ const database = {
     return this.records.length
   },
 
-  // Devuelve el registro de una imagen a partir de su `id`.
+  // Devuelve un resultado a partir de su `id`.
   find: (id) => {
     return database.records.find((record) => record.id === id)
   },
 
-  // Cursa una búsqueda en la base de datos y devuelve los resultados de la misma
-  // y las sugerencias de búsqueda para el término empleado.
+  // Cursa una búsqueda en la base de datos y devuelve los resultados y las
+  // sugerencias de búsqueda para el término empleado.
   search: (string) => {
     const query = normalize(string)
 

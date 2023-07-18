@@ -11,8 +11,6 @@ const app = {
   $search: document.querySelector('x-search'),
   $main: document.querySelector('main'),
 
-  translations: {},
-
   debounceDelay: 200,
 
   results: [],
