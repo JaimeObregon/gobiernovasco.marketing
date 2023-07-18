@@ -4,6 +4,7 @@ class Details extends MyElement {
   static styles = css`
     :host {
       display: block;
+      overflow: hidden;
     }
 
     details {

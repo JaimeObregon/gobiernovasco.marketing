@@ -55,6 +55,7 @@ header {
   padding: 0 var(--space-medium);
   max-width: 75ch;
   text-align: center;
+  text-wrap: balance; /* ✨ https://developer.chrome.com/blog/css-text-wrap-balance/ */
 }
 
 header > x-logo {
@@ -83,7 +84,7 @@ header > hr {
 }
 
 header > h2 {
-  font-size: 1.45em;
+  font-size: 1.35em;
 }
 
 header > :is(h1, h2) {
@@ -209,7 +210,6 @@ section#summary table :is(td, th):not(:nth-child(1)) {
 }
 
 x-details {
-  max-width: var(--line-width-normal);
   padding: var(--space-small);
   margin: 0 auto;
 }
@@ -237,16 +237,43 @@ x-details div[slot='contents'] {
 }
 
 footer {
+  padding: var(--space-xx-large) 0;
   background: white;
 }
 
 footer h1 {
-  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
   text-align: center;
   font-size: var(--type-large);
-  letter-spacing: var(--space-xx-small);
+  letter-spacing: var(--space-x-small);
   font-variant: small-caps;
   padding: var(--space-large) 0;
+}
+
+footer :is(h1, x-details) {
+  max-width: var(--line-width-normal);
+}
+
+footer h1:after,
+footer h1:before {
+  content: '';
+  flex-grow: 1;
+  border-top: 2px dotted var(--color-heading);
+}
+
+footer h1:after {
+  margin-left: var(--space-large);
+}
+
+footer h1:before {
+  margin-right: var(--space-large);
+}
+
+footer h1:first-of-type {
+  padding-top: 0;
 }
 
 cite {
