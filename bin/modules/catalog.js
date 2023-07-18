@@ -264,7 +264,6 @@ const catalog = {
     {
       name: 'Noticias de Gipuzkoa',
       synonyms: [
-        '<A href="http://www.noticiasdegipuzkoa.eus/">noticiasdegipuzkoa.eus</a>',
         'N. de Gipuzkoa',
         'Noticias de Gipúzkoa (Apertura Milán)',
         'Noticias de Gipuzkoa (Brexit) / (USA)',
@@ -308,7 +307,6 @@ const catalog = {
       name: 'Diario de Noticias de Álava',
       synonyms: [
         'Diario de Noticias de Álava',
-        '<A href="http://www.noticiasdealava.eus/">noticiasdealava.eus</a>',
         'Diario Noticias Álava',
         'Diario Noticias de Álava (Brexit) / (USA)',
         'Diario Noticias de Álava',
@@ -317,7 +315,7 @@ const catalog = {
         'noticialsdealava.com',
         'Noticias Álava. Monogr. Álava Enclave Industrial',
         'Noticias Álava',
-        'Noticias de Álava (</span><span class="ft9096">Final Four + Azkena Rock</span><span class="ft0">)',
+        'Noticias de Álava (Final Four + Azkena Rock)',
         'Noticias de Álava (Apertura Milán)',
         'Noticias de Álava (Azkena)',
         'Noticias de Álava (Noviembre)',
@@ -409,7 +407,6 @@ const catalog = {
       name: 'El País',
       synonyms: [
         'El País',
-        '<A href="http://www.elpais.es/">elpais.es</a>',
         'El País (Apertura Milán)',
         'El País (Brexit)',
         'El País (Supl. Infraestructuras)',
@@ -489,7 +486,6 @@ const catalog = {
       name: 'El Correo',
       synonyms: [
         'El Correo',
-        '<A href="http://www.elcorreo.com/">elcorreo.com</a>',
         'Correo Digital',
         'correo.com',
         'Correo.com',
@@ -588,7 +584,6 @@ const catalog = {
       name: 'eldiario.es',
       synonyms: [
         'eldiario.es',
-        '<A href="http://www.eldiario.es/euskadi">eldiario.es</a>',
         'diario norte',
         'Diario Norte',
         'diario.es',
@@ -621,7 +616,6 @@ const catalog = {
       name: 'El Mundo',
       synonyms: [
         'El Mundo',
-        '<A href="http://www.elmundo.es/">elmundo.es</a>',
         'El Mundo (Apertura Milán)',
         'El Mundo (Supl. Innovación y Tecnología)',
         'El Mundo (Tokio)',
@@ -662,7 +656,6 @@ const catalog = {
       name: 'Crónica Vasca',
       synonyms: [
         'Crónica Vasca',
-        '<A href="http://www.cronicavasca.com/">cronicavasca.com</a>',
         'Cronica vasca-branded content',
         'cronica vasca',
         'crónica vasca',
@@ -791,7 +784,6 @@ const catalog = {
       name: 'Deia',
       synonyms: [
         'Deia',
-        '<A href="http://www.deia.eus/">deia.eus</a>',
         'Deia (Apertura Milán)',
         'Deia (Brexit) / (USA)',
         'Deia (Ed. General)',
@@ -904,7 +896,6 @@ const catalog = {
       name: 'Gara',
       synonyms: [
         'Gara',
-        '<A href="http://www.naiz.eus/">naiz.eus</a>',
         'Anuario de Gara',
         'Anuario Gara 2021',
         'Euskal Herriko Gida (Gara)',
@@ -957,7 +948,6 @@ const catalog = {
       name: 'Berria',
       synonyms: [
         'Berria',
-        '<A href="http://www.berria.eus/">berria.eus</a>',
         'Anuario Berria 2021',
         'Anuario de Berria',
         'Berria (Apertura Milán)',
@@ -991,7 +981,6 @@ const catalog = {
       name: 'El Diario Vasco',
       synonyms: [
         'El Diario Vasco',
-        '<A href="http://www.diariovasco.com/">diariovasco.com</a>',
         'Diario Vasco – Cm Gipuzkoa',
         'Diario Vasco – Sud Ouest',
         'Diario Vasco (Apertura Milán)',

@@ -8,10 +8,13 @@ class Interpreter {
   constructor(year, file) {
     this.definitions = definitions[year]
     this.html = fs.readFileSync(file, { encoding: 'utf8' })
-    this.html = this.html.replaceAll(
-      / <\/span><span class="ft(\d+)">/g,
-      '<br>\n'
-    )
+    this.html = this.html.replaceAll(/ <\/span><span class="ft\d+">/g, '<br>\n')
+    this.html = this.html.replaceAll(/(.)<\/span><span class="ft\d+">/g, '$1')
+
+    this.html = this.html.replaceAll(/(&quot;|”|“)/g, '"')
+    this.html = this.html.replaceAll(/&amp;/g, '&')
+
+    this.html = this.html.replaceAll(/<A href="http.+">(.*)<\/a>/g, '$1')
 
     // Las páginas 19 del PDF de 2020 y 36 del PDF de 2019, tienen sendas
     // campañas con un nombre ambiguo que se confunde con una _keyword_.
@@ -24,6 +27,17 @@ class Interpreter {
       this.html = this.html.replaceAll(
         /40(<br>\n4\.628,00€<br>\n)/g,
         '40 Principales$1'
+      )
+
+      // Corrige dos casos en los que en la memoria están intercambiados los
+      // valores de los campos «Inversión total» y «Medio».
+      this.html = this.html.replaceAll(
+        /Inversión<br>\nRadio Popular-Herri Irratia<br>\nTOTAL<br>\nMedio<br>\n850,00 €<br>\n/g,
+        'Inversión<br>\n850,00 €<br>\nTOTAL<br>\nMedio<br>\nRadio Popular-Herri Irratia<br>\n'
+      )
+      this.html = this.html.replaceAll(
+        /Inversión<br>\nRadio Euskadi<br>\nTOTAL<br>\nMedio<br>\n4.367,00 €<br>\n/g,
+        'Inversión<br>\n4.367,00 €<br>\nTOTAL<br>\nMedio<br>\nRadio Euskadi<br>\n'
       )
     }
 
