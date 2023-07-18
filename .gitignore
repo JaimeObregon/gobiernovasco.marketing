@@ -2,5 +2,4 @@
 .netlify
 /temp
 httpdocs/build
-JAIME.md
 node_modules

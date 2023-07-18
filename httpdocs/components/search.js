@@ -128,7 +128,6 @@ class Search extends MyElement {
       <input
         type="search"
         placeholder="Medio, departamento, campaña, anuncio…"
-        autofocus
       />
       <ul></ul>
     </label>
@@ -190,10 +189,12 @@ class Search extends MyElement {
 
     this.input.addEventListener('input', () => {
       this.query = this.input.value
+      app.search()
     })
 
     this.input.addEventListener('focus', () => {
-      this.label.classList.toggle('open', this.results?.length)
+      const open = Boolean(this.results?.length)
+      this.label.classList.toggle('open', open)
 
       const end = this.input.value.length
       this.input.setSelectionRange(end, end)
@@ -243,12 +244,13 @@ class Search extends MyElement {
     const query = normalize(this.query)
     this.ul.innerHTML = suggestions
       .map(
-        (q) => `
+        (q) => html`
           <li>
             <a href="/?q=${q}">
               ${icon} ${q.replace(query, `<mark>${query}</mark>`)}
             </a>
-          </li>`
+          </li>
+        `
       )
       .join('')
 

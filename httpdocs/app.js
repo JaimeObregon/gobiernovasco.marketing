@@ -281,6 +281,7 @@ app.query = q
 
 history.pushState(null, '', q ? `/?q=${q}` : '/')
 
+// 🎉
 app.search()
 
 setTimeout(() => {
