@@ -39,6 +39,11 @@ class Interpreter {
         /Inversión<br>\nRadio Euskadi<br>\nTOTAL<br>\nMedio<br>\n4.367,00 €<br>\n/g,
         'Inversión<br>\n4.367,00 €<br>\nTOTAL<br>\nMedio<br>\nRadio Euskadi<br>\n'
       )
+    } else if (year === 2020) {
+      this.html = this.html.replaceAll(
+        /Propaga<br>\n3.000,00 € impresión carteles<br>\n2.000,00 € banners y gestión online<br>/g,
+        'Propaga (impresión carteles)<br>\n3.000,00 €<br>\n<br>Propaga (banners y gestión online)<br>\n2.000,00 €<br>\n'
+      )
     } else if (year === 2022) {
       // Ajustes para interpretar correctamente un par de campañas que en el PDF
       // tienen una alineación singular.
