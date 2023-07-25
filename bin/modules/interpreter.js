@@ -23,12 +23,14 @@ class Interpreter {
       '$1<br>\nNombre<br>\nANUNCIOS OFICIALES VARIOS<br>\n'
     )
 
-    if (year === 2018) {
-      this.html = this.html.replaceAll(
-        /40(<br>\n4\.628,00€<br>\n)/g,
-        '40 Principales$1'
-      )
+    // A «Los 40» a veces los llaman simplemente «40». Lo arreglamos aquí,
+    // para que el intérprete no lo confunda con cuarenta euros.
+    this.html = this.html.replaceAll(
+      /\n40(<br>\n[\d\.,]+€<br>\n)/g,
+      '\nLos 40$1'
+    )
 
+    if (year === 2018) {
       // Corrige dos casos en los que en la memoria están intercambiados los
       // valores de los campos «Inversión total» y «Medio».
       this.html = this.html.replaceAll(
@@ -160,12 +162,14 @@ class Interpreter {
             )
         ) / 100
 
-      const difference = Math.round(Math.abs(result.euros - sum))
-      if (difference > 1) {
+      if (result.euros !== sum) {
+        const difference = Math.round(result.euros - sum)
         console.error(
-          `La suma de importes (${sum}) no coincide con el total ${result.euros} por ${difference} €.`
+          `En ${result.year}, la suma de importes (${sum}) no coincide con el total ${result.euros} por ${difference} €`
+          // util.inspect(result, { maxArrayLength: null })
         )
-        console.error(util.inspect(result, { maxArrayLength: null }))
+
+        result.warning = true
       }
     }
 

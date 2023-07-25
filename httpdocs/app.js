@@ -61,7 +61,14 @@ const app = {
         const regexp = new RegExp(query, 'i')
 
         const campaigns = this.results
-          .map((result) => `<x-campaign data-id="${result.id}"></x-campaign>`)
+          .map(
+            (result) => html`
+              <x-campaign
+                ${result.warning ? 'class="warning"' : ''}
+                data-id="${result.id}"
+              ></x-campaign>
+            `
+          )
           .join('')
 
         const matches = this.results

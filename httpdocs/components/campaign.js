@@ -41,6 +41,10 @@ class Campaign extends MyElement {
       overflow: scroll;
     }
 
+    :host(.warning) {
+      opacity: 0.5;
+    }
+
     article {
       margin: var(--space-medium);
       line-height: var(--line-height-condensed);

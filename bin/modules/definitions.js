@@ -71,6 +71,7 @@ const campaigns = [
   'IRAGARKIA',
   'IRAGARKIAK',
   'PATROCINIOS',
+  'PATROCINIO',
   'CAMPAÑA-COVID19',
 ]
 
@@ -80,6 +81,7 @@ const keywords = [
   'Objetivo',
   'Objetivo (descripción)',
   'Objeto',
+  'Objeto (descripción)',
   'Helburua',
   'Fecha',
   'Fecha /',
@@ -121,9 +123,13 @@ const rules = [
     rule: (items) => {
       return items
         .find((item) =>
-          ['Objetivo', 'Objetivo (descripción)', 'Objeto', 'Helburua'].includes(
-            item[0]
-          )
+          [
+            'Objetivo',
+            'Objetivo (descripción)',
+            'Objeto',
+            'Objeto (descripción)',
+            'Helburua',
+          ].includes(item[0])
         )
         .filter((item) => !['(descripción)', '(deskribapena)'].includes(item))
         .slice(1)
