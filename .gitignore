@@ -1,5 +1,4 @@
 .DS_Store
 .netlify
-/temp
 httpdocs/build
 node_modules

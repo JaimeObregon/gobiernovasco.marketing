@@ -4,7 +4,7 @@ class Separator extends MyElement {
   static styles = css`
     :host {
       display: block;
-      margin: var(--space-medium) auto;
+      margin: var(--space-large) auto;
     }
 
     svg {

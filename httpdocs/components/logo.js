@@ -7,7 +7,7 @@ class Logo extends MyElement {
     }
 
     a {
-      width: 15em;
+      width: 12em;
       transform: rotate(-3deg);
     }
   `

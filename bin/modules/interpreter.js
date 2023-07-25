@@ -39,6 +39,17 @@ class Interpreter {
         /Inversión<br>\nRadio Euskadi<br>\nTOTAL<br>\nMedio<br>\n4.367,00 €<br>\n/g,
         'Inversión<br>\n4.367,00 €<br>\nTOTAL<br>\nMedio<br>\nRadio Euskadi<br>\n'
       )
+    } else if (year === 2022) {
+      // Ajustes para interpretar correctamente un par de campañas que en el PDF
+      // tienen una alineación singular.
+      this.html = this.html.replaceAll(
+        /Programa Ur Handitan<br>\nUr Handitan es un programa que sirve de<br>(.+)\nObjeto<br>\nTodos los temas del programa están de<br>\n\(descripción\)<br>\n/gs,
+        'Programa Ur Handitan<br>\nObjeto<br>\nUr Handitan es un programa que sirve de<br>\n(descripción)<br>\n$1\nTodos los temas del programa están de<br>\n'
+      )
+      this.html = this.html.replaceAll(
+        /Colaboración Publicitaria y Producción de<br>\nNombre<br>\n‘Aquí Y Ahora’ en Etb2<br>\n"Aquí y Ahora". El programa de ETB2 es una<br>\n(.+)Objeto<br>\ntemporada de "Aquí y ahora" son:<br>\n\(descripción\)<br>\n/gs,
+        'Colaboración Publicitaria y Producción de<br>\nNombre<br>\n‘Aquí Y Ahora’ en Etb2<br>\nObjeto<br>\n"Aquí y Ahora". El programa de ETB2 es una<br>\n(descripción)<br>\n$1temporada de “Aquí y ahora” son:<br>\n'
+      )
     }
 
     this.year = year

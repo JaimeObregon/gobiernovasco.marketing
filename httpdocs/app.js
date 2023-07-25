@@ -17,19 +17,22 @@ const app = {
 
   // Devuelve el término de búsqueda actual.
   get query() {
-    return this.$search.query ?? ''
+    return this.$search.query
   },
 
   // Consigna un término en el buscador.
   set query(query) {
-    this.$search.query = query
+    this.$search.query = query ?? ''
   },
 
   // Lanza una búsqueda del término existente en `this.query`.
   search() {
     const { results, suggestions } = database.search(this.query)
 
-    this.$search.suggestions = suggestions
+    if (results === null) {
+      this.$main.innerHTML = ''
+      return
+    }
 
     const unchanged =
       results.length === this.results.length &&
@@ -40,131 +43,140 @@ const app = {
     }
 
     this.results = results
+    this.$search.suggestions = suggestions
 
-    clearTimeout(this.timeout)
+    if (!results.length) {
+      this.$main.innerHTML = html`<img src="/assets/empty.svg" alt="" />`
+    } else {
+      clearTimeout(this.timeout)
 
-    this.timeout = setTimeout(() => {
-      this.$main.innerHTML = ''
+      this.timeout = setTimeout(() => {
+        this.$main.innerHTML = ''
 
-      if (!this.query.length) {
-        return
-      }
+        if (this.query.length < 3) {
+          return
+        }
 
-      if (!this.results.length) {
-        this.$main.innerHTML = `<div>No hay resultados.</div>`
-        return
-      }
+        const query = normalize(this.query)
+        const regexp = new RegExp(query, 'i')
 
-      const query = normalize(this.query)
-      const regexp = new RegExp(query, 'i')
+        const campaigns = this.results
+          .map((result) => `<x-campaign data-id="${result.id}"></x-campaign>`)
+          .join('')
 
-      const campaigns = this.results
-        .map((result) => `<x-campaign data-id="${result.id}"></x-campaign>`)
-        .join('')
+        const matches = this.results
+          .flatMap(({ outlets }) => outlets)
+          .filter(
+            ({ name, canonical }) =>
+              normalize(name).match(regexp) ||
+              (canonical && normalize(canonical).match(regexp))
+          )
 
-      const matches = this.results
-        .flatMap(({ outlets }) => outlets)
-        .filter(
-          ({ name, canonical }) =>
-            normalize(name).match(regexp) ||
-            (canonical && normalize(canonical).match(regexp))
-        )
+        const outlets = [
+          ...new Set(
+            matches
+              .map(({ name }) => escape(name))
+              .sort((a, b) => a.localeCompare(b))
+          ),
+        ]
 
-      const outlets = [
-        ...new Set(
-          matches
-            .map(({ name }) => escape(name))
-            .sort((a, b) => a.localeCompare(b))
-        ),
-      ]
+        if (outlets.length) {
+          const subject =
+            outlets.length === 1
+              ? 'el medio coincidente'
+              : `los ${outlets.length} medios coincidentes`
 
-      if (outlets.length) {
-        this.$main.innerHTML = html`
+          this.$main.innerHTML = html`
+            <h1>
+              La inversión en ${subject} con
+              <q>${escape(query)}</q>
+            </h1>
+            <section id="summary">
+              <figure>
+                <table></table>
+              </figure>
+
+              <ol>
+                ${outlets
+                  .map(
+                    (outlet, i) => html`
+                      <li>
+                        <label>
+                          <input checked type="checkbox" value="${i}" />
+                          <span>${outlet}</span>
+                        </label>
+                      </li>
+                    `
+                  )
+                  .join('')}
+              </ol>
+            </section>
+          `
+        }
+
+        const subject =
+          this.results.length === 1
+            ? 'una campaña'
+            : `${this.results.length} campañas`
+
+        this.$main.innerHTML += html`
           <h1>
-            La inversión en los ${outlets.length} medios que coinciden con
-            <q>${escape(query)}</q>
+            <span>Hay ${subject} con <q>${escape(query)}</q></span>
           </h1>
-          <section id="summary">
-            <ol>
-              ${outlets
-                .map(
-                  (outlet, i) => html`
-                    <li>
-                      <label>
-                        <input checked type="checkbox" value="${i}" />
-                        ${outlet}
-                      </label>
-                    </li>
-                  `
-                )
-                .join('')}
-            </ol>
-
-            <figure>
-              <table></table>
-            </figure>
-          </section>
+          <section id="results">${campaigns}</section>
         `
-      }
 
-      this.$main.innerHTML += html`
-        <h1>Hay ${this.results.length} campañas con <q>${escape(query)}</q></h1>
-        <section id="masonry">${campaigns}</section>
-      `
+        const recalculate = () => {
+          const selected = [...document.querySelectorAll('input:checked')].map(
+            (input) => input.parentNode.innerText.trim()
+          )
 
-      const recalculate = () => {
-        const selected = [...document.querySelectorAll('input:checked')].map(
-          (input) => input.parentNode.innerText.trim()
-        )
+          const years = this.results.reduce(
+            (accumulator, previous) => {
+              const { year } = previous
 
-        const euros = this.results.reduce(
-          (accumulator, previous) => {
-            const { year } = previous
+              const matches = previous.outlets.filter(({ name, canonical }) =>
+                selected.includes(name)
+              )
 
-            const matches = previous.outlets.filter(({ name, canonical }) =>
-              selected.includes(name)
-            )
+              const euros = matches.reduce(
+                (accumulator, previous) => accumulator + previous.euros,
+                0
+              )
 
-            const euros = matches.reduce(
-              (accumulator, previous) => accumulator + previous.euros,
-              0
-            )
+              const count = matches.length ? 1 : 0
 
-            const count = matches.length ? 1 : 0
+              accumulator[year].euros += euros
+              accumulator[year].count += count
 
-            accumulator[year].euros += euros
-            accumulator[year].count += count
+              return accumulator
+            },
+            {
+              2018: { euros: 0, count: 0 },
+              2019: { euros: 0, count: 0 },
+              2020: { euros: 0, count: 0 },
+              2021: { euros: 0, count: 0 },
+              2022: { euros: 0, count: 0 },
+            }
+          )
 
-            return accumulator
-          },
-          {
-            2018: { euros: 0, count: 0 },
-            2019: { euros: 0, count: 0 },
-            2020: { euros: 0, count: 0 },
-            2021: { euros: 0, count: 0 },
-            2022: { euros: 0, count: 0 },
-          }
-        )
+          const euros =
+            years[2018].euros +
+            years[2019].euros +
+            years[2020].euros +
+            years[2021].euros +
+            years[2022].euros
 
-        console.log(euros)
+          const contracts =
+            years[2018].count +
+            years[2019].count +
+            years[2020].count +
+            years[2021].count +
+            years[2022].count
 
-        const total =
-          euros[2018].euros +
-          euros[2019].euros +
-          euros[2020].euros +
-          euros[2021].euros +
-          euros[2022].euros
+          const table = document.querySelector('table')
 
-        const total2 =
-          euros[2018].count +
-          euros[2019].count +
-          euros[2020].count +
-          euros[2021].count +
-          euros[2022].count
-
-        const table = document.querySelector('table')
-
-        table.innerHTML = html`
+          table.innerHTML = html`
         <thead>
           <tr>
             <th>Año</th>
@@ -175,94 +187,103 @@ const app = {
         <tbody>
       <tr>
         <th>2018</th>
-        <td>${euros[2018].count}</td>
+        <td>${years[2018].count}</td>
         <td>
         ${Intl.NumberFormat('es-ES', {
           style: 'currency',
           currency: 'EUR',
           maximumFractionDigits: 0,
         })
-          .format(Math.round(euros[2018].euros))
+          .format(Math.round(years[2018].euros))
           .replaceAll(/\./g, '&#8239;')}</td>
       </tr>
       <tr>
         <th>2019</th>
-        <td>${euros[2019].count}</td>
+        <td>${years[2019].count}</td>
         <td>
         ${Intl.NumberFormat('es-ES', {
           style: 'currency',
           currency: 'EUR',
           maximumFractionDigits: 0,
         })
-          .format(Math.round(euros[2019].euros))
+          .format(Math.round(years[2019].euros))
           .replaceAll(/\./g, '&#8239;')}</td>
       </tr>
       <tr>
         <th>2020</th>
-        <td>${euros[2020].count}</td>
+        <td>${years[2020].count}</td>
         <td>
         ${Intl.NumberFormat('es-ES', {
           style: 'currency',
           currency: 'EUR',
           maximumFractionDigits: 0,
         })
-          .format(Math.round(euros[2020].euros))
+          .format(Math.round(years[2020].euros))
           .replaceAll(/\./g, '&#8239;')}</td>
       </tr>
       <tr>
         <th>2021</th>
-        <td>${euros[2021].count}</td>
+        <td>${years[2021].count}</td>
         <td>
         ${Intl.NumberFormat('es-ES', {
           style: 'currency',
           currency: 'EUR',
           maximumFractionDigits: 0,
         })
-          .format(Math.round(euros[2021].euros))
+          .format(Math.round(years[2021].euros))
           .replaceAll(/\./g, '&#8239;')}</td>
       </tr>
       <tr>
         <th>2022</th>
-        <td>${euros[2022].count}</td>
+        <td>${years[2022].count}</td>
         <td>
         ${Intl.NumberFormat('es-ES', {
           style: 'currency',
           currency: 'EUR',
           maximumFractionDigits: 0,
         })
-          .format(Math.round(euros[2022].euros))
+          .format(Math.round(years[2022].euros))
           .replaceAll(/\./g, '&#8239;')}</td>
       </tr>
       </tbody>
       <tfoot>
         <tr>
           <th>Total quinquenio</td>
-          <td>${total2}</td>
-          <td>${Intl.NumberFormat('es-ES', {
+          <th>${contracts}</th>
+          <th>${Intl.NumberFormat('es-ES', {
             style: 'currency',
             currency: 'EUR',
             maximumFractionDigits: 0,
           })
-            .format(Math.round(total))
+            .format(Math.round(euros))
             .replaceAll(/\./g, '&#8239;')}</th>
         </td>
       </tfoot>
         `
-      }
-
-      recalculate()
-
-      this.$main.addEventListener('click', ({ target }) => {
-        const inputClicked =
-          target.localName === 'input' && typeof target.checked !== 'undefined'
-
-        if (!inputClicked) {
-          return
         }
 
-        recalculate()
-      })
-    }, this.debounceDelay)
+        if (outlets.length) {
+          recalculate()
+
+          this.$main.addEventListener('click', ({ target }) => {
+            const inputClicked =
+              target.localName === 'input' &&
+              typeof target.checked !== 'undefined'
+
+            if (!inputClicked) {
+              return
+            }
+
+            recalculate()
+          })
+        }
+      }, this.debounceDelay)
+    }
+
+    this.$search.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    })
   },
 }
 

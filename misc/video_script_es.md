@@ -23,9 +23,3 @@ Mi objetivo es dar más transparencia a los contratos del Gobierno y proporciona
 La herramienta gobiernovasco.marketing es software libre. Y, con ella, he publicado también su código fuente. Además, un fichero JSON con todos los datos extraídos y estructurados de 1300 campañas de publicidad y comunicación.
 
 Espero que te guste y, sobre todo, que sirva para provocar cambios positivos en la transparencia del gasto público. Y si encuentras útil esta iniciativa, por favor apoya en Patreon mi próximo proyecto.
-
----
-
-Por último, y para mí es muy importante: este trabajo me ha llevado varias semanas y ha sido posible gracias al compromiso de otros ciudadanos que me apoyan en Patreon. Ponen un poco de dinero cada mes para que yo pueda promover la transparencia en los asuntos públicos programando herramientas digitales. Todos queremos un país más eficaz y unas instituciones más transparentes. Por ello, por favor valora apoyar mi siguiente proyecto uniéndote a mi «crowdfunding».
-
-Muchas gracias.

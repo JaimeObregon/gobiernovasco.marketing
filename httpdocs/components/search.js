@@ -103,7 +103,12 @@ class Search extends MyElement {
     }
 
     label ul li a.selected {
-      background: var(--color-warning);
+      background: var(--color-accent);
+      color: var(--color-background);
+    }
+
+    label ul li a.selected mark {
+      color: var(--color-highlight-inverted);
     }
 
     label ul li a svg {
@@ -145,6 +150,8 @@ class Search extends MyElement {
     this.input = this.shadowRoot.querySelector('input')
     this.ul = this.shadowRoot.querySelector('ul')
 
+    this.input.focus({ preventScroll: true })
+
     document.addEventListener('keydown', (event) => {
       if (event.metaKey || event.ctrlKey) {
         return
@@ -152,6 +159,7 @@ class Search extends MyElement {
 
       if (event.key.length === 1 || event.key === 'Backspace') {
         this.input.focus()
+        this.label.classList.add('open')
       }
 
       const actions = {
@@ -210,19 +218,7 @@ class Search extends MyElement {
   }
 
   set query(value) {
-    this.value = this.input.value = value ?? ''
-    app.search()
-
-    const scrollIntoView = () =>
-      this.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      })
-
-    // Chrome no hace this.scrollIntoView() sin este setTimeout()
-    if (value) {
-      setTimeout(scrollIntoView, 100)
-    }
+    this.value = this.input.value = value
   }
 
   get selected() {
@@ -255,10 +251,6 @@ class Search extends MyElement {
       .join('')
 
     this.results = [...this.ul.querySelectorAll('a')]
-
-    if (document.activeElement === this) {
-      this.label.classList.toggle('open', suggestions.length)
-    }
 
     delete this.selection
   }

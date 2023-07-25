@@ -81,6 +81,7 @@ const keywords = [
   'Objetivo (descripción)',
   'Objeto',
   'Helburua',
+  'Fecha',
   'Fecha /',
   'Fecha / Periodo',
   'Periodo',
@@ -133,7 +134,7 @@ const rules = [
     name: 'date',
     rule: (items) =>
       items.find((item) =>
-        item[0].match(/(Fecha \/|(Fecha \/ )?Periodo|Aldia)/)
+        item[0].match(/(Fecha( \/)?|(Fecha \/ )?Periodo|Aldia)/)
       )?.[1],
   },
   {
@@ -184,7 +185,8 @@ const rules = [
         (details[2] === 'Medio' && details[0] === 'TOTAL') ||
         (details[2] === 'Medio' && details[0] === 'Inversión') ||
         (details[2] === 'Medio' && details[0] === 'Inversión TOTAL') ||
-        (details[2] === 'Komunikabidea' && details[0] === 'GUZTIRA')
+        (details[2] === 'Komunikabidea' && details[0] === 'GUZTIRA') ||
+        (details[2] === 'Hedabidea' && details[0] === 'GUZTIRA')
       ) {
         name = details[3]
       } else if (

@@ -64,7 +64,7 @@ const database = {
     const query = normalize(string)
 
     if (!query.length) {
-      const results = database.records.sort(() => Math.random() - 0.5)
+      const results = null
       const suggestions = []
       return { results, suggestions }
     }
