@@ -23,6 +23,12 @@ class Interpreter {
       '$1<br>\nNombre<br>\nANUNCIOS OFICIALES VARIOS<br>\n'
     )
 
+    // Lo mismo sucede aquí, en el PDF de 2021:
+    this.html = this.html.replaceAll(
+      /\nIRAGARKI OFIZIALA<br>\nIzena<br>\nIRAGARKI OFIZIALAK<br>\nHelburua<br>/g,
+      '\nIRAGARKI OFIZIALA<br>\nIzena<br>\nIragarki Ofizialak<br>\nHelburua<br>'
+    )
+
     // A «Los 40» a veces los llaman simplemente «40». Lo arreglamos aquí,
     // para que el intérprete no lo confunda con cuarenta euros.
     this.html = this.html.replaceAll(
@@ -41,10 +47,28 @@ class Interpreter {
         /Inversión<br>\nRadio Euskadi<br>\nTOTAL<br>\nMedio<br>\n4.367,00 €<br>\n/g,
         'Inversión<br>\n4.367,00 €<br>\nTOTAL<br>\nMedio<br>\nRadio Euskadi<br>\n'
       )
+    } else if (year === 2019) {
+      this.html = this.html.replaceAll(/137.013, 00€<br>/g, '137.013,00€<br>')
+
+      // Corrige un caso en el que están intercambiados los valores de dos campos.
+      this.html = this.html.replaceAll(
+        /Soportes<br>\n41\.322,00€<br>\nInversión TOTAL<br>\nRadio y TV<br>\n/g,
+        'Soportes<br>\nRadio y TV<br>\nInversión TOTAL<br>\n41.322,00 €<br>\n'
+      )
     } else if (year === 2020) {
       this.html = this.html.replaceAll(
         /Propaga<br>\n3.000,00 € impresión carteles<br>\n2.000,00 € banners y gestión online<br>/g,
         'Propaga (impresión carteles)<br>\n3.000,00 €<br>\n<br>Propaga (banners y gestión online)<br>\n2.000,00 €<br>\n'
+      )
+
+      this.html = this.html.replaceAll(
+        /\nTotal<br>\n157.182,15€<br>/g,
+        '\nTOTAL<br>\n157.182,15€<br>'
+      )
+    } else if (year === 2021) {
+      this.html = this.html.replaceAll(
+        /\n100\.00,00 €<br>/g,
+        '\n100.000,00 €<br>'
       )
     } else if (year === 2022) {
       // Ajustes para interpretar correctamente un par de campañas que en el PDF
@@ -162,7 +186,7 @@ class Interpreter {
             )
         ) / 100
 
-      if (result.euros !== sum) {
+      if (Math.abs(result.euros - sum) >= 1) {
         const difference = Math.round(result.euros - sum)
         console.error(
           `En ${result.year}, la suma de importes (${sum}) no coincide con el total ${result.euros} por ${difference} €`

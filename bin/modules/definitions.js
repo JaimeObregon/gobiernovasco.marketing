@@ -5,6 +5,7 @@ const notOutlets = [
   'Inversión',
   'TOTAL',
   'Inversión TOTAL',
+  'Inversión Total',
   'TOTAL PRENSA',
   'PRENSA',
   'TOTAL RADIO',
@@ -68,6 +69,9 @@ const campaigns = [
   'ANUNCIO OFICIAL',
   'ANUNCIOS OFICIALES',
   'PUBLIZITATE-LANKIDETZA',
+  'IRAGARKI OFIZIALA',
+  'IRAGARKI OFICIALA', // 😱
+  'IRAGARKI OFIZIALAK',
   'IRAGARKIA',
   'IRAGARKIAK',
   'PATROCINIOS',
@@ -96,6 +100,7 @@ const keywords = [
   'Soportes utilizados',
   'Inversión',
   'Inversión TOTAL',
+  'Inversión Total',
   'INVERSIÓN TOTAL',
   'TOTAL',
   'GUZTIRA',
@@ -131,7 +136,10 @@ const rules = [
             'Helburua',
           ].includes(item[0])
         )
-        .filter((item) => !['(descripción)', '(deskribapena)'].includes(item))
+        .filter(
+          (item) =>
+            !['(descripción)', '(Descripción)', '(deskribapena)'].includes(item)
+        )
         .slice(1)
         .join(' ')
     },
