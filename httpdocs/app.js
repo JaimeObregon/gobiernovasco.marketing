@@ -3,9 +3,9 @@ import { Campaign } from './components/campaign.js'
 import { database } from './modules/database.js'
 import { Search } from './components/search.js'
 import { Details } from './components/details.js'
+import { Separator } from './components/separator.js'
 import { normalize, escape } from './modules/strings.js'
 import { Logo } from './components/logo.js'
-import { Masonry } from './modules/masonry.js'
 
 const app = {
   $search: document.querySelector('x-search'),
@@ -269,6 +269,7 @@ const app = {
 customElements.define('x-search', Search)
 customElements.define('x-details', Details)
 customElements.define('x-campaign', Campaign)
+customElements.define('x-separator', Separator)
 
 await database.load('/datos/campañas.json')
 
@@ -277,23 +278,10 @@ counter.innerText = database.count
 
 const url = new URL(document.location.href)
 const q = url.searchParams.get('q')
-app.query = q
 
-history.pushState(null, '', q ? `/?q=${q}` : '/')
+app.query = q
 
 // 🎉
 app.search()
-
-setTimeout(() => {
-  const masonry = new Masonry({
-    container: 'section#masonry',
-    static: true,
-    gutter: 16,
-    maxColumns: 3,
-    useMin: true,
-  })
-
-  masonry.listen()
-}, 400)
 
 export { app }

@@ -76,13 +76,6 @@ header > h1 em {
   padding: 0 var(--space-x-small);
 }
 
-header > hr {
-  width: 25em;
-  margin: var(--space-large) auto;
-  border-top: 2px dotted var(--color-text-pale);
-  border-bottom: none;
-}
-
 header > h2 {
   font-size: 1.35em;
 }
