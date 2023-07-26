@@ -34,6 +34,16 @@ const departmentToColor = (string) => {
 
 class Campaign extends MyElement {
   static styles = css`
+    @keyframes grow {
+      0% {
+        transform: scaleX(0);
+      }
+
+      100% {
+        transform: scaleX(100%);
+      }
+    }
+
     :host {
       display: block;
       border: 1px solid var(--color-line);
@@ -172,7 +182,7 @@ class Campaign extends MyElement {
     ul li > span {
       position: absolute;
       left: 0;
-      width: 0;
+      width: var(--width);
       height: 100%;
       transition: width 1s;
       pointer-events: none;
@@ -192,6 +202,8 @@ class Campaign extends MyElement {
       z-index: 1;
       background-color: white;
       mix-blend-mode: difference;
+      transform-origin: center left;
+      animation: grow 1s var(--delay) backwards;
     }
 
     ul li > span:after {
@@ -274,11 +286,15 @@ class Campaign extends MyElement {
     )
 
     ul.innerHTML = campaign.outlets
-      .map(({ name, canonical, euros }) => {
+      .map(({ name, canonical, euros }, i) => {
         const label = escape(canonical ?? name)
+        const width = (100 * euros) / total
+        const delay = i * 50 + 500
+        const style = `--width: ${width}%; --delay: ${delay}ms`
+
         return html`
           <li>
-            <span data-euros="${euros}"></span>
+            <span style="${style}" data-euros="${euros}"></span>
             <a href="/?q=${label}">
               <cite>${label}</cite>
               <small
@@ -295,17 +311,6 @@ class Campaign extends MyElement {
         `
       })
       .join('')
-
-    setTimeout(() => {
-      const max = ul.offsetWidth
-      const spans = [...ul.querySelectorAll('li > span')]
-
-      spans.forEach((span) => {
-        const euros = span.dataset.euros
-        const percent = (100 * euros) / total
-        span.style.width = `${percent}%`
-      })
-    }, 500)
   }
 }
 
