@@ -46,9 +46,6 @@ class Campaign extends MyElement {
 
     :host {
       display: block;
-      border: 1px solid var(--color-line);
-      background: var(--color-highlight-inverted);
-      overflow: scroll;
     }
 
     :host(.warning) {
@@ -56,8 +53,10 @@ class Campaign extends MyElement {
     }
 
     article {
-      margin: var(--space-medium);
+      padding: var(--space-medium);
       line-height: var(--line-height-condensed);
+      border: 1px solid var(--color-line);
+      background: var(--color-highlight-inverted);
     }
 
     header {

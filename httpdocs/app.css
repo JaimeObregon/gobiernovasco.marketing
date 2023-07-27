@@ -285,7 +285,8 @@ section#results {
   }
 }
 section#results x-campaign {
-  margin-bottom: var(--space-medium);
+  border-bottom: var(--space-medium) solid var(--color-background);
+  break-inside: avoid;
 }
 
 x-details {
