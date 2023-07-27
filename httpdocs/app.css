@@ -119,10 +119,11 @@ main:not(:empty) {
 main > img {
   display: block;
   text-align: center;
-  padding: var(--space-xxx-large) 0;
+  padding: var(--space-xx-large) 0;
   margin: auto;
   mix-blend-mode: multiply;
   width: 26em;
+  max-width: 65%;
 }
 
 main > h1 {
@@ -132,6 +133,7 @@ main > h1 {
   padding: 0;
   text-align: center;
   line-height: var(--line-height-condensed);
+  text-wrap: balance; /* ✨ https://developer.chrome.com/blog/css-text-wrap-balance/ */
 }
 
 main > h1:not(:first-of-type) {
@@ -175,7 +177,6 @@ section:first-of-type {
 }
 
 section#summary {
-  display: flex;
   gap: var(--space-large);
   margin: 0 auto var(--space-large) auto;
   align-items: flex-start;
@@ -183,11 +184,32 @@ section#summary {
 
 section#summary figure {
   position: sticky;
-  top: calc(2 * var(--space-medium) + var(--space-large) + var(--space-large));
+  top: calc(2 * var(--space-medium) + 2.7em); /* Número mágico 🤨 */
+  z-index: 1;
   margin: 0;
   padding: var(--space-medium) var(--space-large);
   background: var(--color-highlight-inverted);
-  min-width: 28em;
+}
+
+@media (min-width: 960px) {
+  section#summary {
+    display: flex;
+  }
+
+  section#summary figure {
+    top: calc(2 * (var(--space-medium) + var(--space-large)));
+    flex-grow: 1;
+    margin: 0;
+  }
+
+  section#summary ol {
+    margin: 0 !important;
+  }
+
+  section#summary table,
+  section#summary table :is(td, th) {
+    padding: var(--space-small) !important;
+  }
 }
 
 section#summary table {
@@ -211,7 +233,8 @@ section#summary table thead th:nth-child(1) {
 
 section#summary table,
 section#summary table :is(td, th) {
-  padding: var(--space-small);
+  padding: var(--space-x-small);
+  text-wrap: nowrap;
 }
 
 section#summary table td,
@@ -241,11 +264,12 @@ section#summary table :is(td, th):not(:nth-child(1)) {
 }
 
 section#summary ol {
-  margin: 0;
+  margin: var(--space-large) 0 0 0;
   padding: 0;
   flex-grow: 1;
-  list-style-type: none;
   padding: var(--space-large);
+  font-family: var(--font-display);
+  list-style-type: none;
   background: var(--color-highlight-inverted);
 }
 
@@ -254,19 +278,51 @@ section#summary ol li:nth-child(odd) {
 }
 
 section#summary ol label {
-  display: block;
+  display: flex;
+  gap: var(--space-small);
+  align-items: center;
   padding: var(--space-x-small) var(--space-small);
   cursor: pointer;
 }
 
-section#summary ol label:hover span {
-  text-decoration: underline 1px;
-  text-underline-offset: 3px;
+section#summary ol label input:checked + span {
+  color: var(--color-accent);
 }
 
-section#summary ol label input:checked + span {
-  font-weight: 700;
-  color: var(--color-accent);
+section#summary ol label input[type='checkbox'] {
+  font-size: var(--type-xx-small);
+  position: relative;
+  width: 3em;
+  height: 1.5em;
+  background: var(--color-line);
+  outline: none;
+  border-radius: 99em;
+  box-shadow: inset 0 0 0.375em rgba(0, 0, 0, 0.2);
+  transition: var(--delay-medium);
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+section#summary ol label input:checked[type='checkbox'] {
+  background: var(--color-accent);
+}
+
+section#summary ol label input[type='checkbox']:before {
+  content: '';
+  position: absolute;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 99em;
+  top: 0;
+  left: 0;
+  background: var(--color-highlight-inverted);
+  transform: scale(1.1);
+  box-shadow: 0 0.15em 0.375em rgba(0, 0, 0, 0.5);
+  transition: var(--delay-medium);
+}
+
+section#summary ol label input:checked[type='checkbox']:before {
+  left: 1.5em;
 }
 
 section#results {
@@ -383,7 +439,6 @@ footer a:hover {
 
 cite {
   font-variant: small-caps;
-  hyphens: none;
 }
 
 footer x-details abbr {
