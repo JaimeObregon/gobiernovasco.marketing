@@ -48,10 +48,17 @@ a {
   color: var(--color-accent);
   text-decoration-line: underline;
   text-underline-offset: 3px;
+  padding: 0 1px;
 }
 
 a:hover {
-  text-decoration-style: double;
+  background: var(--color-accent);
+  color: var(--color-highlight-inverted);
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 900;
 }
 
 header {
@@ -289,13 +296,17 @@ x-details {
 x-details div[slot='summary'] {
   font-style: italic;
   font-weight: 700;
-  color: var(--color-highlight-inverted);
   margin-left: var(--space-large);
 }
 
 x-details div[slot='summary']:hover {
   text-decoration-line: underline;
   text-underline-offset: 3px;
+  color: var(--color-highlight-inverted);
+}
+
+x-details[open] div[slot='summary'] {
+  color: var(--color-highlight-inverted);
 }
 
 x-details div[slot='summary'] :is(i, em) {
@@ -306,6 +317,7 @@ x-details div[slot='contents'] {
   margin-left: var(--space-large);
   text-align: justify;
   hyphens: auto;
+  color: var(--color-highlight-inverted);
 }
 
 x-details div[slot='contents'] video {
@@ -361,6 +373,11 @@ footer h1:before {
 
 footer h1:first-of-type {
   padding-top: 0;
+}
+
+footer a:hover {
+  background: var(--color-highlight-inverted);
+  color: var(--color-accent);
 }
 
 cite {
