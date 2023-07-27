@@ -151,27 +151,24 @@ class Campaign extends MyElement {
 
     ul li {
       position: relative;
-      background: var(--color-background);
-      margin: var(--space-xx-small) 0;
-      line-height: var(--line-height-normal);
-      color: var(--color-accent);
-
       height: 100%;
       padding: 0 var(--space-small);
+      margin: var(--space-xx-small) 0;
+      line-height: var(--line-height-normal);
+      background: var(--color-background);
+      color: black;
     }
 
     ul li a {
       display: flex;
       justify-content: space-between;
       align-items: center;
-
+      font-family: var(--font-display);
       text-decoration: none;
+      white-space: nowrap;
+      text-overflow: ellipsis;
       color: inherit;
       overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-
-      font-family: var(--font-display);
     }
 
     ul li a:hover {
@@ -187,8 +184,7 @@ class Campaign extends MyElement {
       pointer-events: none;
     }
 
-    ul li > span:before,
-    ul li > span:after {
+    ul li > span:before {
       content: '';
       width: 100%;
       height: 100%;
@@ -199,15 +195,10 @@ class Campaign extends MyElement {
 
     ul li > span:before {
       z-index: 1;
-      background-color: white;
+      background-color: #e1b042; /* Número mágico 🤨 */
       mix-blend-mode: difference;
       transform-origin: center left;
       animation: grow 1s var(--delay) backwards;
-    }
-
-    ul li > span:after {
-      z-index: -1;
-      background-color: blue;
     }
 
     ul li cite {
