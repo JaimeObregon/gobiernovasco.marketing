@@ -80,7 +80,7 @@ class Campaign extends MyElement {
     }
 
     header h2:hover {
-      filter: invert(100%);
+      filter: saturate(350%);
     }
 
     header h2 a {
@@ -175,7 +175,7 @@ class Campaign extends MyElement {
     }
 
     ul li a:hover {
-      filter: brightness(120%);
+      filter: saturate(350%);
     }
 
     ul li > span {

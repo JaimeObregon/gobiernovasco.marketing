@@ -117,6 +117,10 @@ class Search extends MyElement {
       margin-top: 0.45em;
     }
 
+    label ul li a.selected svg {
+      fill: var(--color-background);
+    }
+
     label ul li a mark {
       font-weight: 700;
       background: inherit;
