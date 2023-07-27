@@ -2,9 +2,9 @@
 
 Explora cómo se reparte el dinero público a los medios de comunicación en el País Vasco.
 
-Este repositorio contiene el código fuente y la documentación del sitio web [gobiernovasco.marketing](https://gobiernovasco.marketing).
+Este repositorio contiene el código fuente y la documentación del sitio web [gobiernovasco.marketing](https://gobiernovasco.marketing), así como las memorias oficiales del Gobierno Vasco, el intérprete (_parser_) programado para extraer de ellas los datos de las campañas de publicidad institucional, y estos datos ya extraídos en forma JSON.
 
-Un proyecto de Jaime Gómez-Obregón.
+Un proyecto de Jaime Gómez-Obregón [que puedes apoyar en Patreon](https://www.patreon.com/jaime_gomez_obregon).
 
 ## Puesta en marcha
 
@@ -32,7 +32,7 @@ Se hace automáticamente en Netlify con cada `push` a la rama `main`.
 
 ### Reconstrucción de la fuente de datos (opcional)
 
-No es necesario porque el documento JSON con todos los datos requeridos por el proyecto está incorporado al repositorio.
+No es necesario porque el documento JSON con todos los datos extraídos de las memorias institucionales está incorporado al repositorio.
 
 Pero para reprocesar los ficheros originales PDF del Gobierno Vasco, instala `pdftohtml` 0.40 en tu sistema y conviértelos a su versión HTML aproximada:
 
@@ -43,11 +43,11 @@ Pero para reprocesar los ficheros originales PDF del Gobierno Vasco, instala `pd
 Después, corre el intérprete que los toma y emite por `stdout` la estructura de datos JSON resultante:
 
 ```shell
-npm run parse > /httpdocs/datos/campañas.json
+npm run --silent parse > httpdocs/datos/campañas.json
 ```
 
 Por último, es recomendable revisar que todos los tests pasan satisfactoriamente:
 
 ```
-npm test
+npm run test
 ```
