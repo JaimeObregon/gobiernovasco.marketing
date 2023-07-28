@@ -11,6 +11,8 @@ const app = {
   $search: document.querySelector('x-search'),
   $main: document.querySelector('main'),
 
+  maxCampaigns: 25,
+
   debounceDelay: 200,
 
   results: [],
@@ -45,6 +47,15 @@ const app = {
     this.results = results
     this.$search.suggestions = suggestions
 
+    setTimeout(
+      () =>
+        document.querySelector('main').scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        }),
+      0
+    )
+
     if (!results.length) {
       this.$main.innerHTML = html`<img src="/assets/empty.svg" alt="" />`
     } else {
@@ -62,8 +73,9 @@ const app = {
 
         const campaigns = this.results
           .map(
-            (result) => html`
+            (result, i) => html`
               <x-campaign
+                ${i >= this.maxCampaigns ? 'style="display: none"' : ''}
                 ${result.warning ? 'class="warning"' : ''}
                 data-id="${result.id}"
               ></x-campaign>
@@ -130,7 +142,17 @@ const app = {
           <h1>
             <span>Hay ${subject} con <q>${escape(query)}</q></span>
           </h1>
-          <section id="results">${campaigns}</section>
+          <section id="results">
+            ${campaigns}
+            ${this.results.length > this.maxCampaigns
+              ? html`<button
+                  style="display: block; column-span: all; margin: var(--space-medium) auto 0 auto; font-size: var(--type-large); cursor: pointer"
+                  onclick="document.querySelectorAll('x-campaign').forEach(i => i.style.display = 'block'); this.remove()"
+                >
+                  Mostrar todas
+                </button>`
+              : ''}
+          </section>
         `
 
         const recalculate = () => {
@@ -285,12 +307,13 @@ const app = {
           })
         }
       }, this.debounceDelay)
-    }
 
-    this.$search.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    })
+      setTimeout(() => {
+        document
+          .querySelector('main')
+          .scrollIntoView({ behavior: 'smooth', block: 'start' })
+      }, 300)
+    }
   },
 }
 

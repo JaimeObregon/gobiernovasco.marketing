@@ -15,7 +15,7 @@ class Search extends MyElement {
     label {
       position: relative;
       display: flex;
-      font-size: 1.35em;
+      font-size: var(--type-large);
       width: 30em;
       align-items: center;
       transition: width 350ms ease;
@@ -33,7 +33,7 @@ class Search extends MyElement {
 
     label input {
       font-family: var(--font-sans);
-      font-size: inherit;
+      font-size: var(--type-medium);
       font-weight: 500;
       width: 100%;
       border: none;
@@ -72,7 +72,7 @@ class Search extends MyElement {
       display: none;
       position: absolute;
       z-index: 1;
-      top: calc(2em - 2px);
+      top: calc(2.625em - 2px); /* Número mágico 🤨 */
       left: var(--space-small);
       width: calc(100% - 2 * var(--space-small));
       max-height: 50vh;
@@ -168,7 +168,11 @@ class Search extends MyElement {
 
       const actions = {
         Escape: () => this.label.classList.remove('open'),
-        Enter: () => this.results[this.selected]?.click(),
+        Enter: () => {
+          const query = this.results[this.selected].innerText
+          this.query = query
+          app.search()
+        },
         ArrowUp: () => --this.selected,
         ArrowDown: () =>
           this.selected === undefined ? (this.selected = 0) : ++this.selected,
@@ -212,8 +216,16 @@ class Search extends MyElement {
       this.input.setSelectionRange(end, end)
     })
 
-    this.input.addEventListener('blur', () => {
+    this.input.addEventListener('blur', (event) => {
       this.label.classList.remove('open')
+    })
+
+    // `mousedown` en vez de `click`, pues de lo contrario el evento `blur`
+    // en `this.input` se dispara antes y cierra el desplegable de sugerencias.
+    this.ul.addEventListener('mousedown', (event) => {
+      const query = event.target.closest('a').innerText
+      this.query = query
+      app.search()
     })
   }
 

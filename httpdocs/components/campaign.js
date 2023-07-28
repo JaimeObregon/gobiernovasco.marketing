@@ -172,7 +172,7 @@ class Campaign extends MyElement {
     }
 
     ul li a:hover {
-      filter: saturate(350%);
+      color: var(--color-warning);
     }
 
     ul li > span {

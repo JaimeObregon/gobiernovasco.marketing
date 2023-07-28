@@ -36,6 +36,10 @@
   background-color: var(--color-accent);
 }
 
+html {
+  scroll-padding-top: var(--space-xx-large);
+}
+
 body {
   margin: 0;
   font-family: var(--font-serif);
@@ -105,11 +109,11 @@ x-search {
   justify-content: center;
   background: var(--color-accent);
   width: 100%;
+  height: var(--space-xx-large);
   position: sticky;
   z-index: 2;
   top: 0px;
   margin-top: var(--space-xx-large);
-  padding: var(--space-medium) 0;
 }
 
 main:not(:empty) {
@@ -184,7 +188,7 @@ section#summary {
 
 section#summary figure {
   position: sticky;
-  top: calc(2 * var(--space-medium) + 2.7em); /* Número mágico 🤨 */
+  top: var(--space-xx-large);
   z-index: 1;
   margin: 0;
   padding: var(--space-medium) var(--space-large);
