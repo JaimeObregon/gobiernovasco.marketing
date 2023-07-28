@@ -58,7 +58,213 @@
       <h1>La pelea</h1>
 
       <x-details>
-        <div slot="summary">¿Quién demonios eres tú?</div>
+        <div slot="summary">
+          ¿Qué es esto exactamente? ¿De dónde proceden estos datos?
+        </div>
+        <div slot="contents">
+          <p>
+            Esta herramienta se llama <cite>gobiernovasco.marketing</cite>, y la
+            he construido porque el Gobierno Vasco no es suficientemente
+            transparente con cómo reparte el dinero público entre los medios de
+            comunicación en las campañas institucionales de publicidad y
+            comunicación.
+          </p>
+
+          <p>
+            Ciertamente el Gobierno cumple con la
+            <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2011-2620"
+              ><cite
+                >Ley 6/2010 de 23 de diciembre, de Publicidad y Comunicación
+                Institucional de Euskadi</cite
+              ></a
+            >, cuyo artículo 12 regula una
+            <a
+              href="https://www.euskadi.eus/comision-interdepartamental-de-publicidad/web01-s1ezaleh/es/"
+              >Comisión Interdepartamental de Publicidad del Gobierno Vasco</a
+            >
+            que ha de remitir una memoria anual al Parlamento Vasco antes de que
+            finalice el primer periodo de sesiones en la Cámara. Esto suele ser
+            en primavera.
+          </p>
+
+          <p>
+            ¡Pero estas memorias son un ladrillo del cual es muy difícil extraer
+            datos significativos! Porque las elaboran como densos documentos
+            <abbr>PDF</abbr> que suelen rondar las 200 páginas. Informes que no
+            son más que una retahíla de campañas e inversiones en medios de la
+            que es <i>misión imposible</i> extraer información agregada,
+            comparativas útiles o cifras totales por medio.
+          </p>
+
+          <p>
+            La mencionada ley de 2010 es positiva en el sentido de que obliga al
+            menos a que el Ejecutivo vasco remita la información al Parlamento,
+            pero esto se lleva a cabo de una forma muy ineficiente: en el
+            inadecuado formato mencionado, solo una vez al año, con un desfase
+            de unos cuatro meses… ¡y
+            <a
+              href="https://twitter.com/JaimeObregon/status/1656082411443175430"
+              >con</a
+            >
+            <a
+              href="https://twitter.com/JaimeObregon/status/1655173725627596801"
+              >numerosos</a
+            >
+            <a
+              href="https://twitter.com/JaimeObregon/status/1655617166182428673"
+              >errores</a
+            >
+            de
+            <a
+              href="https://twitter.com/JaimeObregon/status/1657895174071042050"
+              >todo</a
+            >
+            <a
+              href="https://twitter.com/JaimeObregon/status/1656215497493590016"
+              >tipo</a
+            >!
+          </p>
+
+          <p>
+            Como programador experimentado y con una <em>parafilia</em> por la
+            transparencia y los datos, me ha parecido un reto muy interesante
+            organizar todo ese lío, obtener información en claro y ponerla a
+            disposición de toda la ciudadanía y los medios. Y cuando he pensado
+            que, además, esto podría incomodar a algún político, he pensado…
+            <q>¡Sujétame el cubata…!</q> 😜.
+          </p>
+        </div>
+      </x-details>
+
+      <x-details>
+        <div slot="summary">
+          ¿Haces esto para atacar al Gobierno Vasco o a sus partidos?
+        </div>
+        <div slot="contents">
+          <p>
+            ¡En absoluto! No tengo nada en contra —ni tampoco a favor— del
+            Gobierno Vasco o de los partidos que lo configuran.
+            <strong>Yo ni siquiera soy vasco</strong>, ni resido en el País
+            Vasco.
+          </p>
+
+          <p>
+            No me mueven ideologías partidistas ni banderas. Me motiva el deseo
+            de una mayor transparencia en los asuntos públicos, una buena dosis
+            de reto personal y —no voy a ocultarlo— el puntillo gamberro de que
+            esto pueda incomodar a algún político. Pero no tengo interés en los
+            partidos y yo ni siquiera sigo la política ni consumo medios de
+            comunicación. No digo que ambas cosas no sean útiles; solo expreso
+            que a mí personalmente no me interesan.
+          </p>
+        </div>
+      </x-details>
+
+      <x-details>
+        <div slot="summary">¿Qué antecedentes hay?</div>
+        <div slot="contents">
+          <p>
+            Creo que soy el primero en automatizar la extracción de estos datos
+            y compartir una herramienta para explorarlos. Pero antes que yo
+            pelearon otros por la transparencia.
+          </p>
+
+          <p>
+            Así, y que yo conozca, los periodistas
+            <a href="https://twitter.com/axierL">Axier López</a> y
+            <a href="https://twitter.com/larbelaitz"
+              >Lander Arbelaitz Mitxelena</a
+            >
+            trabajaron paciente y manualmente los datos de 2017 y en diciembre
+            de 2018 publicaron
+            <a
+              href="https://www.argia.eus/argia-astekaria/2623/zortzi-milioi-euroren-banaketa-politikoa"
+              >este reportaje en la revista Argia</a
+            >.
+          </p>
+
+          <p>
+            En el plano institucional, he podido saber que el parlamentario
+            vasco Josu Estarrona
+            <a
+              href="https://twitter.com/Josu_Estarrona/status/1579417369658945538"
+              >requirió en el otoño de 2022 al Gobierno Vasco estos datos</a
+            >
+            en formato abiertos (<i>open data</i>).
+          </p>
+
+          <p>
+            Mi idea de procesar estas memorias surge en junio de 2022,
+            <a
+              href="https://twitter.com/JaimeObregon/status/1539364161003593729"
+              >durante una charla con periodistas de medios de Hekimen</a
+            >, la asociación de medios de comunicación en euskera. Tras echarle
+            un vistazo decidí darlo por imposible, pero en septiembre volví
+            sobre el reto y comencé esta herramienta
+            <cite>gobiernovasco.marketing</cite>, que finalmente ve la luz en
+            julio de 2022.
+          </p>
+
+          <p>
+            A partir de aquí pueden suceder dos cosas: que el Gobierno Vaco
+            publique la próxima memoria institucional en el mismo formato que
+            las anteriores, en cuyo caso hemos ganado porque ya tenemos la
+            herramienta para extraer sus datos y explorarlos 😀. O que el
+            Gobierno adopte un formato estructurado y más transparente, en cuyo
+            caso hemos ganado también 🥳.
+          </p>
+        </div>
+      </x-details>
+
+      <x-details>
+        <div slot="summary">
+          Soy un periodista o un investigador, ¿puedes ayudarme a indagar en
+          este reparto?
+        </div>
+        <div slot="contents">
+          <p>
+            Sí, probablemente pueda ayudarte; aunque mi tiempo es muy limitado
+            porque estoy trabajando en otros proyectos similares a este en su
+            objetivo y que también quiero hacer públicos. Para ponernos en
+            marcha, creo que lo más eficaz es que me dirijas un mensaje público
+            o privado vía Twitter, donde soy
+            <a href="https://twitter.com/jaimeobregon">@JaimeObregon</a>. Los
+            mensajes privados largos se me amontonan y muchas veces se me quedan
+            sin contestar, por eso es más práctico que me escribas en abierto. A
+            partir de ahí quizá podamos contactar por teléfono e intentaré
+            ayudarte.
+          </p>
+        </div>
+      </x-details>
+
+      <x-details>
+        <div slot="summary">
+          Hacer esto cuesta dinero, ¿qué oscura mano te financia?
+        </div>
+        <div slot="contents">
+          <p>
+            Efectivamente, he invertido varios cientos de horas de trabajo
+            solitario en este proyecto. ¿Y de qué vivo mientras tanto? ¿Quién lo
+            ha financiado? Todo ha sido posible única y exclusivamente gracias
+            al patrocinio voluntario de un grupo de ciudadanos anónimos y
+            también comprometidos con la transparencia y con que nuestro país
+            funcione mejor.
+            <a href="https://www.patreon.com/jaime_gomez_obregon"
+              >Son mis patronos</a
+            >, y te invito a sumarte si este proyecto te resulta útil y quieres
+            apoyar el siguiente. 🙏
+          </p>
+
+          <p>
+            Hacerte mi patrono es la manera más directa de apoyarme para que
+            siga haciendo herramientas como esta, en más ámbitos y para otros
+            territorios.
+          </p>
+        </div>
+      </x-details>
+
+      <x-details>
+        <div slot="summary">¿…Y quién demonios eres tú?</div>
         <div slot="contents">
           <p>
             ¡Hola! Me llamo <strong>Jaime Gómez-Obregón</strong>, y soy el autor
@@ -99,153 +305,6 @@
             >. Por un lado, porque está perfectamente alineado con mis intereses
             y actividad. Y, por otro; porque ha supuesto un reto técnico y
             personal, y a mí <em>me chiflan</em> estas cosas. 🤓
-          </p>
-        </div>
-      </x-details>
-
-      <x-details>
-        <div slot="summary">
-          ¿Por qué has hecho esto? Y, ¿por qué el País Vasco?
-        </div>
-        <div slot="contents">
-          <p>
-            Esta herramienta se llama <cite>gobiernovasco.marketing</cite>, y la
-            he construido porque el Gobierno Vasco no ejerce una transparencia
-            eficaz con cómo se reparte el dinero público entre los medios de
-            comunicación en las campañas institucionales.
-          </p>
-
-          <p>
-            Ciertamente está la
-            <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2011-2620"
-              ><cite
-                >Ley 6/2010 de 23 de diciembre, de Publicidad y Comunicación
-                Institucional de Euskadi</cite
-              ></a
-            >, cuyo artículo 12 regula una
-            <a
-              href="https://www.euskadi.eus/comision-interdepartamental-de-publicidad/web01-s1ezaleh/es/"
-              >Comisión Interdepartamental de Publicidad del Gobierno Vasco</a
-            >
-            que ha de remitir una memoria anual al Parlamento Vasco antes de que
-            finalice el primer periodo de sesiones en la Cámara. Esto suele ser
-            en primavera.
-          </p>
-
-          <p>
-            ¡Pero estas memorias son un ladrillo del cual es muy difícil extraer
-            datos significativos! Porque las elaboran como extensos documentos
-            <abbr>PDF</abbr> que suelen rondar las 200 páginas. Informes que no
-            son más que una retahíla de campañas e inversiones en medios de la
-            que es <i>misión imposible</i> extraer información agregada,
-            comparativas útiles o cifras totales por medio.
-          </p>
-
-          <p>
-            La mencionada ley de 2010 es positiva en el sentido de que obliga al
-            menos a que el Ejecutivo vasco remita la información al Parlamento,
-            pero esto se lleva a cabo de una forma muy ineficiente: en el
-            inadecuado formato mencionado, solo una vez al año, con un desfase
-            de unos cuatro meses… ¡<a
-              href="https://twitter.com/JaimeObregon/status/1655617166182428673"
-              >y</a
-            >
-            <a
-              href="https://twitter.com/JaimeObregon/status/1656082411443175430"
-              >con</a
-            >
-            <a
-              href="https://twitter.com/JaimeObregon/status/1655173725627596801"
-              >numerosos</a
-            >
-            errores de
-            <a
-              href="https://twitter.com/JaimeObregon/status/1657895174071042050"
-              >todo</a
-            >
-            <a
-              href="https://twitter.com/JaimeObregon/status/1656215497493590016"
-              >tipo</a
-            >!
-          </p>
-
-          <p>
-            Como programador experimentado y con una <em>parafilia</em> por la
-            transparencia y los datos, me ha parecido un reto muy excitante
-            organizar todo ese lío, obtener información en claro y ponerla a
-            disposición de toda la ciudadanía y los medios. Y cuando he pensado
-            que, además, esto podría incomodar a algún político, he pensado…
-            <q>¡Sujétame el cubata…!</q>. 😜
-          </p>
-        </div>
-      </x-details>
-
-      <x-details>
-        <div slot="summary">
-          ¿Haces esto para atacar al Gobierno Vasco o a sus partidos?
-        </div>
-        <div slot="contents">
-          <p>
-            ¡En absoluto! No tengo nada en contra —ni tampoco a favor— del
-            Gobierno Vasco o de los partidos que lo configuran.
-            <strong>Yo ni siquiera soy vasco</strong>, ni resido en el País
-            Vasco.
-          </p>
-
-          <p>
-            No me mueven ideologías partidistas ni banderas. Me motiva el deseo
-            de una mayor transparencia en los asuntos públicos, una buena dosis
-            de reto personal y —no voy a ocultarlo— el puntillo gamberro de que
-            esto pueda incomodar a algún político. Pero no tengo interés en los
-            partidos y yo ni siquiera sigo la política ni consumo medios de
-            comunicación. No digo que ambas cosas no sean útiles; solo expreso
-            que a mí personalmente no me interesan.
-          </p>
-        </div>
-      </x-details>
-
-      <x-details>
-        <div slot="summary">
-          Soy un periodista o investigador y quiero indagar más sobre este
-          reparto, ¿puedes ayudarme?
-        </div>
-        <div slot="contents">
-          <p>
-            Sí, probablemente pueda ayudarte, aunque mi tiempo es muy limitado
-            porque estoy trabajando en otros proyectos similares a este en su
-            objetivo y que también quiero hacer públicos. Creo que lo más eficaz
-            es que me dirijas un mensaje público vía Twitter, donde soy
-            <a href="https://twitter.com/jaimeobregon">@JaimeObregon</a>. Los
-            mensajes privados largos se me amontonan y muchas veces se me quedan
-            sin contestar, por eso es más práctico que me escribas en abierto. A
-            partir de ahí quizá podamos contactar por teléfono e intentaré
-            ayudarte.
-          </p>
-        </div>
-      </x-details>
-
-      <x-details>
-        <div slot="summary">
-          Hacer esto cuesta dinero, ¿qué oscura mano te financia?
-        </div>
-        <div slot="contents">
-          <p>
-            Efectivamente, he invertido varios cientos de horas de trabajo
-            solitario en este proyecto. ¿Y de qué vivo mientras tanto? ¿Quién lo
-            ha financiado? Todo ha sido posible única y exclusivamente gracias
-            al patrocinio voluntario de un grupo de ciudadanos anónimos y
-            también comprometidos con la transparencia y con que nuestro país
-            funcione mejor.
-            <a href="https://www.patreon.com/jaime_gomez_obregon"
-              >Son mis patronos</a
-            >, y te invito a sumarte si este proyecto te resulta útil y quieres
-            apoyar el siguiente. 🙏
-          </p>
-
-          <p>
-            Hacerte mi patrono es la manera más directa de apoyarme para que
-            siga haciendo herramientas como esta, en más ámbitos y para otros
-            territorios.
           </p>
         </div>
       </x-details>
@@ -358,8 +417,9 @@
           </p>
 
           <p>
-            Existen, por lo tanto, errores de origen que en esta herramienta he
-            tratado de identificar y corregir siempre que ha sido posible.
+            Existen, por lo tanto, errores humanos de origen que en esta
+            herramienta he tratado de identificar y corregir siempre que ha sido
+            posible.
           </p>
 
           <p>
@@ -367,22 +427,24 @@
             documentos <abbr>PDF</abbr>, la irregularidad de los datos de
             partida y la heterogeneidad de los tipos de campañas publicitarioas,
             el proceso informático que he desarrollado para extraer los datos
-            podría introducir alguna omisión. Por ejemplo, hay unas pocas
-            campañas para las que esta herramienta no te propociona magnitudes
-            económicas. He cuantificado que del total de 1297 hay 85 que podrían
-            no haberse extraido o, más probablemente, haberse extraído con la
-            omisión de algún medio o dato.
+            podría introducir alguna omisión. Por ejemplo, he cuantificado que
+            hay 78 campañas que debido a ambas razones podrían no haberse
+            extraido o, más probablemente, haberse extraído con la omisión de
+            algún medio o dato. Cuando he podido detectarlas, estas campañas
+            aparecen en un color más tenue. Representan un 5,7&#8239;% sobre el
+            total extraído.
           </p>
 
           <p>
-            Por lo tanto, puedes otorgar una confianza del 93,5&#8239;% a los
-            datos que te brinda esta herramienta respecto de los datos
-            contenidos en los informes del Gobierno. No obstante, y para un
-            mayor verificabilidad y rigor metodológico, junto con cada campaña
-            te proporciono un enlace al documento <abbr>PDF</abbr> oficial y la
-            página de la sección en que se encuentra, de modo que tienes siempre
-            a un clic de distancia la fuente oficial y original de los datos y,
-            con ella, la posibilidad de contrastar rápidamente cualquier datos.
+            Por lo tanto, puedes otorgar una confianza de aproximadamente el
+            94,3&#8239;% a los datos que te brinda esta herramienta respecto de
+            los datos contenidos en los informes del Gobierno. No obstante, y
+            para un mayor verificabilidad y rigor metodológico, junto con cada
+            campaña te proporciono un enlace al documento
+            <abbr>PDF</abbr> oficial y la página de la sección en que se
+            encuentra, de modo que tienes siempre a un clic de distancia la
+            fuente oficial y original de los datos y, con ella, la posibilidad
+            de contrastar rápidamente cualquier duda.
           </p>
 
           <p>
@@ -423,7 +485,7 @@
             >. Esto significa que tienes la libertad de copiar y redistribuir
             los datos en cualquier medio o formato y remezclarlos transformarlos
             y construir a partir de ellos para cualquier propósito, incluso
-            comercialmente. Pero debes citas que los datos han sido obtenidos y
+            comercialmente. Pero debes citar que los datos han sido obtenidos y
             estructurados por Jaime Gómez-Obregón y enlazar a mi cuenta de
             Twitter:
             <a href="https://twitter.com/jaimeobregon">@JaimeObregon</a>.
@@ -439,14 +501,10 @@
         <div slot="contents">
           <p>
             Sí. Y resulta muy interesante observar dónde se encuentran las
-            mayores desviaciones y si son por exceso o por defecto.
-          </p>
-
-          <p>
-            Para realizar esta comparativa es necesario acudir a los planes de
-            publicidad y comunicación institucional del Gobierno Vasco. La
-            comparación con los datos arrojados por la herramienta se deja como
-            ejercicio periodístico al lector 🙃:
+            mayores desviaciones y si son por exceso o por defecto. Para
+            realizar esta comparativa es necesario acudir a los planes de
+            publicidad y comunicación institucional del Gobierno Vasco. Los he
+            buscado y reunido todos aquí:
           </p>
 
           <ol>
@@ -481,18 +539,10 @@
               >
             </li>
           </ol>
-        </div>
-      </x-details>
 
-      <x-details>
-        <div slot="summary">
-          ¿Qué problema hay con las memorias <abbr>PDF</abbr> que publica el
-          Gobierno Vasco?
-        </div>
-        <div slot="contents">
           <p>
-            Que son difícilmente accesibles, no están estructuradas y contienen
-            numerosos errores.
+            La comparación con los datos arrojados por la herramienta se deja
+            como ejercicio a un sagaz periodista 🙃.
           </p>
         </div>
       </x-details>
@@ -504,8 +554,8 @@
         </div>
         <div slot="contents">
           <p>
-            El Gobierno Vasco cumple eficazmente lo estipulado en la letra d del
-            artículo 12 de la
+            El Gobierno Vasco se limita a cumplir con lo estipulado en la letra
+            d del artículo 12 de la
             <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2011-2620"
               ><cite
                 >Ley 6/2010 de 23 de diciembre, de Publicidad y Comunicación
@@ -529,8 +579,12 @@
           </blockquote>
 
           <p>
-            Por lo tanto, poco reproche cabe hacer al Gobierno Vasco, que se
-            limita a cumplir […]
+            Ciertamente el Gobierno Vasco podría proporcionar los datos de una
+            forma más eficaz para la fiscalización por parte del Parlamento y la
+            ciudadanía. Pero, en mi opinión, el problema de fondo está en la
+            inconcreción de la ley, que no evita que los datos sean
+            proporcionados en memorias difícilmente accesibles, desestructuradas
+            y con numerosos errores.
           </p>
         </div>
       </x-details>
@@ -592,16 +646,6 @@
 
       <x-details>
         <div slot="summary">
-          ¿Qué me da esta herramienta que no me da las memorias originales del
-          Gobierno Vasco
-        </div>
-        <div slot="contents">
-          <p>…</p>
-        </div>
-      </x-details>
-
-      <x-details>
-        <div slot="summary">
           ¡Me encanta! ¿Puedes hacerlo también en mi provincia?
         </div>
         <div slot="contents">
@@ -615,21 +659,16 @@
 
       <x-details>
         <div slot="summary">
-          ¿Cómo lo has hecho? ¿Cuál es el <i>making of</i>?
-        </div>
-        <div slot="contents">
-          <p>…</p>
-        </div>
-      </x-details>
-
-      <x-details>
-        <div slot="summary">
           ¿Está disponible el proyecto también en lengua vasca?
         </div>
         <div slot="contents">
           <p>
             No, aunque me hubiera gustado. La razón principal es que yo soy
-            <i>ocho apellidos cántabros</i> y no hablo euskera.
+            <i>ocho apellidos cántabros</i> y no hablo vasco. No obstante, y
+            para de alguna manera tratar de compensar, he elaborado para las
+            redes sociales este vídeo de presentación en euskera —otro hermoso e
+            interesante reto para mí— a partir de la generosa traducción de una
+            buena amiga euskaldún 😚.
           </p>
 
           <video controls preload="metadata">
@@ -642,39 +681,6 @@
               default
             />
           </video>
-        </div>
-      </x-details>
-
-      <x-details>
-        <div slot="summary">
-          ¿Por qué en algunas campañas aparecen repetidos varias veces el mismo
-          medio?
-        </div>
-        <div slot="contents">
-          <p>…</p>
-        </div>
-      </x-details>
-
-      <x-details>
-        <div slot="summary">
-          ¿Por qué no aparecen agregados todos los medios según el grupo
-          empresarial al que pertenecen?
-        </div>
-        <div slot="contents">
-          <p>…</p>
-        </div>
-      </x-details>
-
-      <x-details>
-        <div slot="summary">
-          ¿Qué impacto, reacciones o consecuencias está teniendo esta
-          herramienta?
-        </div>
-        <div slot="contents">
-          <p>
-            Ha respondido un parlamentario. Ha provocado una pregunta al
-            Gobierno.
-          </p>
         </div>
       </x-details>
 
@@ -702,41 +708,6 @@
             <a href="https://twitter.com/jaimeobregon">@JaimeObregon</a> a
             través de Twitter.
           </p>
-        </div>
-      </x-details>
-
-      <h1>El Gobierno</h1>
-
-      <x-details>
-        <div slot="summary">
-          Pero el reparto será proporcional a la audiencia o la tirada de los
-          medios, ¿no?
-        </div>
-        <div slot="contents">
-          <p>…</p>
-        </div>
-      </x-details>
-
-      <x-details>
-        <div slot="summary">
-          ¡He visto varias campañas absurdas! ¿Se están dilapidando los fondos
-          públicos?
-        </div>
-        <div slot="contents">
-          <p>…</p>
-        </div>
-      </x-details>
-
-      <x-details>
-        <div slot="summary">
-          ¿Hay chanchullos y corruptelas en el reparto de estos fondos públicos?
-        </div>
-        <div slot="contents">
-          <p>…</p>
-          <p>…</p>
-          <p>…</p>
-          <p>…</p>
-          <p>…</p>
         </div>
       </x-details>
     </footer>
