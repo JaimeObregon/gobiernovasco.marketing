@@ -73,11 +73,18 @@ header {
   text-wrap: balance; /* ✨ https://developer.chrome.com/blog/css-text-wrap-balance/ */
 }
 
+@media (max-width: 640px) {
+  header {
+    font-size: 90%;
+  }
+}
+
 header > x-logo {
   margin: var(--space-x-large);
 }
 
 header > h1 {
+  font-size: var(--type-xx-large);
   font-family: var(--font-display);
   font-weight: 500;
   margin: 0;
@@ -92,7 +99,7 @@ header > h1 em {
 }
 
 header > h2 {
-  font-size: 1.35em;
+  font-size: var(--type-x-large);
 }
 
 header > :is(h1, h2) {
@@ -100,7 +107,7 @@ header > :is(h1, h2) {
 }
 
 header > p {
-  font-size: 1em;
+  font-size: var(--type-medium);
   font-weight: 700;
 }
 
