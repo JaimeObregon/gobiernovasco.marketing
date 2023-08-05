@@ -1,6 +1,5 @@
 import { MyElement, html, css } from '../modules/element.js'
 import { normalize } from '../modules/strings.js'
-import { app } from '../app.js'
 
 const icon = html`
   <svg viewBox="0 0 16 16">
@@ -171,7 +170,9 @@ class Search extends MyElement {
         Enter: () => {
           const query = this.results[this.selected].innerText
           this.query = query
-          app.search()
+
+          const event = new Event('search')
+          this.dispatchEvent(event)
         },
         ArrowUp: () => --this.selected,
         ArrowDown: () =>
@@ -205,7 +206,9 @@ class Search extends MyElement {
 
     this.input.addEventListener('input', () => {
       this.query = this.input.value
-      app.search()
+
+      const event = new Event('search')
+      this.dispatchEvent(event)
     })
 
     this.input.addEventListener('focus', () => {
@@ -222,10 +225,12 @@ class Search extends MyElement {
 
     // `mousedown` en vez de `click`, pues de lo contrario el evento `blur`
     // en `this.input` se dispara antes y cierra el desplegable de sugerencias.
-    this.ul.addEventListener('mousedown', (event) => {
-      const query = event.target.closest('a').innerText
+    this.ul.addEventListener('mousedown', ({ target }) => {
+      const query = target.closest('a').innerText
       this.query = query
-      app.search()
+
+      const event = new Event('search')
+      this.dispatchEvent(event)
     })
   }
 

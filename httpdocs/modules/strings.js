@@ -29,4 +29,14 @@ const normalize = (string) => {
     .trim()
 }
 
-export { escape, normalize }
+// Redondea y formatea una cantidad de euros
+const toEuros = (amount) =>
+  Intl.NumberFormat('es-ES', {
+    style: 'currency',
+    currency: 'EUR',
+    maximumFractionDigits: 0,
+  })
+    .format(Math.round(amount))
+    .replaceAll(/\./g, '&#8239;')
+
+export { escape, normalize, toEuros }

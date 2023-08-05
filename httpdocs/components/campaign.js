@@ -1,6 +1,6 @@
 import { MyElement, html, css } from '../modules/element.js'
+import { escape, toEuros } from '../modules/strings.js'
 import { database } from '../modules/database.js'
-import { escape } from '../modules/strings.js'
 
 const departmentToColor = (string) => {
   // Fuente de la paleta de colores: https://tailwindcss.com/docs/customizing-colors
@@ -258,13 +258,9 @@ class Campaign extends MyElement {
     h2.style.background = departmentToColor(campaign.department)
 
     if (campaign.euros) {
-      h3.innerHTML = `Inversión total: <strong>${Intl.NumberFormat('es-ES', {
-        style: 'currency',
-        currency: 'EUR',
-        maximumFractionDigits: 0,
-      })
-        .format(Math.round(campaign.euros))
-        .replaceAll(/\./g, '&#8239;')}</strong>`
+      h3.innerHTML = html`
+        Inversión total: <strong>${toEuros(campaign.euros)}</strong>
+      `
     }
 
     time.innerText = campaign.date ?? ''
@@ -287,15 +283,7 @@ class Campaign extends MyElement {
             <span style="${style}" data-euros="${euros}"></span>
             <a href="/?q=${label}">
               <cite>${label}</cite>
-              <small
-                >${Intl.NumberFormat('es-ES', {
-                  style: 'currency',
-                  currency: 'EUR',
-                  maximumFractionDigits: 0,
-                })
-                  .format(Math.round(euros))
-                  .replaceAll(/\./g, '&#8239;')}</small
-              >
+              <small>${toEuros(euros)}</small>
             </a>
           </li>
         `

@@ -1,10 +1,10 @@
 import { MyElement, html, css } from './modules/element.js'
-import { Campaign } from './components/campaign.js'
+import { normalize, escape, toEuros } from './modules/strings.js'
 import { database } from './modules/database.js'
-import { Search } from './components/search.js'
-import { Details } from './components/details.js'
 import { Separator } from './components/separator.js'
-import { normalize, escape } from './modules/strings.js'
+import { Campaign } from './components/campaign.js'
+import { Details } from './components/details.js'
+import { Search } from './components/search.js'
 import { Logo } from './components/logo.js'
 
 const app = {
@@ -27,6 +27,80 @@ const app = {
     this.$search.query = query ?? ''
   },
 
+  //
+  recalculate() {
+    const selected = [...document.querySelectorAll('input:checked')].map(
+      (input) => input.parentNode.innerText.trim()
+    )
+
+    let totalEuros = 0
+    let totalCount = 0
+
+    const years = this.results.reduce(
+      (previous, current) => {
+        const { year } = current
+
+        const matches = current.outlets.filter(({ name, canonical }) =>
+          selected.includes(name)
+        )
+
+        const euros = matches.reduce(
+          (previous, current) => previous + current.euros,
+          0
+        )
+
+        const count = matches.length
+
+        previous[year].euros += euros
+        previous[year].count += count
+
+        totalEuros += euros
+        totalCount += count
+
+        return previous
+      },
+      {
+        2018: { euros: 0, count: 0 },
+        2019: { euros: 0, count: 0 },
+        2020: { euros: 0, count: 0 },
+        2021: { euros: 0, count: 0 },
+        2022: { euros: 0, count: 0 },
+      }
+    )
+
+    const table = document.querySelector('table')
+
+    table.innerHTML = html`
+      <thead>
+        <tr>
+          <th>Año</th>
+          <th>Contrataciones</th>
+          <th>Inversión</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${[2018, 2019, 2020, 2021, 2022]
+          .map(
+            (year) => html`
+              <tr>
+                <th>${year}</th>
+                <td>${years[year].count}</td>
+                <td>${toEuros(years[year].euros)}</td>
+              </tr>
+            `
+          )
+          .join('')}
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>Total quinquenio</td>
+          <th>${totalCount}</th>
+          <th>${toEuros(Math.round(totalEuros))}</th>
+        </td>
+      </tfoot>
+    `
+  },
+
   // Lanza una búsqueda del término existente en `this.query`.
   search() {
     const { results, suggestions } = database.search(this.query)
@@ -36,11 +110,11 @@ const app = {
       return
     }
 
-    const unchanged =
+    const isUnchanged =
       results.length === this.results.length &&
       results.every((item, i) => item === this.results[i])
 
-    if (results.length && unchanged) {
+    if (results.length && isUnchanged) {
       return
     }
 
@@ -150,142 +224,6 @@ const app = {
           </section>
         `
 
-        const recalculate = () => {
-          const selected = [...document.querySelectorAll('input:checked')].map(
-            (input) => input.parentNode.innerText.trim()
-          )
-
-          const years = this.results.reduce(
-            (accumulator, previous) => {
-              const { year } = previous
-
-              const matches = previous.outlets.filter(({ name, canonical }) =>
-                selected.includes(name)
-              )
-
-              const euros = matches.reduce(
-                (accumulator, previous) => accumulator + previous.euros,
-                0
-              )
-
-              const count = matches.length ? 1 : 0
-
-              accumulator[year].euros += euros
-              accumulator[year].count += count
-
-              return accumulator
-            },
-            {
-              2018: { euros: 0, count: 0 },
-              2019: { euros: 0, count: 0 },
-              2020: { euros: 0, count: 0 },
-              2021: { euros: 0, count: 0 },
-              2022: { euros: 0, count: 0 },
-            }
-          )
-
-          const euros =
-            years[2018].euros +
-            years[2019].euros +
-            years[2020].euros +
-            years[2021].euros +
-            years[2022].euros
-
-          const contracts =
-            years[2018].count +
-            years[2019].count +
-            years[2020].count +
-            years[2021].count +
-            years[2022].count
-
-          const table = document.querySelector('table')
-
-          table.innerHTML = html`
-        <thead>
-          <tr>
-            <th>Año</th>
-            <th>Contrataciones</th>
-            <th>Inversión</th>
-          </tr>
-        </thead>
-        <tbody>
-      <tr>
-        <th>2018</th>
-        <td>${years[2018].count}</td>
-        <td>
-        ${Intl.NumberFormat('es-ES', {
-          style: 'currency',
-          currency: 'EUR',
-          maximumFractionDigits: 0,
-        })
-          .format(Math.round(years[2018].euros))
-          .replaceAll(/\./g, '&#8239;')}</td>
-      </tr>
-      <tr>
-        <th>2019</th>
-        <td>${years[2019].count}</td>
-        <td>
-        ${Intl.NumberFormat('es-ES', {
-          style: 'currency',
-          currency: 'EUR',
-          maximumFractionDigits: 0,
-        })
-          .format(Math.round(years[2019].euros))
-          .replaceAll(/\./g, '&#8239;')}</td>
-      </tr>
-      <tr>
-        <th>2020</th>
-        <td>${years[2020].count}</td>
-        <td>
-        ${Intl.NumberFormat('es-ES', {
-          style: 'currency',
-          currency: 'EUR',
-          maximumFractionDigits: 0,
-        })
-          .format(Math.round(years[2020].euros))
-          .replaceAll(/\./g, '&#8239;')}</td>
-      </tr>
-      <tr>
-        <th>2021</th>
-        <td>${years[2021].count}</td>
-        <td>
-        ${Intl.NumberFormat('es-ES', {
-          style: 'currency',
-          currency: 'EUR',
-          maximumFractionDigits: 0,
-        })
-          .format(Math.round(years[2021].euros))
-          .replaceAll(/\./g, '&#8239;')}</td>
-      </tr>
-      <tr>
-        <th>2022</th>
-        <td>${years[2022].count}</td>
-        <td>
-        ${Intl.NumberFormat('es-ES', {
-          style: 'currency',
-          currency: 'EUR',
-          maximumFractionDigits: 0,
-        })
-          .format(Math.round(years[2022].euros))
-          .replaceAll(/\./g, '&#8239;')}</td>
-      </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <th>Total quinquenio</td>
-          <th>${contracts}</th>
-          <th>${Intl.NumberFormat('es-ES', {
-            style: 'currency',
-            currency: 'EUR',
-            maximumFractionDigits: 0,
-          })
-            .format(Math.round(euros))
-            .replaceAll(/\./g, '&#8239;')}</th>
-        </td>
-      </tfoot>
-        `
-        }
-
         const button = this.$main.querySelector('button')
 
         if (button) {
@@ -298,18 +236,16 @@ const app = {
         }
 
         if (outlets.length) {
-          recalculate()
+          this.recalculate()
 
           this.$main.addEventListener('click', ({ target }) => {
             const inputClicked =
               target.localName === 'input' &&
               typeof target.checked !== 'undefined'
 
-            if (!inputClicked) {
-              return
+            if (inputClicked) {
+              this.recalculate()
             }
-
-            recalculate()
           })
         }
       }, this.debounceDelay)
@@ -342,4 +278,6 @@ app.query = q
 // 🎉
 app.search()
 
-export { app }
+const search = document.querySelector('x-search')
+
+search.addEventListener('search', () => app.search())
