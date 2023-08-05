@@ -145,12 +145,7 @@ const app = {
           <section id="results">
             ${campaigns}
             ${this.results.length > this.maxCampaigns
-              ? html`<button
-                  style="display: block; column-span: all; margin: var(--space-medium) auto 0 auto; font-size: var(--type-large); cursor: pointer"
-                  onclick="document.querySelectorAll('x-campaign').forEach(i => i.style.display = 'block'); this.remove()"
-                >
-                  Mostrar todas
-                </button>`
+              ? html`<button>Mostrar todas</button>`
               : ''}
           </section>
         `
@@ -291,6 +286,17 @@ const app = {
         `
         }
 
+        const button = this.$main.querySelector('button')
+
+        if (button) {
+          button.addEventListener('click', () => {
+            this.$main
+              .querySelectorAll('x-campaign')
+              .forEach((i) => (i.style.display = 'block'))
+            button.remove()
+          })
+        }
+
         if (outlets.length) {
           recalculate()
 
@@ -317,6 +323,7 @@ const app = {
   },
 }
 
+customElements.define('x-logo', Logo)
 customElements.define('x-search', Search)
 customElements.define('x-details', Details)
 customElements.define('x-campaign', Campaign)

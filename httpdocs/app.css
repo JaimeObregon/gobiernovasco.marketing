@@ -356,6 +356,14 @@ section#results x-campaign {
   break-inside: avoid;
 }
 
+section#results button {
+  display: block;
+  column-span: all;
+  margin: var(--space-medium) auto 0 auto;
+  font-size: var(--type-large);
+  cursor: pointer;
+}
+
 x-details {
   padding: var(--space-medium);
   margin: 0 auto;

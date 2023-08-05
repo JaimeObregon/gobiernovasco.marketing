@@ -239,6 +239,4 @@ class Logo extends MyElement {
   `
 }
 
-customElements.define('x-logo', Logo)
-
 export { Logo }
