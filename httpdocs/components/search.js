@@ -211,7 +211,8 @@ class Search extends MyElement {
       this.query = this.input.value
       this.dispatchEvent(searchEvent)
 
-      const open = Boolean(this.ul.querySelectorAll('a')) && this.query.length
+      const suggestions = [...this.ul.querySelectorAll('a')]
+      const open = Boolean(suggestions.length && this.query.length)
       this.label.classList.toggle('open', open)
     })
 
