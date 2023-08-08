@@ -356,11 +356,21 @@ section#results x-campaign {
   break-inside: avoid;
 }
 
+section#results x-campaign.hidden {
+  display: none;
+}
+
 section#results button {
   display: block;
   column-span: all;
+  padding: var(--space-small) var(--space-large);
   margin: var(--space-medium) auto 0 auto;
   font-size: var(--type-large);
+  font-family: var(--font-display);
+  border-radius: 99em;
+  border: none;
+  color: var(--color-highlight-inverted);
+  background: var(--color-accent);
   cursor: pointer;
 }
 

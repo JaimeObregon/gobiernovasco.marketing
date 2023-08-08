@@ -49,7 +49,7 @@ class Campaign extends MyElement {
     }
 
     :host(.warning) {
-      opacity: 0.5;
+      opacity: 0.7;
     }
 
     article {
@@ -279,7 +279,7 @@ class Campaign extends MyElement {
         const style = `--width: ${width}%; --delay: ${delay}ms`
 
         return html`
-          <li>
+          <li data-query="${label}">
             <span style="${style}" data-euros="${euros}"></span>
             <a href="/?q=${label}">
               <cite>${label}</cite>
@@ -289,6 +289,25 @@ class Campaign extends MyElement {
         `
       })
       .join('')
+
+    ul.addEventListener('click', (event) => {
+      const li = event.target.closest('li')
+      if (!li) {
+        return
+      }
+
+      const query = li.dataset.query
+
+      const searchEvent = new CustomEvent('search', {
+        detail: { query },
+        bubbles: true,
+        composed: true,
+      })
+
+      this.dispatchEvent(searchEvent)
+
+      event.preventDefault()
+    })
   }
 }
 

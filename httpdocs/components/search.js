@@ -155,24 +155,27 @@ class Search extends MyElement {
 
     this.input.focus({ preventScroll: true })
 
-    document.addEventListener('keydown', (event) => {
-      if (event.metaKey || event.ctrlKey) {
-        return
-      }
+    const searchEvent = new CustomEvent('search', {
+      bubbles: true,
+      composed: true,
+    })
 
+    document.addEventListener('keydown', (event) => {
       if (event.key.length === 1 || event.key === 'Backspace') {
         this.input.focus()
-        this.label.classList.add('open')
       }
 
       const actions = {
         Escape: () => this.label.classList.remove('open'),
         Enter: () => {
-          const query = this.results[this.selected].innerText
-          this.query = query
+          if (this.selected !== undefined) {
+            const query = this.results[this.selected].innerText
+            this.query = query
+          }
 
-          const event = new Event('search')
-          this.dispatchEvent(event)
+          this.label.classList.toggle('open', false)
+
+          this.dispatchEvent(searchEvent)
         },
         ArrowUp: () => --this.selected,
         ArrowDown: () =>
@@ -206,9 +209,10 @@ class Search extends MyElement {
 
     this.input.addEventListener('input', () => {
       this.query = this.input.value
+      this.dispatchEvent(searchEvent)
 
-      const event = new Event('search')
-      this.dispatchEvent(event)
+      const open = Boolean(this.ul.querySelectorAll('a')) && this.query.length
+      this.label.classList.toggle('open', open)
     })
 
     this.input.addEventListener('focus', () => {
@@ -225,12 +229,10 @@ class Search extends MyElement {
 
     // `mousedown` en vez de `click`, pues de lo contrario el evento `blur`
     // en `this.input` se dispara antes y cierra el desplegable de sugerencias.
-    this.ul.addEventListener('mousedown', ({ target }) => {
-      const query = target.closest('a').innerText
+    this.ul.addEventListener('mousedown', (event) => {
+      const query = event.target.closest('a').innerText
       this.query = query
-
-      const event = new Event('search')
-      this.dispatchEvent(event)
+      this.dispatchEvent(searchEvent)
     })
   }
 

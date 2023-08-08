@@ -11,9 +11,11 @@ const app = {
   $search: document.querySelector('x-search'),
   $main: document.querySelector('main'),
 
-  maxCampaigns: 25,
+  maxCampaigns: 20,
 
-  debounceDelay: 200,
+  debounceDelay: 300,
+
+  scrollDelay: 200,
 
   results: [],
 
@@ -107,14 +109,7 @@ const app = {
 
     if (results === null) {
       this.$main.innerHTML = ''
-      return
-    }
-
-    const isUnchanged =
-      results.length === this.results.length &&
-      results.every((item, i) => item === this.results[i])
-
-    if (results.length && isUnchanged) {
+      this.$search.suggestions = []
       return
     }
 
@@ -130,11 +125,11 @@ const app = {
       0
     )
 
+    clearTimeout(this.timeout)
+
     if (!results.length) {
       this.$main.innerHTML = html`<img src="/assets/empty.svg" alt="" />`
     } else {
-      clearTimeout(this.timeout)
-
       this.timeout = setTimeout(() => {
         this.$main.innerHTML = ''
 
@@ -149,7 +144,7 @@ const app = {
           .map(
             (result, i) => html`
               <x-campaign
-                ${i >= this.maxCampaigns ? 'style="display: none"' : ''}
+                ${i >= this.maxCampaigns ? 'class="hidden"' : ''}
                 ${result.warning ? 'class="warning"' : ''}
                 data-id="${result.id}"
               ></x-campaign>
@@ -182,7 +177,7 @@ const app = {
           this.$main.innerHTML = html`
             <h1>
               La inversión en ${subject} con
-              <q>${escape(query)}</q>
+              <q>${escape(this.query)}</q>
             </h1>
             <section id="summary">
               <figure>
@@ -214,7 +209,7 @@ const app = {
 
         this.$main.innerHTML += html`
           <h1>
-            <span>Hay ${subject} con <q>${escape(query)}</q></span>
+            <span>Hay ${subject} con <q>${escape(this.query)}</q></span>
           </h1>
           <section id="results">
             ${campaigns}
@@ -230,7 +225,7 @@ const app = {
           button.addEventListener('click', () => {
             this.$main
               .querySelectorAll('x-campaign')
-              .forEach((i) => (i.style.display = 'block'))
+              .forEach((i) => i.classList.remove('hidden'))
             button.remove()
           })
         }
@@ -254,7 +249,7 @@ const app = {
         document
           .querySelector('main')
           .scrollIntoView({ behavior: 'smooth', block: 'start' })
-      }, 300)
+      }, this.scrollDelay)
     }
   },
 }
@@ -278,6 +273,13 @@ app.query = q
 // 🎉
 app.search()
 
-const search = document.querySelector('x-search')
+document.addEventListener('search', (event) => {
+  if (event.detail?.query) {
+    app.query = event.detail.query
+  }
 
-search.addEventListener('search', () => app.search())
+  const q = encodeURIComponent(app.query)
+  history.replaceState(null, '', q ? `/?q=${q}` : '/')
+
+  app.search()
+})
