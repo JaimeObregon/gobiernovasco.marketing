@@ -232,20 +232,6 @@ const app = {
 
         if (outlets.length) {
           this.recalculate()
-
-          this.$main.addEventListener('click', ({ target }) => {
-            const inputClicked =
-              target.localName === 'input' &&
-              typeof target.checked !== 'undefined'
-
-            if (inputClicked) {
-              const file = target.checked ? 'activate.mp3' : 'deactivate.mp3'
-              const sound = new Audio(`/sounds/${file}`)
-              sound.play()
-
-              this.recalculate()
-            }
-          })
         }
       }, this.debounceDelay)
 
@@ -286,4 +272,21 @@ document.addEventListener('search', (event) => {
   history.replaceState(null, '', q ? `/?q=${q}` : '/')
 
   app.search()
+})
+
+const main = document.querySelector('main')
+
+main.addEventListener('click', ({ target }) => {
+  const inputClicked =
+    target.localName === 'input' && typeof target.checked !== 'undefined'
+
+  if (!inputClicked) {
+    return
+  }
+
+  const file = target.checked ? 'activate.mp3' : 'deactivate.mp3'
+  const sound = new Audio(`/sounds/${file}`)
+  sound.play()
+
+  app.recalculate()
 })
