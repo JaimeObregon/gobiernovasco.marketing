@@ -89,7 +89,8 @@ class Details extends MyElement {
 
   open() {
     if (this.details.getAttribute('ready')) {
-      this.sounds.open.play()
+      const sound = new Audio('/sounds/activate.mp3')
+      sound.play()
     }
 
     const backup = this.div.offsetHeight
@@ -117,7 +118,8 @@ class Details extends MyElement {
 
   close() {
     if (this.details.getAttribute('ready')) {
-      this.sounds.close.play()
+      const sound = new Audio('/sounds/deactivate.mp3')
+      sound.play()
     }
 
     const height = this.div.offsetHeight
@@ -133,11 +135,6 @@ class Details extends MyElement {
     this.details = this.shadowRoot.querySelector('details')
     this.summary = this.shadowRoot.querySelector('summary')
     this.div = this.shadowRoot.querySelector('div')
-
-    this.sounds = {
-      open: new Audio('/sounds/activate.mp3'),
-      close: new Audio('/sounds/deactivate.mp3'),
-    }
 
     if (this.getAttribute('open') === null) {
       this.close()
