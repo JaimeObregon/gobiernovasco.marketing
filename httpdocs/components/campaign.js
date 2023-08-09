@@ -194,7 +194,6 @@ class Campaign extends MyElement {
     }
 
     ul li > span:before {
-      z-index: 1;
       background-color: #e1b042; /* Número mágico 🤨 */
       mix-blend-mode: difference;
       transform-origin: center left;

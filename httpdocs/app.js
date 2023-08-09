@@ -239,6 +239,10 @@ const app = {
               typeof target.checked !== 'undefined'
 
             if (inputClicked) {
+              const file = target.checked ? 'activate.mp3' : 'deactivate.mp3'
+              const sound = new Audio(`/sounds/${file}`)
+              sound.play()
+
               this.recalculate()
             }
           })
