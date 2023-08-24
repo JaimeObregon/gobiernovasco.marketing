@@ -351,6 +351,7 @@ const catalog = {
         'noticiasgipuzkoa.com',
         'Noticiasgipuzkoa.com',
         'noticiasgipuzkoa.eus',
+        'ndg.eus',
       ],
     },
     {
@@ -408,6 +409,7 @@ const catalog = {
         'noticiasdelava.eus',
         'ON (suplemento Noticias Álava)',
         'N. de Álava',
+        'nda.eus',
       ],
     },
     {
