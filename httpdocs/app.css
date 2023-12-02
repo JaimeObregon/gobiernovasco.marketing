@@ -137,6 +137,17 @@ main > img {
   max-width: 65%;
 }
 
+main > p {
+  text-align: center;
+  font-style: italic;
+  font-size: var(--type-small);
+  margin: 0 0 var(--space-medium) 0;
+}
+
+main > p a {
+  font-weight: 800;
+}
+
 main > h1 {
   font-family: var(--font-display);
   font-weight: 500;

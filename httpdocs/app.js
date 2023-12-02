@@ -168,6 +168,15 @@ const app = {
           ),
         ]
 
+        const canonicals = [
+          ...new Set(
+            matches
+              .filter((match) => match.canonical)
+              .filter((match) => normalize(match.canonical) !== query)
+              .map((match) => match.canonical)
+          ),
+        ]
+
         if (outlets.length) {
           const subject =
             outlets.length === 1
@@ -175,6 +184,23 @@ const app = {
               : `los ${outlets.length} medios coincidentes`
 
           this.$main.innerHTML = html`
+            ${canonicals.length
+              ? html`
+                  <p>
+                    Quizá te interese buscar:
+                    ${canonicals
+                      .map(
+                        (name) =>
+                          html`
+                            <a href="/?q=${encodeURIComponent(name)}">
+                              ${name}
+                            </a>
+                          `
+                      )
+                      .join(', ')}.
+                  </p>
+                `
+              : ''}
             <h1>
               La inversión en ${subject} con
               <q>${escape(this.query)}</q>
