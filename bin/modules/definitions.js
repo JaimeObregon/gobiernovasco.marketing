@@ -136,7 +136,7 @@ const rules = [
             'Helburua',
           ].includes(item[0])
         )
-        .filter(
+        ?.filter(
           (item) =>
             !['(descripción)', '(Descripción)', '(deskribapena)'].includes(item)
         )
@@ -318,6 +318,15 @@ const definitions = {
       /<A name=\d{1,3}><\/a>Memoria de Publicidad y Comunicación Institucional del Gobierno Vasco<br>\nAño 2022<br>/,
     ],
     footer: /Pág\. \d{1,3} de 216<br>\n<hr>/g,
+    campaigns,
+    keywords,
+    rules,
+  },
+  2023: {
+    pageSeparators: [
+      /<A name=\d{1,3}><\/a>Memoria de Publicidad y Comunicación Institucional del Gobierno Vasco<br>\nAño 2023<br>/,
+    ],
+    footer: /\d{1,3}<br>\n<hr>/g,
     campaigns,
     keywords,
     rules,

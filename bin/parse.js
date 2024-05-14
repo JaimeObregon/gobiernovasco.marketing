@@ -3,7 +3,7 @@
 import util from 'util'
 import { Interpreter } from './modules/interpreter.js'
 
-const years = [2022, 2021, 2020, 2019, 2018]
+const years = [2023, 2022, 2021, 2020, 2019, 2018]
 
 const results = []
 
@@ -14,6 +14,7 @@ years.forEach((year) => {
 
   interpreter.departments.forEach((department) => {
     const campaigns = interpreter.getCampaigns(department)
+
     campaigns.forEach((campaign) => {
       results.push({
         id: ++id,
