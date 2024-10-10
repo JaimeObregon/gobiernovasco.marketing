@@ -67,6 +67,7 @@ const app = {
         2020: { euros: 0, count: 0 },
         2021: { euros: 0, count: 0 },
         2022: { euros: 0, count: 0 },
+        2023: { euros: 0, count: 0 },
       }
     )
 
