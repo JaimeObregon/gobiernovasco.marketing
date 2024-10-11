@@ -1,10 +1,10 @@
 [
   {
     "id": 5379,
-    "name": "ETORKIZUNA ERAIKIZ",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "ETORKIZUNA ERAIKIZ",
     "outlets": [
       {
         "name": "OPPIS CIRCUITO IRUN",
@@ -164,10 +164,10 @@
   },
   {
     "id": 5380,
-    "name": "BERDINTASUNA",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "BERDINTASUNA",
     "outlets": [
       {
         "name": "OPPIS",
@@ -182,10 +182,10 @@
   },
   {
     "id": 5381,
-    "name": "TURISLAN 2018",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "TURISLAN 2018",
     "outlets": [
       {
         "name": "EL DIARIO VASCO",
@@ -221,10 +221,10 @@
   },
   {
     "id": 5382,
-    "name": "FITUR 2018",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "FITUR 2018",
     "outlets": [
       { "name": "ELMUNDO.ES", "channel": "Digitala Digital", "euros": 2541.0 },
       {
@@ -236,10 +236,10 @@
   },
   {
     "id": 5383,
-    "name": "KULTURA BONOA",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "KULTURA BONOA",
     "outlets": [
       {
         "name": "CADENA SER",
@@ -265,10 +265,10 @@
   },
   {
     "id": 5384,
-    "name": "ETORKIZUNA ERAIKIZ",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "ETORKIZUNA ERAIKIZ",
     "outlets": [
       {
         "name": "ONDA CERO",
@@ -279,10 +279,10 @@
   },
   {
     "id": 5385,
-    "name": "ZIUR - CIBERSEGURIDAD",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "ZIUR - CIBERSEGURIDAD",
     "outlets": [
       {
         "name": "DBUS AUTOBUSES DONOSTIA",
@@ -365,10 +365,10 @@
   },
   {
     "id": 5386,
-    "name": "HERRIZ HERRI",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "HERRIZ HERRI",
     "outlets": [
       {
         "name": "ONDA VASCA GIPUZKOA",
@@ -379,10 +379,10 @@
   },
   {
     "id": 5387,
-    "name": "INSERCIONES PUBLICITARIAS",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "INSERCIONES PUBLICITARIAS",
     "outlets": [
       {
         "name": "TELEDONOSTI",
@@ -393,10 +393,10 @@
   },
   {
     "id": 5388,
-    "name": "GIPUZKOAKO URREZKO DOMINA 2017",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "GIPUZKOAKO URREZKO DOMINA 2017",
     "outlets": [
       {
         "name": "BERRIA",
@@ -412,10 +412,10 @@
   },
   {
     "id": 5389,
-    "name": "ITUN EKONOMIKOAREN 140 URTE",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "ITUN EKONOMIKOAREN 140 URTE",
     "outlets": [
       {
         "name": "NOTICIAS DE GIPUZKOA",
@@ -426,10 +426,10 @@
   },
   {
     "id": 5390,
-    "name": "TAMBORRADA 2018",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "TAMBORRADA 2018",
     "outlets": [
       {
         "name": "EUSKAL TELEBISTA",
@@ -440,10 +440,10 @@
   },
   {
     "id": 5391,
-    "name": "IRAGARKIAK: EGUTEGIAREN EGUNEKO ORRIA (2018)",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "IRAGARKIAK: EGUTEGIAREN EGUNEKO ORRIA (2018)",
     "outlets": [
       {
         "name": "ARRATE IRRATIA",
@@ -454,10 +454,10 @@
   },
   {
     "id": 5392,
-    "name": "GIPUZKOA EREDU PROGRAMA",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "GIPUZKOA EREDU PROGRAMA",
     "outlets": [
       {
         "name": "ERLO TELEBISTA - UROLALDEKO KOMUNIKABIDEAK, SL",
@@ -468,10 +468,10 @@
   },
   {
     "id": 5393,
-    "name": "TOLOSAKO IÑAUTERIAK 2018",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "TOLOSAKO IÑAUTERIAK 2018",
     "outlets": [
       {
         "name": "28 KANALA",
@@ -482,10 +482,10 @@
   },
   {
     "id": 5394,
-    "name": "UDAL TELEFONO GIDAK 2018",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "UDAL TELEFONO GIDAK 2018",
     "outlets": [
       {
         "name": "AIHEKO ZUBIMENDI IZAGA Y OTRO CB",
@@ -496,10 +496,10 @@
   },
   {
     "id": 5395,
-    "name": "EXPLORE SAN SEBASTIAN REGION ESKUALDEEN TXOKOA",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "EXPLORE SAN SEBASTIAN REGION ESKUALDEEN TXOKOA",
     "outlets": [
       {
         "name": "BASQUETRIBUNE",
@@ -515,10 +515,10 @@
   },
   {
     "id": 5396,
-    "name": "TOLOSAKO ARTXIBOA",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "TOLOSAKO ARTXIBOA",
     "outlets": [
       {
         "name": "CADENA SER",
@@ -529,10 +529,10 @@
   },
   {
     "id": 5397,
-    "name": "INSERCIONES PUBLICITARIAS",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "INSERCIONES PUBLICITARIAS",
     "outlets": [
       {
         "name": "ONDA CERO",
@@ -543,10 +543,10 @@
   },
   {
     "id": 5398,
-    "name": "BERTSO FINALA",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "BERTSO FINALA",
     "outlets": [
       {
         "name": "BERRIA",
@@ -557,10 +557,10 @@
   },
   {
     "id": 5399,
-    "name": "INSERCIONES PUBLICITARIAS",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "INSERCIONES PUBLICITARIAS",
     "outlets": [
       {
         "name": "KMON ALDIZKARIA",
@@ -571,10 +571,10 @@
   },
   {
     "id": 5400,
-    "name": "GIPUZKOA TURISMO",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "GIPUZKOA TURISMO",
     "outlets": [
       {
         "name": "NEKATUR-NEKAZALTURISMO ELKARTEA",
@@ -585,10 +585,10 @@
   },
   {
     "id": 5401,
-    "name": "IRAGARKIA: DV KIROLAK",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "IRAGARKIA: DV KIROLAK",
     "outlets": [
       {
         "name": "EL DIARIO VASCO",
@@ -599,10 +599,10 @@
   },
   {
     "id": 5402,
-    "name": "GIPUZKOA KIROLAK",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "GIPUZKOA KIROLAK",
     "outlets": [
       {
         "name": "RADIO MARCA",
@@ -613,10 +613,10 @@
   },
   {
     "id": 5403,
-    "name": "KIROLETAKO IRAGARKIAK",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "KIROLETAKO IRAGARKIAK",
     "outlets": [
       {
         "name": "REVISTA REAL SOCIEDAD - PRODUCCIONES MIC, S.L.",
@@ -627,10 +627,10 @@
   },
   {
     "id": 5404,
-    "name": "K BULEGOA",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "K BULEGOA",
     "outlets": [
       {
         "name": "AUX MAGAZINE - AUXILIARTE FACTORIA, S.L.",
@@ -641,10 +641,10 @@
   },
   {
     "id": 5405,
-    "name": "INSERCIONES PUBLICITARIAS",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "INSERCIONES PUBLICITARIAS",
     "outlets": [
       {
         "name": "ONDA VASCA",
@@ -655,10 +655,10 @@
   },
   {
     "id": 5406,
-    "name": "LUCES EN LA MEMORIA",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "LUCES EN LA MEMORIA",
     "outlets": [
       {
         "name": "GAZTEA",
@@ -679,10 +679,10 @@
   },
   {
     "id": 5407,
-    "name": "ITSAS FESTIBALA PASAIA 2018",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "ITSAS FESTIBALA PASAIA 2018",
     "outlets": [
       {
         "name": "THE KARMA ALDIZKARIA",
@@ -693,10 +693,10 @@
   },
   {
     "id": 5408,
-    "name": "INSERCIONES PUBLICITARIAS",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "INSERCIONES PUBLICITARIAS",
     "outlets": [
       {
         "name": "ONDA VASCA",
@@ -707,10 +707,10 @@
   },
   {
     "id": 5409,
-    "name": "SEVATUR 2018",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "SEVATUR 2018",
     "outlets": [
       {
         "name": "EL DIARIO VASCO",
@@ -721,10 +721,10 @@
   },
   {
     "id": 5410,
-    "name": "SUPLEMENTO EVENTOS 18",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "SUPLEMENTO EVENTOS 18",
     "outlets": [
       {
         "name": "EL DIARIO VASCO",
@@ -735,10 +735,10 @@
   },
   {
     "id": 5411,
-    "name": "INSERCIONES PUBLICITARIAS",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "INSERCIONES PUBLICITARIAS",
     "outlets": [
       {
         "name": "CADENA SER",
@@ -749,10 +749,10 @@
   },
   {
     "id": 5412,
-    "name": "INSERCIONES PUBLICITARIAS",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "INSERCIONES PUBLICITARIAS",
     "outlets": [
       {
         "name": "CADENA SER",
@@ -763,10 +763,10 @@
   },
   {
     "id": 5413,
-    "name": "INSERCIONES PUBLICITARIAS",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "INSERCIONES PUBLICITARIAS",
     "outlets": [
       {
         "name": "ONDA VASCA",
@@ -777,10 +777,10 @@
   },
   {
     "id": 5414,
-    "name": "EH GIDA 2018",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "EH GIDA 2018",
     "outlets": [
       {
         "name": "GARA",
@@ -791,10 +791,10 @@
   },
   {
     "id": 5415,
-    "name": "PUBLIZITATEA ENBA ALDIZKARIKO 209. ZENBAKIAN",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "PUBLIZITATEA ENBA ALDIZKARIKO 209. ZENBAKIAN",
     "outlets": [
       {
         "name": "ENBA ALDIZKARIA - ENARO KOOPERATIBA ELKARTEA",
@@ -805,10 +805,10 @@
   },
   {
     "id": 5416,
-    "name": "ESPECIAL TRANSPORTES",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "ESPECIAL TRANSPORTES",
     "outlets": [
       {
         "name": "NOTICIAS DE GIPUZKOA",
@@ -819,10 +819,10 @@
   },
   {
     "id": 5417,
-    "name": "LA GIPUZKOA DEL FUTURO",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "LA GIPUZKOA DEL FUTURO",
     "outlets": [
       {
         "name": "EL DIARIO VASCO",
@@ -833,10 +833,10 @@
   },
   {
     "id": 5418,
-    "name": "LA GIPUZKOA DEL FUTURO - ENTREVISTA MARISOL GARMENDIA",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "LA GIPUZKOA DEL FUTURO - ENTREVISTA MARISOL GARMENDIA",
     "outlets": [
       {
         "name": "EL DIARIO VASCO",
@@ -847,10 +847,10 @@
   },
   {
     "id": 5419,
-    "name": "HOY POR HOY - ESPECIAL VIAS VERDES",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "HOY POR HOY - ESPECIAL VIAS VERDES",
     "outlets": [
       {
         "name": "CADENA SER",
@@ -861,10 +861,10 @@
   },
   {
     "id": 5420,
-    "name": "INGURU APP",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "INGURU APP",
     "outlets": [
       {
         "name": "BERRIA",
@@ -875,10 +875,10 @@
   },
   {
     "id": 5421,
-    "name": "INSERCIONES PUBLICITARIAS",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "INSERCIONES PUBLICITARIAS",
     "outlets": [
       {
         "name": "ONDA CERO",
@@ -889,10 +889,10 @@
   },
   {
     "id": 5422,
-    "name": "INSERCIONES PUBLICITARIAS",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "INSERCIONES PUBLICITARIAS",
     "outlets": [
       {
         "name": "CADENA SER",
@@ -903,10 +903,10 @@
   },
   {
     "id": 5423,
-    "name": "I. EKONOMIA ZIRKULARREKO JARDUNALDIA",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "I. EKONOMIA ZIRKULARREKO JARDUNALDIA",
     "outlets": [
       {
         "name": "BERRIA",
@@ -927,10 +927,10 @@
   },
   {
     "id": 5424,
-    "name": "LA GIPUZKOA DEL FUTURO",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "LA GIPUZKOA DEL FUTURO",
     "outlets": [
       {
         "name": "EL DIARIO VASCO",
@@ -941,10 +941,10 @@
   },
   {
     "id": 5425,
-    "name": "INSERCIONES PUBLICITARIAS",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "INSERCIONES PUBLICITARIAS",
     "outlets": [
       {
         "name": "CADENA SER",
@@ -955,10 +955,10 @@
   },
   {
     "id": 5426,
-    "name": "CAMPAÑA MEDIO AMBIENTE",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "CAMPAÑA MEDIO AMBIENTE",
     "outlets": [
       {
         "name": "TELEDONOSTI",
@@ -969,10 +969,10 @@
   },
   {
     "id": 5427,
-    "name": "ENTZUN ENTZUN PROGRAMA",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "ENTZUN ENTZUN PROGRAMA",
     "outlets": [
       {
         "name": "EUSKO IRRATIA - RADIODIFUSION VASCA, SA",
@@ -983,10 +983,10 @@
   },
   {
     "id": 5428,
-    "name": "INSERCIONES PUBLICITARIAS",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "INSERCIONES PUBLICITARIAS",
     "outlets": [
       {
         "name": "CADENA SER",
@@ -997,10 +997,10 @@
   },
   {
     "id": 5429,
-    "name": "INSERCIONES PUBLICITARIAS",
     "department": "Diputación Foral de Gipuzkoa",
     "year": 2018,
     "document": "2018_1.xlsx",
+    "name": "INSERCIONES PUBLICITARIAS",
     "outlets": [
       {
         "name": "ONDA CERO",

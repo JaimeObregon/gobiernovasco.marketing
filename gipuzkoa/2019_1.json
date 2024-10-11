@@ -1,10 +1,10 @@
 [
   {
-    "name": "ETORKIZUNA ERAIKIZ",
-    "department": "Diputación Foral de Gipuzkoa",
     "id": 5458,
+    "department": "Diputación Foral de Gipuzkoa",
     "year": 2019,
     "document": "2019_1.xlsx",
+    "name": "ETORKIZUNA ERAIKIZ",
     "outlets": [
       {
         "name": "DBUS Autobuses Donostia",
@@ -124,11 +124,11 @@
     ]
   },
   {
-    "name": "RENDICIÓN DE CUENTAS- KONTU EMATEA",
-    "department": "Diputación Foral de Gipuzkoa",
     "id": 5459,
+    "department": "Diputación Foral de Gipuzkoa",
     "year": 2019,
     "document": "2019_1.xlsx",
+    "name": "RENDICIÓN DE CUENTAS- KONTU EMATEA",
     "outlets": [
       {
         "name": "DBUS Autobuses Donostia",
@@ -303,11 +303,11 @@
     ]
   },
   {
-    "name": "PIDE UN DESEO - ESKATU DESIO BAT",
-    "department": "Diputación Foral de Gipuzkoa",
     "id": 5460,
+    "department": "Diputación Foral de Gipuzkoa",
     "year": 2019,
     "document": "2019_1.xlsx",
+    "name": "PIDE UN DESEO - ESKATU DESIO BAT",
     "outlets": [
       {
         "name": "eldiarionorte.es",
@@ -367,11 +367,11 @@
     ]
   },
   {
-    "name": "TURISLAN",
-    "department": "Diputación Foral de Gipuzkoa",
     "id": 5461,
+    "department": "Diputación Foral de Gipuzkoa",
     "year": 2019,
     "document": "2019_1.xlsx",
+    "name": "TURISLAN",
     "outlets": [
       {
         "name": "Gaztea",
@@ -411,11 +411,11 @@
     ]
   },
   {
-    "name": "SAGARDOTEGIAK",
-    "department": "Diputación Foral de Gipuzkoa",
     "id": 5462,
+    "department": "Diputación Foral de Gipuzkoa",
     "year": 2019,
     "document": "2019_1.xlsx",
+    "name": "SAGARDOTEGIAK",
     "outlets": [
       {
         "name": "Aiurri - Andoain, Urnieta",
@@ -450,11 +450,11 @@
     ]
   },
   {
-    "name": "LORE FERIA",
-    "department": "Diputación Foral de Gipuzkoa",
     "id": 5463,
+    "department": "Diputación Foral de Gipuzkoa",
     "year": 2019,
     "document": "2019_1.xlsx",
+    "name": "LORE FERIA",
     "outlets": [
       {
         "name": "Berria",
@@ -479,11 +479,11 @@
     ]
   },
   {
-    "name": "LURRALDEBUS",
-    "department": "Diputación Foral de Gipuzkoa",
     "id": 5464,
+    "department": "Diputación Foral de Gipuzkoa",
     "year": 2019,
     "document": "2019_1.xlsx",
+    "name": "LURRALDEBUS",
     "outlets": [
       {
         "name": "Euskadi Gaztea",
@@ -518,11 +518,11 @@
     ]
   },
   {
-    "name": "GIPUZKOA KIROLAK",
-    "department": "Diputación Foral de Gipuzkoa",
     "id": 5465,
+    "department": "Diputación Foral de Gipuzkoa",
     "year": 2019,
     "document": "2019_1.xlsx",
+    "name": "GIPUZKOA KIROLAK",
     "outlets": [
       {
         "name": "RADIO MARCA",
@@ -532,11 +532,11 @@
     ]
   },
   {
-    "name": "KIROLETAKO IRAGARKIAK",
-    "department": "Diputación Foral de Gipuzkoa",
     "id": 5466,
+    "department": "Diputación Foral de Gipuzkoa",
     "year": 2019,
     "document": "2019_1.xlsx",
+    "name": "KIROLETAKO IRAGARKIAK",
     "outlets": [
       {
         "name": "REVISTA REAL SOCIEDAD",
@@ -546,11 +546,11 @@
     ]
   },
   {
-    "name": "INSERCIONES PUBLICITARIAS",
-    "department": "Diputación Foral de Gipuzkoa",
     "id": 5467,
+    "department": "Diputación Foral de Gipuzkoa",
     "year": 2019,
     "document": "2019_1.xlsx",
+    "name": "INSERCIONES PUBLICITARIAS",
     "outlets": [
       {
         "name": "CACTUS aldizkaria",
@@ -560,11 +560,11 @@
     ]
   },
   {
-    "name": "INSERCIONES PUBLICITARIAS",
-    "department": "Diputación Foral de Gipuzkoa",
     "id": 5468,
+    "department": "Diputación Foral de Gipuzkoa",
     "year": 2019,
     "document": "2019_1.xlsx",
+    "name": "INSERCIONES PUBLICITARIAS",
     "outlets": [
       {
         "name": "ONDA VASCA",
@@ -574,11 +574,11 @@
     ]
   },
   {
-    "name": "MÁS CULTURA ES MENOS MANIPULACIÓN",
-    "department": "Diputación Foral de Gipuzkoa",
     "id": 5469,
+    "department": "Diputación Foral de Gipuzkoa",
     "year": 2019,
     "document": "2019_1.xlsx",
+    "name": "MÁS CULTURA ES MENOS MANIPULACIÓN",
     "outlets": [
       {
         "name": "THE KARMA aldizkaria",
@@ -588,11 +588,11 @@
     ]
   },
   {
-    "name": "INSERCIONES PUBLICITARIAS",
-    "department": "Diputación Foral de Gipuzkoa",
     "id": 5470,
+    "department": "Diputación Foral de Gipuzkoa",
     "year": 2019,
     "document": "2019_1.xlsx",
+    "name": "INSERCIONES PUBLICITARIAS",
     "outlets": [
       {
         "name": "AUX MAGAZINE",
@@ -602,11 +602,11 @@
     ]
   },
   {
-    "name": "ELIAS QUEREJETA ZINE ESKOLA",
-    "department": "Diputación Foral de Gipuzkoa",
     "id": 5471,
+    "department": "Diputación Foral de Gipuzkoa",
     "year": 2019,
     "document": "2019_1.xlsx",
+    "name": "ELIAS QUEREJETA ZINE ESKOLA",
     "outlets": [
       {
         "name": "Hamaika Telebista",
@@ -616,11 +616,11 @@
     ]
   },
   {
-    "name": "ARTZEREN ARTXIBOA",
-    "department": "Diputación Foral de Gipuzkoa",
     "id": 5472,
+    "department": "Diputación Foral de Gipuzkoa",
     "year": 2019,
     "document": "2019_1.xlsx",
+    "name": "ARTZEREN ARTXIBOA",
     "outlets": [
       {
         "name": "Hamaika Telebista",
@@ -630,11 +630,11 @@
     ]
   },
   {
-    "name": "INSERCIONES PUBLICITARIAS",
-    "department": "Diputación Foral de Gipuzkoa",
     "id": 5473,
+    "department": "Diputación Foral de Gipuzkoa",
     "year": 2019,
     "document": "2019_1.xlsx",
+    "name": "INSERCIONES PUBLICITARIAS",
     "outlets": [
       {
         "name": "TOUR MAGAZINE",
@@ -644,11 +644,11 @@
     ]
   },
   {
-    "name": "INSERCIONES PUBLICITARIAS",
-    "department": "Diputación Foral de Gipuzkoa",
     "id": 5474,
+    "department": "Diputación Foral de Gipuzkoa",
     "year": 2019,
     "document": "2019_1.xlsx",
+    "name": "INSERCIONES PUBLICITARIAS",
     "outlets": [
       {
         "name": "KMON aldizkaria",
@@ -658,11 +658,11 @@
     ]
   },
   {
-    "name": "KM, BIBLIOTECAS DEL MAÑANA",
-    "department": "Diputación Foral de Gipuzkoa",
     "id": 5475,
+    "department": "Diputación Foral de Gipuzkoa",
     "year": 2019,
     "document": "2019_1.xlsx",
+    "name": "KM, BIBLIOTECAS DEL MAÑANA",
     "outlets": [
       {
         "name": "Radio Euskadi",
@@ -672,11 +672,11 @@
     ]
   },
   {
-    "name": "INSERCIONES PUBLICITARIAS",
-    "department": "Diputación Foral de Gipuzkoa",
     "id": 5476,
+    "department": "Diputación Foral de Gipuzkoa",
     "year": 2019,
     "document": "2019_1.xlsx",
+    "name": "INSERCIONES PUBLICITARIAS",
     "outlets": [
       {
         "name": "Magazine Diario Norte",
@@ -686,11 +686,11 @@
     ]
   },
   {
-    "name": "DEPORTISTAS 5 ESTRELLAS",
-    "department": "Diputación Foral de Gipuzkoa",
     "id": 5477,
+    "department": "Diputación Foral de Gipuzkoa",
     "year": 2019,
     "document": "2019_1.xlsx",
+    "name": "DEPORTISTAS 5 ESTRELLAS",
     "outlets": [
       {
         "name": "El Diario Vasco",
@@ -700,11 +700,11 @@
     ]
   },
   {
-    "name": "CROSSOVER",
-    "department": "Diputación Foral de Gipuzkoa",
     "id": 5478,
+    "department": "Diputación Foral de Gipuzkoa",
     "year": 2019,
     "document": "2019_1.xlsx",
+    "name": "CROSSOVER",
     "outlets": [
       {
         "name": "Hamaika Telebista",
@@ -714,11 +714,11 @@
     ]
   },
   {
-    "name": "INSERCIONES PUBLICITARIAS",
-    "department": "Diputación Foral de Gipuzkoa",
     "id": 5479,
+    "department": "Diputación Foral de Gipuzkoa",
     "year": 2019,
     "document": "2019_1.xlsx",
+    "name": "INSERCIONES PUBLICITARIAS",
     "outlets": [
       {
         "name": "Berria",
@@ -728,11 +728,11 @@
     ]
   },
   {
-    "name": "INSERCIONES PUBLICITARIAS. TURISMO",
-    "department": "Diputación Foral de Gipuzkoa",
     "id": 5480,
+    "department": "Diputación Foral de Gipuzkoa",
     "year": 2019,
     "document": "2019_1.xlsx",
+    "name": "INSERCIONES PUBLICITARIAS. TURISMO",
     "outlets": [
       {
         "name": "Gara",
@@ -742,11 +742,11 @@
     ]
   },
   {
-    "name": "CONCURSO JÓVENES Y COMIC",
-    "department": "Diputación Foral de Gipuzkoa",
     "id": 5481,
+    "department": "Diputación Foral de Gipuzkoa",
     "year": 2019,
     "document": "2019_1.xlsx",
+    "name": "CONCURSO JÓVENES Y COMIC",
     "outlets": [
       {
         "name": "El Diario Vasco",
@@ -756,11 +756,11 @@
     ]
   },
   {
-    "name": "INSERCIONES PUBLICITARIAS",
-    "department": "Diputación Foral de Gipuzkoa",
     "id": 5482,
+    "department": "Diputación Foral de Gipuzkoa",
     "year": 2019,
     "document": "2019_1.xlsx",
+    "name": "INSERCIONES PUBLICITARIAS",
     "outlets": [
       {
         "name": "Sud Ouest",
@@ -770,11 +770,11 @@
     ]
   },
   {
-    "name": "EXPLORE SAN SEBASTIAN REGION",
-    "department": "Diputación Foral de Gipuzkoa",
     "id": 5483,
+    "department": "Diputación Foral de Gipuzkoa",
     "year": 2019,
     "document": "2019_1.xlsx",
+    "name": "EXPLORE SAN SEBASTIAN REGION",
     "outlets": [
       {
         "name": "Onda Cero",
@@ -784,11 +784,11 @@
     ]
   },
   {
-    "name": "LANDABERRI",
-    "department": "Diputación Foral de Gipuzkoa",
     "id": 5484,
+    "department": "Diputación Foral de Gipuzkoa",
     "year": 2019,
     "document": "2019_1.xlsx",
+    "name": "LANDABERRI",
     "outlets": [
       {
         "name": "Euskadi Irratia",
@@ -798,11 +798,11 @@
     ]
   },
   {
-    "name": "INSERCIONES PUBLICITARIAS",
-    "department": "Diputación Foral de Gipuzkoa",
     "id": 5485,
+    "department": "Diputación Foral de Gipuzkoa",
     "year": 2019,
     "document": "2019_1.xlsx",
+    "name": "INSERCIONES PUBLICITARIAS",
     "outlets": [
       {
         "name": "Estrategia Empresarial",
@@ -812,11 +812,11 @@
     ]
   },
   {
-    "name": "INSERCIONES PUBLICITARIAS",
-    "department": "Diputación Foral de Gipuzkoa",
     "id": 5486,
+    "department": "Diputación Foral de Gipuzkoa",
     "year": 2019,
     "document": "2019_1.xlsx",
+    "name": "INSERCIONES PUBLICITARIAS",
     "outlets": [
       {
         "name": "Naturaren Ahotsa",
@@ -826,11 +826,11 @@
     ]
   },
   {
-    "name": "INICIATIVA \"HOY ME TOCA A MÍ\"",
-    "department": "Diputación Foral de Gipuzkoa",
     "id": 5487,
+    "department": "Diputación Foral de Gipuzkoa",
     "year": 2019,
     "document": "2019_1.xlsx",
+    "name": "INICIATIVA \"HOY ME TOCA A MÍ\"",
     "outlets": [
       {
         "name": "Teledonosti",
@@ -845,11 +845,11 @@
     ]
   },
   {
-    "name": "7 VÍAS VERDES PARA DISFRUTAR DE LA BICI",
-    "department": "Diputación Foral de Gipuzkoa",
     "id": 5488,
+    "department": "Diputación Foral de Gipuzkoa",
     "year": 2019,
     "document": "2019_1.xlsx",
+    "name": "7 VÍAS VERDES PARA DISFRUTAR DE LA BICI",
     "outlets": [
       {
         "name": "Sisters and The City Magazine",
@@ -859,11 +859,11 @@
     ]
   },
   {
-    "name": "INSERCIONES PUBLICITARIAS. MEDIO AMBIENTE",
-    "department": "Diputación Foral de Gipuzkoa",
     "id": 5489,
+    "department": "Diputación Foral de Gipuzkoa",
     "year": 2019,
     "document": "2019_1.xlsx",
+    "name": "INSERCIONES PUBLICITARIAS. MEDIO AMBIENTE",
     "outlets": [
       {
         "name": "EL DIARIO VASCO",

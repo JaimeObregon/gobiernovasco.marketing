@@ -1,10 +1,10 @@
 [
   {
     "id": 5344,
-    "name": "ETORKIZUNA ERAIKIZ",
     "department": "Diputación Foral de Gipuzkoa",
-    "document": "2017_2.xlsx",
     "year": 2017,
+    "document": "2017_2.xlsx",
+    "name": "ETORKIZUNA ERAIKIZ",
     "outlets": [
       {
         "name": "BERRIA.EUS",
@@ -115,10 +115,10 @@
   },
   {
     "id": 5345,
-    "name": "BIOLENTZIA MATXISTAREN AURKAKO PLANA",
     "department": "Diputación Foral de Gipuzkoa",
-    "document": "2017_2.xlsx",
     "year": 2017,
+    "document": "2017_2.xlsx",
+    "name": "BIOLENTZIA MATXISTAREN AURKAKO PLANA",
     "outlets": [
       {
         "name": "GOOGLE",
@@ -174,10 +174,10 @@
   },
   {
     "id": 5346,
-    "name": "EXPLORE SAN SEBASTIAN REGION ESKUALDEEN TXOKOA",
     "department": "Diputación Foral de Gipuzkoa",
-    "document": "2017_2.xlsx",
     "year": 2017,
+    "document": "2017_2.xlsx",
+    "name": "EXPLORE SAN SEBASTIAN REGION ESKUALDEEN TXOKOA",
     "outlets": [
       {
         "name": "EL MUNDO DE LOS PIRINEOS",
@@ -243,10 +243,10 @@
   },
   {
     "id": 5347,
-    "name": "META KANPAINA",
     "department": "Diputación Foral de Gipuzkoa",
-    "document": "2017_2.xlsx",
     "year": 2017,
+    "document": "2017_2.xlsx",
+    "name": "META KANPAINA",
     "outlets": [
       {
         "name": "CADENA SER",
@@ -257,10 +257,10 @@
   },
   {
     "id": 5348,
-    "name": "FISKALITATEA",
     "department": "Diputación Foral de Gipuzkoa",
-    "document": "2017_2.xlsx",
     "year": 2017,
+    "document": "2017_2.xlsx",
+    "name": "FISKALITATEA",
     "outlets": [
       {
         "name": "FACEBOOK, RED SOCIAL",
@@ -281,10 +281,10 @@
   },
   {
     "id": 5349,
-    "name": "HERRIZ HERRI",
     "department": "Diputación Foral de Gipuzkoa",
-    "document": "2017_2.xlsx",
     "year": 2017,
+    "document": "2017_2.xlsx",
+    "name": "HERRIZ HERRI",
     "outlets": [
       {
         "name": "ONDA VASCA GIPUZKOA",
@@ -295,10 +295,10 @@
   },
   {
     "id": 5350,
-    "name": "ORAIN GIPUZKOA",
     "department": "Diputación Foral de Gipuzkoa",
-    "document": "2017_2.xlsx",
     "year": 2017,
+    "document": "2017_2.xlsx",
+    "name": "ORAIN GIPUZKOA",
     "outlets": [
       {
         "name": "THE KARMA ALDIZKARIA",
@@ -309,10 +309,10 @@
   },
   {
     "id": 5351,
-    "name": "KILOMETROAK",
     "department": "Diputación Foral de Gipuzkoa",
-    "document": "2017_2.xlsx",
     "year": 2017,
+    "document": "2017_2.xlsx",
+    "name": "KILOMETROAK",
     "outlets": [
       {
         "name": "KILOMETROAK KULTUR ELKARTEA",
@@ -323,10 +323,10 @@
   },
   {
     "id": 5352,
-    "name": "ITSAS TANTAK",
     "department": "Diputación Foral de Gipuzkoa",
-    "document": "2017_2.xlsx",
     "year": 2017,
+    "document": "2017_2.xlsx",
+    "name": "ITSAS TANTAK",
     "outlets": [
       {
         "name": "ONDA VASCA GIPUZKOA",
@@ -337,10 +337,10 @@
   },
   {
     "id": 5353,
-    "name": "HIRITARREN TERTULIA",
     "department": "Diputación Foral de Gipuzkoa",
-    "document": "2017_2.xlsx",
     "year": 2017,
+    "document": "2017_2.xlsx",
+    "name": "HIRITARREN TERTULIA",
     "outlets": [
       {
         "name": "ONDA VASCA GIPUZKOA",
@@ -351,10 +351,10 @@
   },
   {
     "id": 5354,
-    "name": "GIPUZKOA EREDU PROGRAMA",
     "department": "Diputación Foral de Gipuzkoa",
-    "document": "2017_2.xlsx",
     "year": 2017,
+    "document": "2017_2.xlsx",
+    "name": "GIPUZKOA EREDU PROGRAMA",
     "outlets": [
       {
         "name": "TELEDONOSTI",
@@ -375,10 +375,10 @@
   },
   {
     "id": 5355,
-    "name": "GFAREN PUBLIZITATEA, EDUKIAK ETA HAIZATZEA",
     "department": "Diputación Foral de Gipuzkoa",
-    "document": "2017_2.xlsx",
     "year": 2017,
+    "document": "2017_2.xlsx",
+    "name": "GFAREN PUBLIZITATEA, EDUKIAK ETA HAIZATZEA",
     "outlets": [
       {
         "name": "ZUZEU.EUS",
@@ -389,10 +389,10 @@
   },
   {
     "id": 5356,
-    "name": "ELKARREKIN SAIOA",
     "department": "Diputación Foral de Gipuzkoa",
-    "document": "2017_2.xlsx",
     "year": 2017,
+    "document": "2017_2.xlsx",
+    "name": "ELKARREKIN SAIOA",
     "outlets": [
       {
         "name": "11 TELEBISTA",
@@ -403,10 +403,10 @@
   },
   {
     "id": 5357,
-    "name": "GIPUZKOA, MUSEOS INFINITOS",
     "department": "Diputación Foral de Gipuzkoa",
-    "document": "2017_2.xlsx",
     "year": 2017,
+    "document": "2017_2.xlsx",
+    "name": "GIPUZKOA, MUSEOS INFINITOS",
     "outlets": [
       {
         "name": "GIPUZKOA TOUR ALDIZKARIA",
@@ -417,10 +417,10 @@
   },
   {
     "id": 5358,
-    "name": "ERREPORTAJE ETA SPOTAK: CANAL EUROPA, ZINE ESKOLA, UNTZI MUSEO ETA EXPO TURISMO",
     "department": "Diputación Foral de Gipuzkoa",
-    "document": "2017_2.xlsx",
     "year": 2017,
+    "document": "2017_2.xlsx",
+    "name": "ERREPORTAJE ETA SPOTAK: CANAL EUROPA, ZINE ESKOLA, UNTZI MUSEO ETA EXPO TURISMO",
     "outlets": [
       {
         "name": "11 TELEBISTA",
@@ -431,10 +431,10 @@
   },
   {
     "id": 5359,
-    "name": "HXH EUSKADI TURISMO",
     "department": "Diputación Foral de Gipuzkoa",
-    "document": "2017_2.xlsx",
     "year": 2017,
+    "document": "2017_2.xlsx",
+    "name": "HXH EUSKADI TURISMO",
     "outlets": [
       {
         "name": "CADENA SER",
@@ -445,10 +445,10 @@
   },
   {
     "id": 5360,
-    "name": "CLASICA SS",
     "department": "Diputación Foral de Gipuzkoa",
-    "document": "2017_2.xlsx",
     "year": 2017,
+    "document": "2017_2.xlsx",
+    "name": "CLASICA SS",
     "outlets": [
       {
         "name": "EUSKAL TELEBISTA",
@@ -459,10 +459,10 @@
   },
   {
     "id": 5361,
-    "name": "P.EMISION: 07-07/07/2017 (JUVENTUD Y DEPORTES)",
     "department": "Diputación Foral de Gipuzkoa",
-    "document": "2017_2.xlsx",
     "year": 2017,
+    "document": "2017_2.xlsx",
+    "name": "P.EMISION: 07-07/07/2017 (JUVENTUD Y DEPORTES)",
     "outlets": [
       {
         "name": "ONDA CERO DONOSTIA",
@@ -473,10 +473,10 @@
   },
   {
     "id": 5362,
-    "name": "DV KIROLAK",
     "department": "Diputación Foral de Gipuzkoa",
-    "document": "2017_2.xlsx",
     "year": 2017,
+    "document": "2017_2.xlsx",
+    "name": "DV KIROLAK",
     "outlets": [
       {
         "name": "CM GIPUZKOA, SL",
@@ -487,10 +487,10 @@
   },
   {
     "id": 5363,
-    "name": "SUPLEMENTO DE FIESTAS VASCAS",
     "department": "Diputación Foral de Gipuzkoa",
-    "document": "2017_2.xlsx",
     "year": 2017,
+    "document": "2017_2.xlsx",
+    "name": "SUPLEMENTO DE FIESTAS VASCAS",
     "outlets": [
       {
         "name": "HEMEN ALDIZKARIA",
@@ -501,10 +501,10 @@
   },
   {
     "id": 5364,
-    "name": "ESPECIAL TURISMO",
     "department": "Diputación Foral de Gipuzkoa",
-    "document": "2017_2.xlsx",
     "year": 2017,
+    "document": "2017_2.xlsx",
+    "name": "ESPECIAL TURISMO",
     "outlets": [
       {
         "name": "EL MUNDO",
@@ -515,10 +515,10 @@
   },
   {
     "id": 5365,
-    "name": "INSERCION PUBLICITARIA",
     "department": "Diputación Foral de Gipuzkoa",
-    "document": "2017_2.xlsx",
     "year": 2017,
+    "document": "2017_2.xlsx",
+    "name": "INSERCION PUBLICITARIA",
     "outlets": [
       {
         "name": "REAL SOCIEDAD",
@@ -529,10 +529,10 @@
   },
   {
     "id": 5366,
-    "name": "FALDONES DE PUBLICIDAD",
     "department": "Diputación Foral de Gipuzkoa",
-    "document": "2017_2.xlsx",
     "year": 2017,
+    "document": "2017_2.xlsx",
+    "name": "FALDONES DE PUBLICIDAD",
     "outlets": [
       {
         "name": "TELEDONOSTI",
@@ -543,10 +543,10 @@
   },
   {
     "id": 5367,
-    "name": "SUPLEMENTO SALUD",
     "department": "Diputación Foral de Gipuzkoa",
-    "document": "2017_2.xlsx",
     "year": 2017,
+    "document": "2017_2.xlsx",
+    "name": "SUPLEMENTO SALUD",
     "outlets": [
       {
         "name": "EL DIARIO VASCO",
@@ -557,10 +557,10 @@
   },
   {
     "id": 5368,
-    "name": "SAN SEBASTIANAK 2017",
     "department": "Diputación Foral de Gipuzkoa",
-    "document": "2017_2.xlsx",
     "year": 2017,
+    "document": "2017_2.xlsx",
+    "name": "SAN SEBASTIANAK 2017",
     "outlets": [
       {
         "name": "ERLO TELEBISTA - UROLALDEKO KOMUNIKABIDEAK, S.L.",
@@ -571,10 +571,10 @@
   },
   {
     "id": 5369,
-    "name": "ASTE NAGUSIA 2017",
     "department": "Diputación Foral de Gipuzkoa",
-    "document": "2017_2.xlsx",
     "year": 2017,
+    "document": "2017_2.xlsx",
+    "name": "ASTE NAGUSIA 2017",
     "outlets": [
       {
         "name": "TELEDONOSTI",
@@ -585,10 +585,10 @@
   },
   {
     "id": 5370,
-    "name": "FALDONES DE PUBLICIDAD",
     "department": "Diputación Foral de Gipuzkoa",
-    "document": "2017_2.xlsx",
     "year": 2017,
+    "document": "2017_2.xlsx",
+    "name": "FALDONES DE PUBLICIDAD",
     "outlets": [
       {
         "name": "TELEDONOSTI",
@@ -599,10 +599,10 @@
   },
   {
     "id": 5371,
-    "name": "LANDABERRI PROGRAMA",
     "department": "Diputación Foral de Gipuzkoa",
-    "document": "2017_2.xlsx",
     "year": 2017,
+    "document": "2017_2.xlsx",
+    "name": "LANDABERRI PROGRAMA",
     "outlets": [
       {
         "name": "EUSKO IRRATIA - RADIODIFUSION VASCA, SA",
@@ -613,10 +613,10 @@
   },
   {
     "id": 5372,
-    "name": "ORAIN GIPUZKOA",
     "department": "Diputación Foral de Gipuzkoa",
-    "document": "2017_2.xlsx",
     "year": 2017,
+    "document": "2017_2.xlsx",
+    "name": "ORAIN GIPUZKOA",
     "outlets": [
       {
         "name": "ENBA",
@@ -627,10 +627,10 @@
   },
   {
     "id": 5373,
-    "name": "EHUNMILAK ULTRATRAIL 2017",
     "department": "Diputación Foral de Gipuzkoa",
-    "document": "2017_2.xlsx",
     "year": 2017,
+    "document": "2017_2.xlsx",
+    "name": "EHUNMILAK ULTRATRAIL 2017",
     "outlets": [
       {
         "name": "GOIERRI IRRATI TELEBISTA - GOIHERRIKO IKUSKARI, SL",
@@ -641,10 +641,10 @@
   },
   {
     "id": 5374,
-    "name": "ITURRARANGO LANDARE BEREZIEN AZOKA",
     "department": "Diputación Foral de Gipuzkoa",
-    "document": "2017_2.xlsx",
     "year": 2017,
+    "document": "2017_2.xlsx",
+    "name": "ITURRARANGO LANDARE BEREZIEN AZOKA",
     "outlets": [
       {
         "name": "ARRATE IRRATIA",
@@ -655,10 +655,10 @@
   },
   {
     "id": 5375,
-    "name": "ORAIN INDUSTRI4.0. LAUGARREN INDUSTRIA-IRAULTZARAKO PREST",
     "department": "Diputación Foral de Gipuzkoa",
-    "document": "2017_2.xlsx",
     "year": 2017,
+    "document": "2017_2.xlsx",
+    "name": "ORAIN INDUSTRI4.0. LAUGARREN INDUSTRIA-IRAULTZARAKO PREST",
     "outlets": [
       {
         "name": "EL DIARIO VASCO",
@@ -669,10 +669,10 @@
   },
   {
     "id": 5376,
-    "name": "ESPECIAL INNOVACIÓN",
     "department": "Diputación Foral de Gipuzkoa",
-    "document": "2017_2.xlsx",
     "year": 2017,
+    "document": "2017_2.xlsx",
+    "name": "ESPECIAL INNOVACIÓN",
     "outlets": [
       {
         "name": "NOTICIAS DE GIPUZKOA",
@@ -683,10 +683,10 @@
   },
   {
     "id": 5377,
-    "name": "ORAIN AZPIEGITURAK",
     "department": "Diputación Foral de Gipuzkoa",
-    "document": "2017_2.xlsx",
     "year": 2017,
+    "document": "2017_2.xlsx",
+    "name": "ORAIN AZPIEGITURAK",
     "outlets": [
       {
         "name": "BERRIA",
@@ -697,10 +697,10 @@
   },
   {
     "id": 5378,
-    "name": "CURSOS BICICLETA",
     "department": "Diputación Foral de Gipuzkoa",
-    "document": "2017_2.xlsx",
     "year": 2017,
+    "document": "2017_2.xlsx",
+    "name": "CURSOS BICICLETA",
     "outlets": [
       {
         "name": "SOCIEDAD ESPAÑOLA DE RADIODIFUSION, S.L.",
