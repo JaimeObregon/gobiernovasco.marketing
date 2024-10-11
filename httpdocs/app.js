@@ -62,6 +62,10 @@ const app = {
         return previous
       },
       {
+        2014: { euros: 0, count: 0 },
+        2015: { euros: 0, count: 0 },
+        2016: { euros: 0, count: 0 },
+        2017: { euros: 0, count: 0 },
         2018: { euros: 0, count: 0 },
         2019: { euros: 0, count: 0 },
         2020: { euros: 0, count: 0 },
@@ -82,7 +86,7 @@ const app = {
         </tr>
       </thead>
       <tbody>
-        ${[2018, 2019, 2020, 2021, 2022]
+        ${[2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023]
           .map(
             (year) => html`
               <tr>
@@ -96,7 +100,7 @@ const app = {
       </tbody>
       <tfoot>
         <tr>
-          <th>Total quinquenio</td>
+          <th>Total período</td>
           <th>${totalCount}</th>
           <th>${toEuros(Math.round(totalEuros))}</th>
         </td>

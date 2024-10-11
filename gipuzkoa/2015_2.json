@@ -1,0 +1,622 @@
+[
+  {
+    "id": 5026,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2015,
+    "document": "2015_2.xls",
+    "h1": "DIPUTATU NAGUSIA / DIPUTADO GENERAL",
+    "name": "TABAKALERA Tabakaleraren inaugurazioa (Irailak 11) (Kanpaina EJ-GV, eta Donostiako udalarekin batera egindako kanpaina) Inauguración de Tabakalera (11 de Septiembre) (Campaña conjunta con EJ-GV y Ayuntamiento de San Sebastian)",
+    "outlets": [
+      {
+        "name": "GARA",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 4900.0
+      },
+      {
+        "name": "BERRIA",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 4477.0
+      },
+      {
+        "name": "NOTICIAS DE GIPUZKOA",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 6588.45
+      }
+    ]
+  },
+  {
+    "id": 5027,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2015,
+    "document": "2015_2.xls",
+    "name": "KILOMETROAK Urriaren 4an, Usurbilen egin den Kilometroetarako gehigarri bereziak Suplementos especiales para Kilometroak celebrado el 4 de Octubre en Usurbil",
+    "outlets": [
+      {
+        "name": "EL DIARIO VASCO",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 1210.0
+      },
+      {
+        "name": "BERRIA",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 968.0
+      },
+      {
+        "name": "NOTICIAS DE GIPUZKOA",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 1089.0
+      },
+      {
+        "name": "GARA",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 1149.5
+      }
+    ]
+  },
+  {
+    "id": 5028,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2015,
+    "document": "2015_2.xls",
+    "name": "G MARKA BERRIA AURKEZTEKO KANPAINA (urriak 18-25) PRESENTACIÓN DE LA NUEVA MARCA G (octubre 18-25)",
+    "outlets": [
+      {
+        "name": "EL DIARIO VASCO",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 21860.77
+      },
+      {
+        "name": "NOTICIAS DE GIPUZKOA",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 14347.58
+      },
+      {
+        "name": "BERRIA",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 12931.88
+      },
+      {
+        "name": "GARA",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 4253.9
+      },
+      {
+        "name": "EL MUNDO - PAÍS VASCO",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 2858.63
+      },
+      {
+        "name": "ELPAÍS - PAÍS VASCO",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 2795.1
+      },
+      {
+        "name": "RADIOEUSKADI",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 2920.7
+      },
+      {
+        "name": "EUSKADIIRRATIA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 1454.9
+      },
+      {
+        "name": "EUSKADIGAZTEA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 1030.63
+      },
+      {
+        "name": "SERGIPUZKOA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 4105.53
+      },
+      {
+        "name": "40 PRINCIPALES SANSEBASTIÁN",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 1259.84
+      },
+      {
+        "name": "ONDA VASCAGIPUZKOA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 1543.48
+      },
+      {
+        "name": "ONDA CEROGIPUZKOA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 1335.38
+      },
+      {
+        "name": "COPE SANSEBASTIÁN",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 1628.49
+      },
+      {
+        "name": "CADENA 100 SANSEBASTIÁN",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 1133.98
+      },
+      {
+        "name": "RADIOARRATE",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 363.0
+      },
+      {
+        "name": "RADIOSEGURA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 392.04
+      },
+      {
+        "name": "diariovasco.com",
+        "channel": "Digitala (Azaleko botoia) Digital (Botón portada)",
+        "euros": 1089.0
+      },
+      {
+        "name": "noticiasdegipuzkoa.com",
+        "channel": "Digitala (jumbibanner-a) Digital (jumbobanner)",
+        "euros": 907.5
+      },
+      {
+        "name": "berria.eus",
+        "channel": "Digitala (megabanner-a) Digital (megabanner)",
+        "euros": 665.5
+      },
+      {
+        "name": "naiz.info",
+        "channel": "Digitala (Azaleko botoia) Digital (Botón portada)",
+        "euros": 907.5
+      },
+      {
+        "name": "eitb.com",
+        "channel": "Digitala (megabanner-a) Digital (megabanner)",
+        "euros": 726.0
+      },
+      {
+        "name": "hamaika.eus",
+        "channel": "Digitala (megabanner-a) Digital (megabanner)",
+        "euros": 653.4
+      },
+      {
+        "name": "diarionorte.es",
+        "channel": "Digitala (orri hausgarria) Digital (robapágina)",
+        "euros": 484.0
+      },
+      {
+        "name": "dvbus",
+        "channel": "Digitala (Iragarkia 20\") Digital (Anuncio 20\")",
+        "euros": 1548.8
+      },
+      {
+        "name": "…ETAKITTO!",
+        "channel": "Tokiko prentsa Prensa local",
+        "euros": 442.13
+      },
+      {
+        "name": "AIURRI (Andoain,Urnieta)",
+        "channel": "Tokiko prentsa Prensa local",
+        "euros": 817.68
+      },
+      {
+        "name": "AIURRI (Beterri,Aiztondo)",
+        "channel": "Tokiko prentsa Prensa local",
+        "euros": 447.7
+      },
+      {
+        "name": "BARREN",
+        "channel": "Tokiko prentsa Prensa local",
+        "euros": 477.95
+      },
+      {
+        "name": "GOIBRERI",
+        "channel": "Tokiko prentsa Prensa local",
+        "euros": 487.63
+      },
+      {
+        "name": "GOIENA",
+        "channel": "Tokiko prentsa Prensa local",
+        "euros": 1402.39
+      },
+      {
+        "name": "NOAUA",
+        "channel": "Tokiko prentsa Prensa local",
+        "euros": 267.25
+      },
+      {
+        "name": "PUNTUA",
+        "channel": "Tokiko prentsa Prensa local",
+        "euros": 242.0
+      },
+      {
+        "name": "TOLOSALDEKOATARIA",
+        "channel": "Tokiko prentsa Prensa local",
+        "euros": 375.1
+      },
+      {
+        "name": "TXINTXARRI",
+        "channel": "Tokiko prentsa Prensa local",
+        "euros": 477.35
+      },
+      {
+        "name": "URUMEAKOKRONIKA",
+        "channel": "Tokiko prentsa Prensa local",
+        "euros": 1815.0
+      },
+      {
+        "name": "ANTXETAIRRATIA",
+        "channel": "Tokiko Irratia - Soinu deia Radio Local - Anuncio",
+        "euros": 508.2
+      },
+      {
+        "name": "ARRASATEIRRATIA",
+        "channel": "Tokiko Irratia - Soinu deia Radio Local - Anuncio",
+        "euros": 406.56
+      },
+      {
+        "name": "ATARIAIRRATIA",
+        "channel": "Tokiko Irratia - Soinu deia Radio Local - Anuncio",
+        "euros": 362.85
+      },
+      {
+        "name": "AIURRI.COM",
+        "channel": "Digitala - Tokiko prentsa (megabanner-a) Digital - Prensa local (megabanner)",
+        "euros": 193.6
+      },
+      {
+        "name": "ANTXETAMEDIA.INFO",
+        "channel": "Digitala - Tokiko prentsa (megabanner-a) Digital - Prensa local (megabanner)",
+        "euros": 181.5
+      },
+      {
+        "name": "BALEIKE.EUS",
+        "channel": "Digitala - Tokiko prentsa (megabanner-a) Digital - Prensa local (megabanner)",
+        "euros": 121.0
+      },
+      {
+        "name": "BARREN.EUS",
+        "channel": "Digitala - Tokiko prentsa (megabanner-a) Digital - Prensa local (megabanner)",
+        "euros": 127.05
+      },
+      {
+        "name": "GOIENA.EUS",
+        "channel": "Digitala - Tokiko prentsa (megabanner-a) Digital - Prensa local (megabanner)",
+        "euros": 310.97
+      },
+      {
+        "name": "KARKARA.EUS",
+        "channel": "Digitala - Tokiko prentsa (megabanner-a) Digital - Prensa local (megabanner)",
+        "euros": 90.75
+      },
+      {
+        "name": "KRONIKA.EUS",
+        "channel": "Digitala - Tokiko prentsa (megabanner-a) Digital - Prensa local (megabanner)",
+        "euros": 121.0
+      },
+      {
+        "name": "MAXIXATZEN.EUS",
+        "channel": "Digitala - Tokiko prentsa (megabanner-a) Digital - Prensa local (megabanner)",
+        "euros": 127.05
+      },
+      {
+        "name": "NOAUA.EUS",
+        "channel": "Digitala - Tokiko prentsa (megabanner-a) Digital - Prensa local (megabanner)",
+        "euros": 133.1
+      },
+      {
+        "name": "PLAENTXIA.EUS",
+        "channel": "Digitala - Tokiko prentsa (megabanner-a) Digital - Prensa local (megabanner)",
+        "euros": 90.75
+      },
+      {
+        "name": "TXINTXARRI.EUS",
+        "channel": "Digitala - Tokiko prentsa (megabanner-a) Digital - Prensa local (megabanner)",
+        "euros": 127.05
+      },
+      {
+        "name": "UZTARRIA.EUS",
+        "channel": "Digitala - Tokiko prentsa (megabanner-a) Digital - Prensa local (megabanner)",
+        "euros": 102.85
+      },
+      {
+        "name": "28KANALA.EUS",
+        "channel": "Digitala - Tokiko prentsa (megabanner-a) Digital - Prensa local (megabanner)",
+        "euros": 235.95
+      },
+      {
+        "name": "ERLOTELEBISTA.EUS",
+        "channel": "Digitala - Tokiko prentsa (megabanner-a) Digital - Prensa local (megabanner)",
+        "euros": 235.95
+      },
+      {
+        "name": "GITB.EUS",
+        "channel": "Digitala - Tokiko prentsa (megabanner-a) Digital - Prensa local (megabanner)",
+        "euros": 235.95
+      }
+    ]
+  },
+  {
+    "id": 5029,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2015,
+    "document": "2015_2.xls",
+    "name": "HAKOBA TXANTXANGORRIAREN KANPAINA CAMPAÑA DEL PETIRROJO HAKOBA",
+    "outlets": [
+      {
+        "name": "EL DIARIO VASCO",
+        "channel": "Digitala (orri hausgarria eta mugikorrerako kortinatxoa) Digital (robapágina y cortinilla para móvil)",
+        "euros": 8318.75
+      },
+      {
+        "name": "NOTICIAS DE GIPUZKOA",
+        "channel": "Digitala (jumbobanner-a eta mugikorrerako banner-a eta kortinatxoa) Digital (jumbobanner y banner y cortinilla para móvil)",
+        "euros": 5445.0
+      },
+      {
+        "name": "EUSKADI GAZTEA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 8016.25
+      }
+    ]
+  },
+  {
+    "id": 5030,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2015,
+    "document": "2015_2.xls",
+    "h2": "KULTURA, TURISMO, GAZTERIA ETA KIROLA / CULTURA, TURISMO, JUVENTUD Y DEPORTES",
+    "name": "KULTURA BONOA",
+    "outlets": [
+      {
+        "name": "EL MUNDO - PAÍS VASCO",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 1331.0
+      },
+      {
+        "name": "EL DIARIO VASCO",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 7406.41
+      },
+      {
+        "name": "EL CORREO",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 1282.3
+      },
+      {
+        "name": "ARGIA",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 726.0
+      },
+      {
+        "name": "BERRIA",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 5148.55
+      },
+      {
+        "name": "NOTICIAS DE GIPUZKOA",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 2268.75
+      },
+      {
+        "name": "DIARIO NORTE",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 2420.0
+      },
+      {
+        "name": "GARA",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 3781.25
+      },
+      {
+        "name": "EITBIrratiak",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 3889.42
+      },
+      {
+        "name": "SERGIPUZKOA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 3504.16
+      },
+      {
+        "name": "ONDA VASCAGIPUZKOA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 948.64
+      },
+      {
+        "name": "COPE",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 3954.28
+      },
+      {
+        "name": "ONDA CERO",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 774.4
+      }
+    ]
+  },
+  {
+    "id": 5031,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2015,
+    "document": "2015_2.xls",
+    "name": "ONDAREA BERTATIK BERTARA",
+    "outlets": [
+      {
+        "name": "SERGIPUZKOA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 841.07
+      },
+      {
+        "name": "EITB",
+        "channel": "Irratia",
+        "euros": 1278.97
+      }
+    ]
+  },
+  {
+    "id": 5032,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2015,
+    "document": "2015_2.xls",
+    "h1": "MUGIKORTASUNA ETA LURRALDE ANTOLAKETA / MOVILIDAD Y ORDENACIÓN DEL TERRITORIO",
+    "name": "MUGIKORTASUN ETA LURRALDE ANTOLAKETAREN BULEGO ALDAKETAK CAMBIO DE OFICINAS DE MOVILIDAD Y ODENACIÓN DEL TERRITORIO",
+    "outlets": [
+      {
+        "name": "EL DIARIO VASCO",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 2090.88
+      },
+      {
+        "name": "SERGIPUZKOA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 1403.6
+      }
+    ]
+  },
+  {
+    "id": 5033,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2015,
+    "document": "2015_2.xls",
+    "name": "AIAN EGINDAKO SANEAMENTU KANPAINA CAMPAÑA DE SANEAMIENTO REALIZADA EN AIA",
+    "outlets": [
+      {
+        "name": "EL DIARIO VASCO",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 542.29
+      },
+      {
+        "name": "NOTICIAS DE GIPUZKOA",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 351.38
+      }
+    ]
+  },
+  {
+    "id": 5034,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2015,
+    "document": "2015_2.xls",
+    "name": "BEIZAMAN EGINDAKO SANEAMENTU KANPAINA CAMPAÑA DE SANEAMIENTO REALIZADA EN BEIZAMA",
+    "outlets": [
+      {
+        "name": "EL DIARIO VASCO",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 813.45
+      },
+      {
+        "name": "NOTICIAS DE GIPUZKOA",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 351.38
+      }
+    ]
+  },
+  {
+    "id": 5035,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2015,
+    "document": "2015_2.xls",
+    "name": "GABIRIAN EGINDAKO SANEAMENTU KANPAINA CAMPAÑA DE SANEAMIENTO REALIZADA EN GABIRIA",
+    "outlets": [
+      {
+        "name": "EL DIARIO VASCO",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 448.18
+      },
+      {
+        "name": "GARA",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 484.0
+      }
+    ]
+  },
+  {
+    "id": 5036,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2015,
+    "document": "2015_2.xls",
+    "name": "GABIRIAN EGINDAKO SANEAMENTU KANPAINAREN OSAGARRIA COMPLEMENTARIO DE LA CAMPAÑA DE SANEAMIENTO REALIZADA EN GABIRIA",
+    "outlets": [
+      {
+        "name": "EL DIARIO VASCO",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 448.18
+      },
+      {
+        "name": "NOTICIAS DE GIPUZKOA",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 326.7
+      }
+    ]
+  },
+  {
+    "id": 5037,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2015,
+    "document": "2015_2.xls",
+    "name": "\".eus\" domeinuari buruzko gehigarrian iragarkia Anuncio en el suplemento sobre \".eus\"",
+    "outlets": [
+      {
+        "name": "BERRIA",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 2014.65
+      }
+    ]
+  },
+  {
+    "id": 5038,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2015,
+    "document": "2015_2.xls",
+    "h2": "INGURUMENA ETA OBRA HIDRAULIKOAK / MEDIO AMBIENTE Y OBRAS HIDRÁULICAS",
+    "name": "ENERGIA JARDUNALDIAK 2015 JORNADAS ENERGÍA 2015",
+    "outlets": [
+      {
+        "name": "EITB",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 1666.89
+      },
+      {
+        "name": "SER",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 560.71
+      },
+      {
+        "name": "EL DIARIO VASCO",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 937.44
+      }
+    ]
+  },
+  {
+    "id": 5039,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2015,
+    "document": "2015_2.xls",
+    "name": "KATAK CATAS",
+    "outlets": [
+      {
+        "name": "EL DIARIO VASCO",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 448.18
+      },
+      {
+        "name": "NOTICIAS DE GIPUZKOA",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 326.7
+      }
+    ]
+  },
+  {
+    "id": 5040,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2015,
+    "document": "2015_2.xls",
+    "h2": "EKONOMINA SUSTAPENA, LANDA INGURUNEA ETA LURRALDE OREKA / PROMOCIÓN ECONÓMICA, MEDIO RURAL Y EQUILIBRIO TERRITORIAL",
+    "name": "Berrikuntza gida 2016an iragarkia. Anuncio en la guía de la Innovación 2016",
+    "outlets": [
+      {
+        "name": "ESTRATEGIA EMPRESARIAL",
+        "channel": "Aldizkari espezializatua Publicación especializada",
+        "euros": 2420.0
+      }
+    ]
+  }
+]

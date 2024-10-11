@@ -1,0 +1,712 @@
+[
+  {
+    "id": 5344,
+    "name": "ETORKIZUNA ERAIKIZ",
+    "department": "Diputación Foral de Gipuzkoa",
+    "document": "2017_2.xlsx",
+    "year": 2017,
+    "outlets": [
+      {
+        "name": "BERRIA.EUS",
+        "channel": "Edukiak Contenidos",
+        "euros": 2722.5
+      },
+      {
+        "name": "NOTICIASDEGIPUZKOA.COM",
+        "channel": "Edukiak Contenidos",
+        "euros": 4537.5
+      },
+      {
+        "name": "DIARIOVASCO.COM",
+        "channel": "Edukiak Contenidos",
+        "euros": 29040.0
+      },
+      {
+        "name": "EITB.eus",
+        "channel": "Edukiak Contenidos",
+        "euros": 3025.0
+      },
+      {
+        "name": "FACEBOOK, RED SOCIAL",
+        "channel": "Edukiak Contenidos",
+        "euros": 1862.38
+      },
+      {
+        "name": "NAIZ.INFO",
+        "channel": "Edukiak Contenidos",
+        "euros": 3630.0
+      },
+      {
+        "name": "GOOGLE",
+        "channel": "Edukiak Contenidos",
+        "euros": 1106.47
+      },
+      {
+        "name": "INSTAGRAM",
+        "channel": "Edukiak Contenidos",
+        "euros": 631.02
+      },
+      {
+        "name": "TWITTER, RED SOCIAL",
+        "channel": "Edukiak Contenidos",
+        "euros": 518.58
+      },
+      {
+        "name": "YOU TUBE",
+        "channel": "Edukiak Contenidos",
+        "euros": 2239.76
+      },
+      {
+        "name": "BERRIA",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 2722.5
+      },
+      {
+        "name": "NOTICIAS DE GIPUZKOA",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 4939.22
+      },
+      {
+        "name": "EL DIARIO VASCO",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 5649.79
+      },
+      {
+        "name": "GARA",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 3775.2
+      },
+      {
+        "name": "COPE San Sebastián",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 1004.37
+      },
+      {
+        "name": "RADIO EUSKADI",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 3103.65
+      },
+      {
+        "name": "EUSKADI IRRATIA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 1905.75
+      },
+      {
+        "name": "ONDA CERO DONOSTIA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 974.66
+      },
+      {
+        "name": "ONDA VASCA GIPUZKOA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 1057.06
+      },
+      {
+        "name": "SER GIPUZKOA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 3862.32
+      },
+      {
+        "name": "EUSKAL TELEBISTA",
+        "channel": "Telebista - Iragarkiak Televisión  - Anuncios",
+        "euros": 968.0
+      }
+    ]
+  },
+  {
+    "id": 5345,
+    "name": "BIOLENTZIA MATXISTAREN AURKAKO PLANA",
+    "department": "Diputación Foral de Gipuzkoa",
+    "document": "2017_2.xlsx",
+    "year": 2017,
+    "outlets": [
+      {
+        "name": "GOOGLE",
+        "channel": "Edukiak Contenidos",
+        "euros": 2048.26
+      },
+      {
+        "name": "BERRIA",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 2082.71
+      },
+      {
+        "name": "NOTICIAS DE GIPUZKOA",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 2008.66
+      },
+      {
+        "name": "EL DIARIO VASCO",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 3184.7
+      },
+      {
+        "name": "GARA",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 3397.68
+      },
+      {
+        "name": "RADIO EUSKADI",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 2904.0
+      },
+      {
+        "name": "EUSKADI IRRATIA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 1542.75
+      },
+      {
+        "name": "GAZTEA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 1149.5
+      },
+      {
+        "name": "ONDA VASCA GIPUZKOA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 935.94
+      },
+      {
+        "name": "SER GIPUZKOA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 2498.65
+      }
+    ]
+  },
+  {
+    "id": 5346,
+    "name": "EXPLORE SAN SEBASTIAN REGION ESKUALDEEN TXOKOA",
+    "department": "Diputación Foral de Gipuzkoa",
+    "document": "2017_2.xlsx",
+    "year": 2017,
+    "outlets": [
+      {
+        "name": "EL MUNDO DE LOS PIRINEOS",
+        "channel": "Aldizkari espezializatua Publicación especializada",
+        "euros": 1210.0
+      },
+      {
+        "name": "EUSKADI IRRATIA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 508.2
+      },
+      {
+        "name": "EUSKADI IRRATIA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 450.04
+      },
+      {
+        "name": "RADIO EUSKADI",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 450.04
+      },
+      {
+        "name": "EUSKADI IRRATIA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 647.59
+      },
+      {
+        "name": "RADIO EUSKADI",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 450.04
+      },
+      {
+        "name": "EUSKADI IRRATIA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 660.66
+      },
+      {
+        "name": "EUSKADI IRRATIA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 248.29
+      },
+      {
+        "name": "EUSKADI IRRATIA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 399.3
+      },
+      {
+        "name": "RADIO EUSKADI",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 450.04
+      },
+      {
+        "name": "RADIO EUSKADI",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 449.71
+      },
+      {
+        "name": "REVISTA HOSTELERÍA",
+        "channel": "Aldizkari espezializatua Publicación especializada",
+        "euros": 907.5
+      }
+    ]
+  },
+  {
+    "id": 5347,
+    "name": "META KANPAINA",
+    "department": "Diputación Foral de Gipuzkoa",
+    "document": "2017_2.xlsx",
+    "year": 2017,
+    "outlets": [
+      {
+        "name": "CADENA SER",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 1893.06
+      }
+    ]
+  },
+  {
+    "id": 5348,
+    "name": "FISKALITATEA",
+    "department": "Diputación Foral de Gipuzkoa",
+    "document": "2017_2.xlsx",
+    "year": 2017,
+    "outlets": [
+      {
+        "name": "FACEBOOK, RED SOCIAL",
+        "channel": "Edukiak Contenidos",
+        "euros": 1214.82
+      },
+      {
+        "name": "INSTAGRAM",
+        "channel": "Edukiak Contenidos",
+        "euros": 721.47
+      },
+      {
+        "name": "TWITTER, RED SOCIAL",
+        "channel": "Edukiak Contenidos",
+        "euros": 357.87
+      }
+    ]
+  },
+  {
+    "id": 5349,
+    "name": "HERRIZ HERRI",
+    "department": "Diputación Foral de Gipuzkoa",
+    "document": "2017_2.xlsx",
+    "year": 2017,
+    "outlets": [
+      {
+        "name": "ONDA VASCA GIPUZKOA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 3872.0
+      }
+    ]
+  },
+  {
+    "id": 5350,
+    "name": "ORAIN GIPUZKOA",
+    "department": "Diputación Foral de Gipuzkoa",
+    "document": "2017_2.xlsx",
+    "year": 2017,
+    "outlets": [
+      {
+        "name": "THE KARMA ALDIZKARIA",
+        "channel": "Aldizkari espezializatua Publicación especializada",
+        "euros": 1347.63
+      }
+    ]
+  },
+  {
+    "id": 5351,
+    "name": "KILOMETROAK",
+    "department": "Diputación Foral de Gipuzkoa",
+    "document": "2017_2.xlsx",
+    "year": 2017,
+    "outlets": [
+      {
+        "name": "KILOMETROAK KULTUR ELKARTEA",
+        "channel": "Babesletza Patrocinio",
+        "euros": 19965.0
+      }
+    ]
+  },
+  {
+    "id": 5352,
+    "name": "ITSAS TANTAK",
+    "department": "Diputación Foral de Gipuzkoa",
+    "document": "2017_2.xlsx",
+    "year": 2017,
+    "outlets": [
+      {
+        "name": "ONDA VASCA GIPUZKOA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 4537.5
+      }
+    ]
+  },
+  {
+    "id": 5353,
+    "name": "HIRITARREN TERTULIA",
+    "department": "Diputación Foral de Gipuzkoa",
+    "document": "2017_2.xlsx",
+    "year": 2017,
+    "outlets": [
+      {
+        "name": "ONDA VASCA GIPUZKOA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 6050.0
+      }
+    ]
+  },
+  {
+    "id": 5354,
+    "name": "GIPUZKOA EREDU PROGRAMA",
+    "department": "Diputación Foral de Gipuzkoa",
+    "document": "2017_2.xlsx",
+    "year": 2017,
+    "outlets": [
+      {
+        "name": "TELEDONOSTI",
+        "channel": "Telebista - Iragarkiak Televisión  - Anuncios",
+        "euros": 4537.5
+      },
+      {
+        "name": "28 KANALA",
+        "channel": "Telebista - Iragarkiak Televisión  - Anuncios",
+        "euros": 3267.0
+      },
+      {
+        "name": "GOIERRI IRRATI TELEBISTA - GOIHERRIKO IKUSKARI, SL",
+        "channel": "Irrati-Telebista - Iragarkiak Radio-Televisión  - Anuncios",
+        "euros": 3267.0
+      }
+    ]
+  },
+  {
+    "id": 5355,
+    "name": "GFAREN PUBLIZITATEA, EDUKIAK ETA HAIZATZEA",
+    "department": "Diputación Foral de Gipuzkoa",
+    "document": "2017_2.xlsx",
+    "year": 2017,
+    "outlets": [
+      {
+        "name": "ZUZEU.EUS",
+        "channel": "Digitala Digital",
+        "euros": 4356.0
+      }
+    ]
+  },
+  {
+    "id": 5356,
+    "name": "ELKARREKIN SAIOA",
+    "department": "Diputación Foral de Gipuzkoa",
+    "document": "2017_2.xlsx",
+    "year": 2017,
+    "outlets": [
+      {
+        "name": "11 TELEBISTA",
+        "channel": "Telebista - Iragarkiak Televisión  - Anuncios",
+        "euros": 9075.0
+      }
+    ]
+  },
+  {
+    "id": 5357,
+    "name": "GIPUZKOA, MUSEOS INFINITOS",
+    "department": "Diputación Foral de Gipuzkoa",
+    "document": "2017_2.xlsx",
+    "year": 2017,
+    "outlets": [
+      {
+        "name": "GIPUZKOA TOUR ALDIZKARIA",
+        "channel": "Aldizkari espezializatua Publicación especializada",
+        "euros": 3363.8
+      }
+    ]
+  },
+  {
+    "id": 5358,
+    "name": "ERREPORTAJE ETA SPOTAK: CANAL EUROPA, ZINE ESKOLA, UNTZI MUSEO ETA EXPO TURISMO",
+    "department": "Diputación Foral de Gipuzkoa",
+    "document": "2017_2.xlsx",
+    "year": 2017,
+    "outlets": [
+      {
+        "name": "11 TELEBISTA",
+        "channel": "Telebista - Iragarkiak Televisión  - Anuncios",
+        "euros": 4840.0
+      }
+    ]
+  },
+  {
+    "id": 5359,
+    "name": "HXH EUSKADI TURISMO",
+    "department": "Diputación Foral de Gipuzkoa",
+    "document": "2017_2.xlsx",
+    "year": 2017,
+    "outlets": [
+      {
+        "name": "CADENA SER",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 10890.0
+      }
+    ]
+  },
+  {
+    "id": 5360,
+    "name": "CLASICA SS",
+    "department": "Diputación Foral de Gipuzkoa",
+    "document": "2017_2.xlsx",
+    "year": 2017,
+    "outlets": [
+      {
+        "name": "EUSKAL TELEBISTA",
+        "channel": "Telebista - Iragarkiak Televisión  - Anuncios",
+        "euros": 3025.0
+      }
+    ]
+  },
+  {
+    "id": 5361,
+    "name": "P.EMISION: 07-07/07/2017 (JUVENTUD Y DEPORTES)",
+    "department": "Diputación Foral de Gipuzkoa",
+    "document": "2017_2.xlsx",
+    "year": 2017,
+    "outlets": [
+      {
+        "name": "ONDA CERO DONOSTIA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 21175.0
+      }
+    ]
+  },
+  {
+    "id": 5362,
+    "name": "DV KIROLAK",
+    "department": "Diputación Foral de Gipuzkoa",
+    "document": "2017_2.xlsx",
+    "year": 2017,
+    "outlets": [
+      {
+        "name": "CM GIPUZKOA, SL",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 29697.94
+      }
+    ]
+  },
+  {
+    "id": 5363,
+    "name": "SUPLEMENTO DE FIESTAS VASCAS",
+    "department": "Diputación Foral de Gipuzkoa",
+    "document": "2017_2.xlsx",
+    "year": 2017,
+    "outlets": [
+      {
+        "name": "HEMEN ALDIZKARIA",
+        "channel": "Aldizkaria Revista",
+        "euros": 1028.5
+      }
+    ]
+  },
+  {
+    "id": 5364,
+    "name": "ESPECIAL TURISMO",
+    "department": "Diputación Foral de Gipuzkoa",
+    "document": "2017_2.xlsx",
+    "year": 2017,
+    "outlets": [
+      {
+        "name": "EL MUNDO",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 1815.0
+      }
+    ]
+  },
+  {
+    "id": 5365,
+    "name": "INSERCION PUBLICITARIA",
+    "department": "Diputación Foral de Gipuzkoa",
+    "document": "2017_2.xlsx",
+    "year": 2017,
+    "outlets": [
+      {
+        "name": "REAL SOCIEDAD",
+        "channel": "Aldizkari espezializatua Publicación especializada",
+        "euros": 1270.5
+      }
+    ]
+  },
+  {
+    "id": 5366,
+    "name": "FALDONES DE PUBLICIDAD",
+    "department": "Diputación Foral de Gipuzkoa",
+    "document": "2017_2.xlsx",
+    "year": 2017,
+    "outlets": [
+      {
+        "name": "TELEDONOSTI",
+        "channel": "Telebista - Iragarkiak Televisión  - Anuncios",
+        "euros": 4235.0
+      }
+    ]
+  },
+  {
+    "id": 5367,
+    "name": "SUPLEMENTO SALUD",
+    "department": "Diputación Foral de Gipuzkoa",
+    "document": "2017_2.xlsx",
+    "year": 2017,
+    "outlets": [
+      {
+        "name": "EL DIARIO VASCO",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 4235.0
+      }
+    ]
+  },
+  {
+    "id": 5368,
+    "name": "SAN SEBASTIANAK 2017",
+    "department": "Diputación Foral de Gipuzkoa",
+    "document": "2017_2.xlsx",
+    "year": 2017,
+    "outlets": [
+      {
+        "name": "ERLO TELEBISTA - UROLALDEKO KOMUNIKABIDEAK, S.L.",
+        "channel": "Telebista - Iragarkiak Televisión  - Anuncios",
+        "euros": 242.0
+      }
+    ]
+  },
+  {
+    "id": 5369,
+    "name": "ASTE NAGUSIA 2017",
+    "department": "Diputación Foral de Gipuzkoa",
+    "document": "2017_2.xlsx",
+    "year": 2017,
+    "outlets": [
+      {
+        "name": "TELEDONOSTI",
+        "channel": "Telebista - Iragarkiak Televisión  - Anuncios",
+        "euros": 3025.0
+      }
+    ]
+  },
+  {
+    "id": 5370,
+    "name": "FALDONES DE PUBLICIDAD",
+    "department": "Diputación Foral de Gipuzkoa",
+    "document": "2017_2.xlsx",
+    "year": 2017,
+    "outlets": [
+      {
+        "name": "TELEDONOSTI",
+        "channel": "Telebista - Iragarkiak Televisión  - Anuncios",
+        "euros": 4235.0
+      }
+    ]
+  },
+  {
+    "id": 5371,
+    "name": "LANDABERRI PROGRAMA",
+    "department": "Diputación Foral de Gipuzkoa",
+    "document": "2017_2.xlsx",
+    "year": 2017,
+    "outlets": [
+      {
+        "name": "EUSKO IRRATIA - RADIODIFUSION VASCA, SA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 1815.0
+      }
+    ]
+  },
+  {
+    "id": 5372,
+    "name": "ORAIN GIPUZKOA",
+    "department": "Diputación Foral de Gipuzkoa",
+    "document": "2017_2.xlsx",
+    "year": 2017,
+    "outlets": [
+      {
+        "name": "ENBA",
+        "channel": "Aldizkari espezializatua Publicación especializada",
+        "euros": 1058.78
+      }
+    ]
+  },
+  {
+    "id": 5373,
+    "name": "EHUNMILAK ULTRATRAIL 2017",
+    "department": "Diputación Foral de Gipuzkoa",
+    "document": "2017_2.xlsx",
+    "year": 2017,
+    "outlets": [
+      {
+        "name": "GOIERRI IRRATI TELEBISTA - GOIHERRIKO IKUSKARI, SL",
+        "channel": "Irrati-Telebista - Iragarkiak Radio-Televisión  - Anuncios",
+        "euros": 242.0
+      }
+    ]
+  },
+  {
+    "id": 5374,
+    "name": "ITURRARANGO LANDARE BEREZIEN AZOKA",
+    "department": "Diputación Foral de Gipuzkoa",
+    "document": "2017_2.xlsx",
+    "year": 2017,
+    "outlets": [
+      {
+        "name": "ARRATE IRRATIA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 242.0
+      }
+    ]
+  },
+  {
+    "id": 5375,
+    "name": "ORAIN INDUSTRI4.0. LAUGARREN INDUSTRIA-IRAULTZARAKO PREST",
+    "department": "Diputación Foral de Gipuzkoa",
+    "document": "2017_2.xlsx",
+    "year": 2017,
+    "outlets": [
+      {
+        "name": "EL DIARIO VASCO",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 5445.0
+      }
+    ]
+  },
+  {
+    "id": 5376,
+    "name": "ESPECIAL INNOVACIÓN",
+    "department": "Diputación Foral de Gipuzkoa",
+    "document": "2017_2.xlsx",
+    "year": 2017,
+    "outlets": [
+      {
+        "name": "NOTICIAS DE GIPUZKOA",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 3516.26
+      }
+    ]
+  },
+  {
+    "id": 5377,
+    "name": "ORAIN AZPIEGITURAK",
+    "department": "Diputación Foral de Gipuzkoa",
+    "document": "2017_2.xlsx",
+    "year": 2017,
+    "outlets": [
+      {
+        "name": "BERRIA",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 1826.34
+      }
+    ]
+  },
+  {
+    "id": 5378,
+    "name": "CURSOS BICICLETA",
+    "department": "Diputación Foral de Gipuzkoa",
+    "document": "2017_2.xlsx",
+    "year": 2017,
+    "outlets": [
+      {
+        "name": "SOCIEDAD ESPAÑOLA DE RADIODIFUSION, S.L.",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 274.34
+      }
+    ]
+  }
+]

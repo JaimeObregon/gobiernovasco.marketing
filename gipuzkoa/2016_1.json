@@ -1,0 +1,889 @@
+[
+  {
+    "id": 5097,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "h1": "DIPUTATU NAGUSIA / DIPUTADO GENERAL",
+    "name": "HERRIZ HERRI KANPAINA",
+    "outlets": [
+      {
+        "name": "ONDA VASCA GIPUZKOA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 2904.0
+      }
+    ]
+  },
+  {
+    "id": 5098,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "h2": "KULTURA, TURISMO, GAZTERIA ETA KIROLA / CULTURA, TURISMO, JUVENTUD Y DEPORTES",
+    "name": "KULTURA BONOA",
+    "outlets": [
+      {
+        "name": "NOTICIAS DE GIPUZKOA",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 2268.75
+      },
+      {
+        "name": "EUSKADI IRRATIA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 2222.53
+      },
+      {
+        "name": "EL MUNDO.ES",
+        "channel": "Digitala - Estatuko prentsa Digital - Prensa estatal",
+        "euros": 544.5
+      },
+      {
+        "name": "EL MUNDO",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 786.5
+      },
+      {
+        "name": "GAZTEA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 813.12
+      },
+      {
+        "name": "RADIO EUSKADI",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 1992.14
+      }
+    ]
+  },
+  {
+    "id": 5099,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "CAMPAÑA META!",
+    "outlets": [
+      {
+        "name": "SIGNOS DE IDENTIDAD, S.L.",
+        "channel": "Moldaketak/Prentsa-Iragarkiak/Irratia-Soinu deia Adaptaciones/Prensa-Anuncios/Radio-Anuncio",
+        "euros": 21652.95
+      }
+    ]
+  },
+  {
+    "id": 5100,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "h2": "EKONOMIA SUSTAPENA, LANDA INGURUNEA ETA LURRALDE OREKA / PROMOCIÓN ECONÓMICA, MEDIO RURAL Y EQUILIBRIO TERRITORIAL",
+    "name": "SAGARDOTEGIAK 2016",
+    "outlets": [
+      {
+        "name": "GARA",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 1089.0
+      },
+      {
+        "name": "NOTICIAS DE GIPUZKOA",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 2268.75
+      },
+      {
+        "name": "EL DIARIO VASCO",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 1815.0
+      },
+      {
+        "name": "BERRIA",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 1089.0
+      }
+    ]
+  },
+  {
+    "id": 5101,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "HERRIZ- HERRI KANPAINA",
+    "outlets": [
+      {
+        "name": "ONDA VASCA GIPUZKOA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 5808.0
+      }
+    ]
+  },
+  {
+    "id": 5102,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "h2": "MUGIKORTASUNA ETA LURRALDE ANTOLAKETA / MOVILIDAD Y ORDENACIÓN DEL TERRITORIO",
+    "name": "LURRALDEBUS KANPAINA",
+    "outlets": [
+      {
+        "name": "EL DIARIO VASCO",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 3630.0
+      },
+      {
+        "name": "GAZTEA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 1045.44
+      },
+      {
+        "name": "RADIO EUSKADI",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 4791.78
+      },
+      {
+        "name": "EUSKADI IRRATIA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 2555.52
+      },
+      {
+        "name": "NOTICIAS DE GIPUZKOA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 3630.0
+      },
+      {
+        "name": "CADENA SER",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 2967.46
+      }
+    ]
+  },
+  {
+    "id": 5103,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "h2": "OGASUNA ETA FINANTZAK / HACIENDA Y FINANZAS",
+    "name": "ERRENTA 2015 KANPAINA",
+    "outlets": [
+      {
+        "name": "PUBLICIDAD HEDATU S.L.",
+        "channel": "Tokiko prentsa Prensa local",
+        "euros": 72592.63
+      },
+      {
+        "name": "LAPRODUCER PRODUCCION AUDIOVISUAL S.L.U.",
+        "channel": "Kanpainaren produkzio eta grabaketa. Musika eskubideak. Producción y grabación de campaña. Derechos musicales.",
+        "euros": 1790.8
+      },
+      {
+        "name": "KARMA ALDIZKARIA",
+        "channel": "Aldizkari espezializatua Publicación especializada",
+        "euros": 1347.63
+      },
+      {
+        "name": "DRUCK SERVICIOS GRAFICOS, S.L.U.",
+        "channel": "Kartel eta egitura horniketa Suministro de carteles y estructuras",
+        "euros": 7550.4
+      },
+      {
+        "name": "LAPRODUCER PRODUCCION AUDIOVISUAL S.L.U.",
+        "channel": "Bideoak eta aretoak (Errenta 2015) Vídeos y salas (Renta 2015)",
+        "euros": 3509.0
+      }
+    ]
+  },
+  {
+    "id": 5104,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "h2": "GIZARTE POLITIKAK / POLÍTICAS SOCIALES",
+    "name": "HIRITARREN TERTULIA KANPAINA",
+    "outlets": [
+      {
+        "name": "ONDA VASCA GIPUZKOA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 1512.5
+      }
+    ]
+  },
+  {
+    "id": 5105,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "h2": "INGURUMENA ETA OBRA HIDRAULIKOAK / MEDIO AMBIENTE Y OBRAS HIDRÁULICAS",
+    "name": "ENERGIA JARDUNALDIAK 2015 JORNADAS ENERGÍA 2015",
+    "outlets": [
+      {
+        "name": "EL DIARIO VASCO",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 937.45
+      }
+    ]
+  },
+  {
+    "id": 5106,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "h1": "DIPUTATU NAGUSIA / DIPUTADO GENERAL",
+    "name": "ARGIA SARIAK",
+    "outlets": [
+      {
+        "name": "ARGIA",
+        "channel": "Babesletza Patrocinio",
+        "euros": 1694.0
+      }
+    ]
+  },
+  {
+    "id": 5107,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "DANBORRADA EGUNA UDALETXETIK 2016 DíA DE LA TAMBORRADA DESDE EL AYUNTAMIENTO 2016",
+    "outlets": [
+      {
+        "name": "ONDA VASCA GIPUZKOA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 1815.0
+      }
+    ]
+  },
+  {
+    "id": 5108,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "EGUTEGIAREN EGUNEKO ORRIA (2016) HOJA DIARIA DEL CALENDARIO (2016)",
+    "outlets": [
+      {
+        "name": "ARRATE IRRATIA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 3630.0
+      }
+    ]
+  },
+  {
+    "id": 5109,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "DIPUTATU NAGUSIAREN GABONETAKO AGURRA SALUDO NAVIDEÑO BILINGUE DEL DIPUTADO GENERAL",
+    "outlets": [
+      {
+        "name": "TELEDONOSTI",
+        "channel": "Telebista - Iragarkiak Televisión  - Anuncios",
+        "euros": 8228.0
+      }
+    ]
+  },
+  {
+    "id": 5110,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "25 URTE. EUSKARA BIHOTZETIK PLAZARA ERAMATEN. ZORIONAK!",
+    "outlets": [
+      {
+        "name": "BERTSOLARI ALDIZKARIA",
+        "channel": "Aldizkari espezializatua Publicación especializada",
+        "euros": 2178.0
+      }
+    ]
+  },
+  {
+    "id": 5111,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "EUSKARARI BURUZKO IRAGARKIA",
+    "outlets": [
+      {
+        "name": "BERTSOLARI.NET",
+        "channel": "Digitala - Aldizkari espezializatua (banner-a) Digital - Publicación especializada (banner)",
+        "euros": 3025.0
+      }
+    ]
+  },
+  {
+    "id": 5112,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "SEASKAREN EKITALDIA ACTO DE SEASKA",
+    "outlets": [
+      {
+        "name": "SEASKA ELKARTEA",
+        "channel": "Babesletza Patrocinio",
+        "euros": 4114.0
+      }
+    ]
+  },
+  {
+    "id": 5113,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "ALDUNDIAREN IRAGARKI KORPORATIBOA. ORAIN GIPUZKOA",
+    "outlets": [
+      {
+        "name": "ANTXETA IRRATIA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 4000.0
+      }
+    ]
+  },
+  {
+    "id": 5114,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "ALDUNDIAREN IRAGARKI KORPORATIBOA. ORAIN GIPUZKOA",
+    "outlets": [
+      {
+        "name": "PUNTUA ASTEKARIA",
+        "channel": "Tokiko prentsa Prensa local",
+        "euros": 1403.6
+      }
+    ]
+  },
+  {
+    "id": 5115,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "HAUR FESTA ETA MENDI LASTERKETA FIESTA INFANTIL Y CARRERA DE MONTAÑA",
+    "outlets": [
+      {
+        "name": "AIURRI (Andoain,Urnieta)",
+        "channel": "Tokiko prentsa Prensa local",
+        "euros": 1089.0
+      }
+    ]
+  },
+  {
+    "id": 5116,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "ORAIN GIPUZKOA. MUTRIKUKO ASIER ILLARRAMENDI KANPUSA",
+    "outlets": [
+      {
+        "name": "ESPARBELA, S.L.",
+        "channel": "Babesletza Patrocinio",
+        "euros": 2420.0
+      }
+    ]
+  },
+  {
+    "id": 5117,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "DANBORRADA 2016 TAMBORRADA 2016",
+    "outlets": [
+      {
+        "name": "TELEDONOSTI",
+        "channel": "Telebista - Iragarkiak Televisión  - Anuncios",
+        "euros": 2541.0
+      }
+    ]
+  },
+  {
+    "id": 5118,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "KILOMETROAK 2016",
+    "outlets": [
+      {
+        "name": "KILOMETROAK KULTUR ELKARTEA",
+        "channel": "Babesletza (publizitatea, balizatzeko zinta, iragarkiak, kamisetak) Patrocinio (publicidad, cinta para balizar, anuncios, camisetas)",
+        "euros": 19965.0
+      }
+    ]
+  },
+  {
+    "id": 5119,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "EXPLORE SAN SEBASTIAN REGION",
+    "outlets": [
+      {
+        "name": "NEWSWEEK ALDIZKARIA",
+        "channel": "Atzerriko aldizkari espezializatua Publicación extranjera especializada",
+        "euros": 10285.0
+      }
+    ]
+  },
+  {
+    "id": 5120,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "EXPLORE SAN SEBASTIAN REGION",
+    "outlets": [
+      {
+        "name": "WASHINGTON POST",
+        "channel": "Atzerriko prentsa Prensa extranjera",
+        "euros": 21780.0
+      }
+    ]
+  },
+  {
+    "id": 5121,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "ORAIN ELKARBIZITZA",
+    "outlets": [
+      {
+        "name": "TAXI EN RUTA ALDIZKARIA",
+        "channel": "Aldizkari espezializatua Publicación especializada",
+        "euros": 2178.0
+      }
+    ]
+  },
+  {
+    "id": 5122,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "ETORKIZUNA ERAIKIZ",
+    "outlets": [
+      {
+        "name": "PUBLICIDAD HEDATU, S.L.",
+        "channel": "Sare sozialak-Iragarkiak Redes sociales-Anuncios",
+        "euros": 5415.96
+      }
+    ]
+  },
+  {
+    "id": 5123,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "h2": "KULTURA, TURISMO, GAZTERIA ETA KIROLA / CULTURA, TURISMO, JUVENTUD Y DEPORTES",
+    "name": "VISIT GIPUZKOA.NET",
+    "outlets": [
+      {
+        "name": "GIPUZKOA TOUR",
+        "channel": "Aldizkari espezializatua Publicación especializada",
+        "euros": 3363.8
+      }
+    ]
+  },
+  {
+    "id": 5124,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "KOLDO MITXELENA",
+    "outlets": [
+      {
+        "name": "ARGIA",
+        "channel": "Digitala - Tokiko prentsa (megabanner-a) Digital - Prensa local (megabanner)",
+        "euros": 490.05
+      }
+    ]
+  },
+  {
+    "id": 5125,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "VISIT GIPUZKOA.EUS - GUIDE GASTRONOMIQUE ET TOURISTIQUE DE GIPUZKOA",
+    "outlets": [
+      {
+        "name": "SUD OUEST",
+        "channel": "Atzerriko prentsa Prensa extranjera",
+        "euros": 2178.0
+      }
+    ]
+  },
+  {
+    "id": 5126,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "VII. LIGA ETA TXAPELKETA. GIPUZKOA NESKEN ESTROPADAK VII LIGA Y CPTO. GIPUZKOA TRAINERAS FEMENINAS",
+    "outlets": [
+      {
+        "name": "GIPUZKOAKO ARRAUNKETA FEDERAZIOA",
+        "channel": "Babesletza Patrocinio",
+        "euros": 13000.0
+      }
+    ]
+  },
+  {
+    "id": 5127,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "GIPUZKOAKO IZKUTUKO ALTXORRAK TESOROS SECRETOS DE GIPUZKOA",
+    "outlets": [
+      {
+        "name": "EL DIARIO VASCO",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 4235.0
+      }
+    ]
+  },
+  {
+    "id": 5128,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "EXPLORE SAN SEBASTIAN REGION",
+    "outlets": [
+      {
+        "name": "GIPUZKOA TOUR",
+        "channel": "Aldizkari espezializatua Publicación especializada",
+        "euros": 3363.8
+      }
+    ]
+  },
+  {
+    "id": 5129,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "DONOSTIA GEHIGARRIA/GIPUZKOAKO FORU ALDUNDIA SUPLEMENTO SAN SEBASTIAN / DIPUTACION FORAL DE GIPUZKOA",
+    "outlets": [
+      {
+        "name": "SUD OUEST",
+        "channel": "Atzerriko prentsa Prensa extranjera",
+        "euros": 4235.0
+      }
+    ]
+  },
+  {
+    "id": 5130,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "UNTZI MUSEOA. EMAKUMEAK ETA ITSASOA ERAKUSKETA MUSEO NAVAL. EXPOSICIÓN LAS MUJERES Y EL MAR KOLDO MITXELENA. DIEGO MATXINBARRENAREN ERAKUSKETA KOLDO MITXELENA. EXPOSICIÓN DE DIEGO MATXINBARRENA META! EGIN ¡TÚ PUEDES HACER META!",
+    "outlets": [
+      {
+        "name": "KMON 2016 ALDIZKARIA",
+        "channel": "Aldizkari espezializatua Publicación especializada",
+        "euros": 7986.0
+      }
+    ]
+  },
+  {
+    "id": 5131,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "EXPLORE SAN SEBASTIAN REGION",
+    "outlets": [
+      {
+        "name": "LA POSTE ROUEN",
+        "channel": "Imprimaketa Impresión",
+        "euros": 12473.96
+      },
+      {
+        "name": "LA POSTE ROUEN",
+        "channel": "Buzoietan banatzea Buzoneo",
+        "euros": 2904.0
+      }
+    ]
+  },
+  {
+    "id": 5132,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "EXPLORE SAN SEBASTIAN REGION",
+    "outlets": [
+      {
+        "name": "EL MUNDO DE LOS PIRINEOS ALDIZKARIA",
+        "channel": "Aldizkari espezializatua Publicación especializada",
+        "euros": 1510.08
+      }
+    ]
+  },
+  {
+    "id": 5133,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "SUPLEMENTO PAYS BASQUE",
+    "outlets": [
+      {
+        "name": "SUD OUEST",
+        "channel": "Atzerriko prentsa Prensa extranjera",
+        "euros": 1694.0
+      }
+    ]
+  },
+  {
+    "id": 5134,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "GAU PARALINPIKOA NOCHE PARALIMPICA",
+    "outlets": [
+      {
+        "name": "FEDERACION VASCA DE DEPORTE ADAPTADO",
+        "channel": "Babesletza Patrocinio",
+        "euros": 5000.0
+      }
+    ]
+  },
+  {
+    "id": 5135,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "KOLDO MITXELENA. DIEGO MATXINBARRENAREN ERAKUSKETA KOLDO MITXELENA. EXPOSICIÓN DE DIEGO MATXINBARRENA TRUKE.EU. BIGARREN ESKU ETA TRUKERAKO SARE SOZIALA TRUKE.EU. RED SOCIAL PARA SEGUNDA MANO E INTERCAMBIO",
+    "outlets": [
+      {
+        "name": "THE BALDE ALDIZKARIA",
+        "channel": "Aldizkari espezializatua Publicación especializada",
+        "euros": 605.0
+      }
+    ]
+  },
+  {
+    "id": 5136,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "EH GIDA 2016",
+    "outlets": [
+      {
+        "name": "GARA",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 2359.5
+      }
+    ]
+  },
+  {
+    "id": 5137,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "h2": "GOBERNANTZA ETA GIZARTEAREKIKO KOMUNIKAZIOA / GOBERNANZA Y COMUNICACIÓN CON LA SOCIEDAD",
+    "name": "AZPEITIAKO SEBASTIANAK",
+    "outlets": [
+      {
+        "name": "ERLO TELEBISTA",
+        "channel": "Tokiko telebista - Iragarkiak Televisión local  - Anuncios",
+        "euros": 181.5
+      }
+    ]
+  },
+  {
+    "id": 5138,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "TOLOSAKO INAUTERIAK 2016",
+    "outlets": [
+      {
+        "name": "28 KANALA",
+        "channel": "Tokiko telebista - Iragarkiak Televisión local  - Anuncios",
+        "euros": 302.5
+      }
+    ]
+  },
+  {
+    "id": 5139,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "HERRITARREN PARTAIDETZA PARTICIPACIÓN CIUDADANA",
+    "outlets": [
+      {
+        "name": "LAPRODUCER PRODUCCION AUDIOVISUAL S.L.U.",
+        "channel": "Ikus-entzunezko ekoizpena Producción audiovisual",
+        "euros": 1573.0
+      }
+    ]
+  },
+  {
+    "id": 5140,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "ORAIN GIPUZKOA",
+    "outlets": [
+      {
+        "name": "GRABOLASER CONSULTING, S.L.",
+        "channel": "USB memorietan laser grabaketa Grabako láser de memorias USB  ",
+        "euros": 290.4
+      }
+    ]
+  },
+  {
+    "id": 5141,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "ORAIN GIPUZKOA",
+    "outlets": [
+      {
+        "name": "VARELA IMPRESION GRAFICA, S.L.",
+        "channel": "Zabalgarria Desplegable (175,01x14,8)",
+        "euros": 647.35
+      }
+    ]
+  },
+  {
+    "id": 5142,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "h2": "EKONOMIA SUSTAPENA, LANDA INGURUNEA ETA LURRALDE OREKA / PROMOCIÓN ECONÓMICA, MEDIO RURAL Y EQUILIBRIO TERRITORIAL",
+    "name": "LANDABERRI 2015-2016",
+    "outlets": [
+      {
+        "name": "EUSKADI IRRATIA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 3630.0
+      }
+    ]
+  },
+  {
+    "id": 5143,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "ORAIN GIPUZKOA. GEHIGARRI BEREZIA: BERRIKUNTZA ORAIN GIPUZKOA. SUPLEMENTO ESPECIAL INNOVACION",
+    "outlets": [
+      {
+        "name": "NOTICIAS DE GIPUZKOA",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 2268.75
+      }
+    ]
+  },
+  {
+    "id": 5144,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "ONGI ETORRI (2016)",
+    "outlets": [
+      {
+        "name": "SUD OUEST",
+        "channel": "Atzerriko prentsa Prensa extranjera",
+        "euros": 1512.5
+      }
+    ]
+  },
+  {
+    "id": 5145,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "TOLOSA ENCOUNTER 2016",
+    "outlets": [
+      {
+        "name": "ONDA VASCA GIPUZKOA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 847.0
+      }
+    ]
+  },
+  {
+    "id": 5146,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "GEHIGARRI BEREZIA EKINTZAILETZA SUPLEMENTO ESPECIAL EMPRENDIZAJE",
+    "outlets": [
+      {
+        "name": "NOTICIAS DE GIPUZKOA",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 1089.0
+      }
+    ]
+  },
+  {
+    "id": 5147,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "EUSKADIKO KOMERTZIOA SUSTATZEN \"APOYAMOS AL COMERCIO EN EUSKADI\"",
+    "outlets": [
+      {
+        "name": "ONDA VASCA GIPUZKOA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 1089.0
+      }
+    ]
+  },
+  {
+    "id": 5148,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "BERRIKUNTZAREN ALDEKO APUSTUA APUESTA POR LA INNOVACIÓN",
+    "outlets": [
+      {
+        "name": "EDITORA DEL PAIS VASCO 93, S.A.",
+        "channel": "Aldizkari espezializatua Publicación especializada",
+        "euros": 3025.0
+      }
+    ]
+  },
+  {
+    "id": 5149,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "h2": "GIZARTE POLITIKAK / POLÍTICAS SOCIALES",
+    "name": "PROGRAMA \"NUNCA SERAS TAN JOVEN\" SAIOA",
+    "outlets": [
+      {
+        "name": "ONDA VASCA GIPUZKOA",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 242.0
+      }
+    ]
+  },
+  {
+    "id": 5150,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "PROGRAMA \"SASOI ONEAN\" SAIOA",
+    "outlets": [
+      {
+        "name": "HAMAIKA TELEBISTA",
+        "channel": "Telebista - Iragarkiak Televisión  - Anuncios",
+        "euros": 8736.2
+      }
+    ]
+  },
+  {
+    "id": 5151,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "h2": "INGURUMENA ETA OBRA HIDRAULIKOAK / MEDIO AMBIENTE Y OBRAS HIDRÁULICAS",
+    "name": "UNTZI MUSEOA. EMAKUMEAK ETA ITSASOA ERAKUSKETA MUSEO NAVAL. LAS MUJERES Y EL MAR",
+    "outlets": [
+      {
+        "name": "NATURAREN AHOTSA",
+        "channel": "Aldizkari espezializatua Publicación especializada",
+        "euros": 300.0
+      }
+    ]
+  },
+  {
+    "id": 5152,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2016,
+    "document": "2016_1.xls",
+    "name": "GIPUZKOA ENERGIA BERRIZTAGARRIEN ALDE UNA GIPUZKOA QUE APUESTA POR LAS ENERGÍAS RENOVABLES",
+    "outlets": [
+      {
+        "name": "NATURAREN AHOTSA",
+        "channel": "Aldizkari espezializatua Publicación especializada",
+        "euros": 300.0
+      }
+    ]
+  }
+]

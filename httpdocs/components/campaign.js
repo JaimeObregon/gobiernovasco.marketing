@@ -246,7 +246,10 @@ class Campaign extends MyElement {
     const campaign = database.find(id)
 
     a.innerHTML += campaign.year
-    const href = `/documentos/memorias/${campaign.year}.pdf#page=${campaign.page}`
+    const href =
+      campaign.department === 'Diputación Foral de Gipuzkoa'
+        ? `/documentos/gipuzkoa/${campaign.document}`
+        : `/documentos/memorias/${campaign.year}.pdf#page=${campaign.page}`
     a.setAttribute('href', href)
 
     h1.innerText = campaign.name
@@ -263,7 +266,7 @@ class Campaign extends MyElement {
     }
 
     time.innerText = campaign.date ?? ''
-    p.innerText = campaign.description
+    p.innerText = campaign.description ?? ''
 
     const total = campaign.outlets.reduce(
       (accumulator, current) => accumulator + current.euros,

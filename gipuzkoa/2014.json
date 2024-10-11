@@ -1,0 +1,632 @@
+[
+  {
+    "id": 5000,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2014,
+    "document": "2014.xls",
+    "h1": "DIPUTATU NAGUSIA / DIPUTADO GENERAL",
+    "h2": "KABINETEA / GABINETE",
+    "name": "Komertzio txikiak sustatzeko kanpaina (Dendartean elkartearekin batera) Campaña de promoción de comercio pequeño (con la asociación Dendartean)",
+    "outlets": [
+      {
+        "name": "Info 7",
+        "channels": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 3000.0
+      },
+      {
+        "name": "Hekimen",
+        "canonical": "Hekimen",
+        "channels": "Tokiko prentsa Prensa local",
+        "euros": 16477.78
+      },
+      {
+        "name": "Ser",
+        "canonical": "Cadena SER",
+        "channels": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 10707.6
+      },
+      {
+        "name": "11amaika",
+        "canonical": "Hamaika Telebista",
+        "channels": "Telebista - Iragarkiak Televisión - Anuncio",
+        "euros": 5989.5
+      },
+      {
+        "name": "Euskadi Irratia",
+        "channels": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 7121.53
+      },
+      {
+        "name": "Gaztea",
+        "channels": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 2519.51
+      },
+      {
+        "name": "Zu Zeu-Xoraturikan",
+        "channels": "Interneta - Banner-a Internet - Banner",
+        "euros": 2500.01
+      }
+    ]
+  },
+  {
+    "id": 5001,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2014,
+    "document": "2014.xls",
+    "name": "Zuri esker. Gipuzkoa Berria egiten ari gara (Gipuzkoa Solidarioagoa. Iraunkorragoa. Justuagoa.) Zuri esker (Gracias a ti). Haciendo una nueva Gipuzkoa. (Gipuzkoa Solidaria. Duradera. Justa)",
+    "outlets": [
+      {
+        "name": "Bidera zerbitzuak",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 20017.73
+      },
+      {
+        "name": "Cm Gipuzkoa",
+        "canonical": "El Diario Vasco",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 41868.57
+      },
+      {
+        "name": "11amaika",
+        "canonical": "Hamaika Telebista",
+        "channel": "Telebista - Iragarkiak Televisión - Anuncio",
+        "euros": 4658.5
+      },
+      {
+        "name": "Zu Zeu-Xoraturikan",
+        "channel": "Interneta - Banner-a Internet - Banner",
+        "euros": 2500.01
+      },
+      {
+        "name": "Ser",
+        "canonical": "Cadena SER",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 6011.66
+      },
+      {
+        "name": "ETB",
+        "channel": "Telebista - Iragarkiak Televisión - Anuncio",
+        "euros": 3872.0
+      }
+    ]
+  },
+  {
+    "id": 5002,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2014,
+    "document": "2014.xls",
+    "name": "Hainbat publizitate Publicidad varia",
+    "outlets": [
+      {
+        "name": "Gaztea",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 2991.92
+      },
+      {
+        "name": "ETB",
+        "channel": "Telebista - Iragarkiak Televisión - Anuncio",
+        "euros": 4017.2
+      }
+    ]
+  },
+  {
+    "id": 5003,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2014,
+    "document": "2014.xls",
+    "h2": "EUSKARA / EUSKERA",
+    "name": "Euskaltegietarako matrikulazio kanpaina Campaña de matriculación a Euskaltegis",
+    "outlets": [
+      {
+        "name": "Euskadi Irratia",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 2810.47
+      },
+      {
+        "name": "Gaztea",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 1102.29
+      },
+      {
+        "name": "Radio Euskadi",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 4159.28
+      }
+    ]
+  },
+  {
+    "id": 5004,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2014,
+    "document": "2014.xls",
+    "h2": "BERDINTASUNA / IGUALDAD",
+    "name": "Emakume GUNEA Centro de mujeres",
+    "outlets": [
+      {
+        "name": "Info 7",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 1250.0
+      },
+      {
+        "name": "Bidera zerbitzuak",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 1187.45
+      },
+      {
+        "name": "Onda cero",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 399.3
+      },
+      {
+        "name": "Euskal prensa",
+        "canonical": "Euskal Prentsa",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 9861.5
+      },
+      {
+        "name": "Euskadi Irratia",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 3643.82
+      },
+      {
+        "name": "Gaztea",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 1102.7
+      },
+      {
+        "name": "Radio Euskadi",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 4367.63
+      },
+      {
+        "name": "Hekimen Euskal Hedabideen Elkartea",
+        "canonical": "Hekimen",
+        "channel": "Tokiko prentsa Prensa local",
+        "euros": 15185.5
+      },
+      {
+        "name": "Gaztezulo",
+        "channel": "Aldizkaria Revista",
+        "euros": 3025.0
+      }
+    ]
+  },
+  {
+    "id": 5005,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2014,
+    "document": "2014.xls",
+    "h2": "MIGRAZIOA ETA ANIZTASUNA / MIGRACIÓN Y DIVERSIDAD",
+    "name": "Aniztasunaren ekimena Iniciativa diversidad",
+    "outlets": [
+      {
+        "name": "Info 7",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 1000.0
+      },
+      {
+        "name": "Radio Euskadi",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 761.48
+      },
+      {
+        "name": "Euskadi Irratia",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 716.32
+      }
+    ]
+  },
+  {
+    "id": 5006,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2014,
+    "document": "2014.xls",
+    "h2": "HERRITARREN PARTAIDETZA / PARTICIPACIÓN CIUDADANA",
+    "name": "Partaidetzako aurrekontuak Presupuestos participativos",
+    "outlets": [
+      {
+        "name": "Info 7",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 3450.0
+      },
+      {
+        "name": "Euskadi Irratia",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 1921.48
+      },
+      {
+        "name": "Radio Euskadi",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 3144.6
+      },
+      {
+        "name": "Bidera zerbitzuak",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 1576.39
+      },
+      {
+        "name": "Hekimen Hedabideen Elkartea",
+        "canonical": "Hekimen",
+        "channel": "Tokiko prentsa Prensa local",
+        "euros": 1452.0
+      },
+      {
+        "name": "ETB",
+        "channel": "Telebista - Iragarkiak Televisión - Anuncio",
+        "euros": 3907.7
+      },
+      {
+        "name": "Euskal Prensa",
+        "canonical": "Euskal Prentsa",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 718.74
+      },
+      {
+        "name": "Bidera",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 529.98
+      }
+    ]
+  },
+  {
+    "id": 5007,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2014,
+    "document": "2014.xls",
+    "h2": "LURRALDE GARAPENA / DESARROLLO TERRITORIAL",
+    "name": "Sarean Topaketak Encuentro Sarean",
+    "outlets": [
+      {
+        "name": "Euskal Prensa",
+        "canonical": "Euskal Prentsa",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 718.74
+      },
+      {
+        "name": "Bidera",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 529.98
+      }
+    ]
+  },
+  {
+    "id": 5008,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2014,
+    "document": "2014.xls",
+    "h2": "GIZARTE POLITIKA / POLITICA SOCIAL",
+    "name": "Harrera familiak Familias de acogida",
+    "outlets": [
+      {
+        "name": "Euskadi Irratia",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 3491.5
+      },
+      {
+        "name": "Radio Euskadi",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 5677.61
+      },
+      {
+        "name": "ETB",
+        "channel": "Telebista - Iragarkiak Televisión - Anuncio",
+        "euros": 13237.4
+      },
+      {
+        "name": "Zu zeu-Xoraturikan",
+        "channel": "Interneta - Banner-a Internet - Banner",
+        "euros": 2000.0
+      }
+    ]
+  },
+  {
+    "id": 5009,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2014,
+    "document": "2014.xls",
+    "h2": "OGASUNA ETA FINANTZAK / HACIENDA Y FINANZAS",
+    "name": "Ondasunak atzerrian Bienes en el extranjero",
+    "outlets": [
+      {
+        "name": "Euskadi Irratia",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 3249.5
+      },
+      {
+        "name": "Radio Euskadi",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 5676.59
+      },
+      {
+        "name": "Hirian",
+        "channel": "Tokiko prentsa Prensa local",
+        "euros": 363.0
+      }
+    ]
+  },
+  {
+    "id": 5010,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2014,
+    "document": "2014.xls",
+    "name": "Ekonomia gardena (faktura eskaera) Economía transparente (petición de facturas)",
+    "outlets": [
+      {
+        "name": "Radio Euskadi",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 10437.62
+      },
+      {
+        "name": "Euskadi Irratia",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 6145.7
+      },
+      {
+        "name": "Info 7",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 3700.0
+      },
+      {
+        "name": "Gaztezulo",
+        "channel": "Aldizkaria Revista",
+        "euros": 2057.0
+      },
+      {
+        "name": "11amaika",
+        "canonical": "Hamaika Telebista",
+        "channel": "Telebista - Iragarkiak Televisión - Anuncio",
+        "euros": 4192.65
+      },
+      {
+        "name": "Argia",
+        "channel": "Aldizkaria Revista",
+        "euros": 943.8
+      },
+      {
+        "name": "Gaztea",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 1574.69
+      },
+      {
+        "name": "Hekimen Euskal Hedabideen Elkartea",
+        "canonical": "Hekimen",
+        "channel": "Tokiko prentsa Prensa local",
+        "euros": 11131.64
+      },
+      {
+        "name": "ETB",
+        "channel": "Telebista - Iragarkiak Televisión - Anuncio",
+        "euros": 9315.19
+      },
+      {
+        "name": "Onda Cero",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 629.2
+      }
+    ]
+  },
+  {
+    "id": 5011,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2014,
+    "document": "2014.xls",
+    "name": "Kutxabank kontrol publiko eta soziala Control público y social Kutxabank",
+    "outlets": [
+      {
+        "name": "Onda cero",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 387.2
+      },
+      {
+        "name": "Euskadi Irratia",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 1200.08
+      },
+      {
+        "name": "Gaztea",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 1574.7
+      },
+      {
+        "name": "Radio euskadi",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 2096.74
+      },
+      {
+        "name": "Cadena Cope",
+        "canonical": "COPE",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 762.3
+      }
+    ]
+  },
+  {
+    "id": 5012,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2014,
+    "document": "2014.xls",
+    "h2": "INGURUMENA ETA LURRALDE ANTOLAKETA / MEDIO AMBIENTE Y ORDENACION TERRITORIAL",
+    "name": "Gipuzkoa zabortegirik gabe Gipuzkoa sin vertederos",
+    "outlets": [
+      {
+        "name": "Info 7",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 1500.0
+      },
+      {
+        "name": "Euskadi Irratia",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 3644.59
+      },
+      {
+        "name": "Radio Euskadi",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 6551.46
+      },
+      {
+        "name": "Euskal Prensa",
+        "canonical": "Euskal Prentsa",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 9450.1
+      },
+      {
+        "name": "Noticias de gipuzkoa",
+        "canonical": "Noticias de Gipuzkoa",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 3591.28
+      },
+      {
+        "name": "Bidera zerbitzuak",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 3694.28
+      },
+      {
+        "name": "ETB",
+        "channel": "Telebista - Iragarkiak Televisión - Anuncio",
+        "euros": 4887.19
+      }
+    ]
+  },
+  {
+    "id": 5013,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2014,
+    "document": "2014.xls",
+    "name": "Gipuzkoa truke (bigarren eskuko web orrialdea) Trueque Gipuzkoa (web de segunda mano)",
+    "outlets": [
+      {
+        "name": "Cm Gipuzkoa",
+        "canonical": "El Diario Vasco",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 665.74
+      },
+      {
+        "name": "Euskal Prensa",
+        "canonical": "Euskal Prentsa",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 3103.65
+      },
+      {
+        "name": "Hamaika telebista",
+        "canonical": "Hamaika Telebista",
+        "channel": "Telebista - Iragarkiak Televisión - Anuncio",
+        "euros": 838.53
+      },
+      {
+        "name": "Bidera zerbitzuak",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 2662.0
+      },
+      {
+        "name": "Gaztea",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 2204.57
+      },
+      {
+        "name": "Radio Euskadi",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 4891.68
+      },
+      {
+        "name": "Euskadi Irratia",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 2921.18
+      },
+      {
+        "name": "ETB",
+        "channel": "Telebista - Iragarkiak Televisión - Anuncio",
+        "euros": 9268.93
+      },
+      {
+        "name": "11amaika",
+        "canonical": "Hamaika Telebista",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 3944.6
+      }
+    ]
+  },
+  {
+    "id": 5014,
+    "department": "Diputación Foral de Gipuzkoa",
+    "year": 2014,
+    "document": "2014.xls",
+    "h2": "MUGIKORTASUNA ETA BIDE AZPIEGITURAK / MOVILIDAD E INFRAESTRUCTURAS VIARIAS",
+    "name": "Garraio zerbitzu berriak",
+    "outlets": [
+      {
+        "name": "Info 7",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 4500.0
+      },
+      {
+        "name": "11amaika",
+        "canonical": "Hamaika Telebista",
+        "channel": "Telebista - Iragarkiak Televisión - Anuncio",
+        "euros": 11809.6
+      },
+      {
+        "name": "Euskal Prentsa",
+        "canonical": "Euskal Prentsa",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 27442.8
+      },
+      {
+        "name": "Zu zeu-Xoraturikan",
+        "channel": "Interneta - Banner-a Internet - Banner",
+        "euros": 2500.01
+      },
+      {
+        "name": "Cm Gipuzkoa",
+        "canonical": "El Diario Vasco",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 21603.43
+      },
+      {
+        "name": "ETB",
+        "channel": "Telebista - Iragarkiak Televisión - Anuncio",
+        "euros": 2497.44
+      },
+      {
+        "name": "Bidera zerbitzuak",
+        "channel": "Prentsa - Iragarkiak Prensa - Anuncios",
+        "euros": 24783.75
+      },
+      {
+        "name": "Radio Euskadi",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 11501.38
+      },
+      {
+        "name": "Euskadi Irratia",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 7445.54
+      },
+      {
+        "name": "28 kanala",
+        "channel": "Interneta - Banner-a Internet - Banner",
+        "euros": 914.76
+      },
+      {
+        "name": "ERLO telebista",
+        "channel": "Telebista - Iragarkiak Televisión - Anuncio",
+        "euros": 742.94
+      },
+      {
+        "name": "Goierri Irrati telebista",
+        "channel": "Telebista - Iragarkiak Televisión - Anuncio",
+        "euros": 914.76
+      },
+      {
+        "name": "Gaztea",
+        "channel": "Irratia - Soinu deia Radio - Anuncio",
+        "euros": 4526.83
+      },
+      {
+        "name": "Hekimen",
+        "canonical": "Hekimen",
+        "channel": "Tokiko prentsa Prensa local",
+        "euros": 15980.47
+      }
+    ]
+  }
+]
