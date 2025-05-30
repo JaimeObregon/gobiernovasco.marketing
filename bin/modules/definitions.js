@@ -81,6 +81,7 @@ const campaigns = [
 
 const keywords = [
   'Nombre',
+  'NOMBRE',
   'Izena',
   'Objetivo',
   'Objetivo (descripción)',
@@ -119,7 +120,9 @@ const rules = [
     rule: (items) => {
       return [
         ...items[0].slice(1),
-        ...items.find((item) => ['Nombre', 'Izena'].includes(item[0])).slice(1),
+        ...items
+          .find((item) => ['Nombre', 'NOMBRE', 'Izena'].includes(item[0]))
+          .slice(1),
       ].join(' ')
     },
   },
@@ -325,6 +328,15 @@ const definitions = {
   2023: {
     pageSeparators: [
       /<A name=\d{1,3}><\/a>Memoria de Publicidad y Comunicación Institucional del Gobierno Vasco<br>\nAño 2023<br>/,
+    ],
+    footer: /\d{1,3}<br>\n<hr>/g,
+    campaigns,
+    keywords,
+    rules,
+  },
+  2024: {
+    pageSeparators: [
+      /<A name=\d{1,3}><\/a>MEMORIA DE PUBLICIDAD GOBIERNO VASCO<br>\nAño 2024<br>/,
     ],
     footer: /\d{1,3}<br>\n<hr>/g,
     campaigns,

@@ -1,8 +1,7 @@
 import fs from 'fs'
-import util from 'util'
 import { definitions } from './definitions.js'
 import { catalog } from './catalog.js'
-import { parseEuros, splitArrayByKeywords } from './parsers.js'
+import { splitArrayByKeywords } from './parsers.js'
 
 class Interpreter {
   constructor(year, file) {

@@ -69,7 +69,7 @@ console.log(sum)
 
 No es necesario porque el documento JSON con todos los datos extraídos de las memorias institucionales está incorporado al repositorio.
 
-Pero para reprocesar los ficheros originales PDF del Gobierno Vasco, instala `pdftohtml` 0.40 en tu sistema y conviértelos a su versión HTML aproximada:
+Pero para reprocesar los ficheros originales PDF del Gobierno Vasco, instala `pdftohtml` 0.40 (la versión del paquete poppler es más moderna y no sirve) en tu sistema y conviértelos a su versión HTML aproximada:
 
 ```shell
 ./bin/convert.sh

@@ -441,6 +441,7 @@ const catalog = {
         'ETB 4',
         'ETB-1',
         'ETB-2',
+        'Etb-2',
         'etb.eus',
         'Etb',
         'Etb1',
