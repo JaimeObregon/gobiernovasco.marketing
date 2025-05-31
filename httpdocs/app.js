@@ -32,7 +32,7 @@ const app = {
   //
   recalculate() {
     const selected = [...document.querySelectorAll('input:checked')].map(
-      (input) => input.parentNode.innerText.trim()
+      (input) => input.parentNode.innerText.trim(),
     )
 
     let totalEuros = 0
@@ -43,12 +43,12 @@ const app = {
         const { year } = current
 
         const matches = current.outlets.filter(({ name, canonical }) =>
-          selected.includes(name)
+          selected.includes(name),
         )
 
         const euros = matches.reduce(
           (previous, current) => previous + current.euros,
-          0
+          0,
         )
 
         const count = matches.length
@@ -69,7 +69,7 @@ const app = {
         2022: { euros: 0, count: 0 },
         2023: { euros: 0, count: 0 },
         2024: { euros: 0, count: 0 },
-      }
+      },
     )
 
     const table = document.querySelector('table')
@@ -91,7 +91,7 @@ const app = {
                 <td>${years[year].count}</td>
                 <td>${toEuros(years[year].euros)}</td>
               </tr>
-            `
+            `,
           )
           .join('')}
       </tbody>
@@ -124,7 +124,7 @@ const app = {
           behavior: 'smooth',
           block: 'start',
         }),
-      0
+      0,
     )
 
     clearTimeout(this.timeout)
@@ -150,7 +150,7 @@ const app = {
                 ${result.warning ? 'class="warning"' : ''}
                 data-id="${result.id}"
               ></x-campaign>
-            `
+            `,
           )
           .join('')
 
@@ -159,14 +159,14 @@ const app = {
           .filter(
             ({ name, canonical }) =>
               normalize(name).match(regexp) ||
-              (canonical && normalize(canonical).match(regexp))
+              (canonical && normalize(canonical).match(regexp)),
           )
 
         const outlets = [
           ...new Set(
             matches
               .map(({ name }) => escape(name))
-              .sort((a, b) => a.localeCompare(b))
+              .sort((a, b) => a.localeCompare(b)),
           ),
         ]
 
@@ -175,7 +175,7 @@ const app = {
             matches
               .filter((match) => match.canonical)
               .filter((match) => normalize(match.canonical) !== query)
-              .map((match) => match.canonical)
+              .map((match) => match.canonical),
           ),
         ]
 
@@ -192,12 +192,11 @@ const app = {
                     Quizá te interese buscar:
                     ${canonicals
                       .map(
-                        (name) =>
-                          html`
-                            <a href="/?q=${encodeURIComponent(name)}">
-                              ${name}
-                            </a>
-                          `
+                        (name) => html`
+                          <a href="/?q=${encodeURIComponent(name)}">
+                            ${name}
+                          </a>
+                        `,
                       )
                       .join(', ')}.
                   </p>
@@ -222,7 +221,7 @@ const app = {
                           <span>${outlet}</span>
                         </label>
                       </li>
-                    `
+                    `,
                   )
                   .join('')}
               </ol>
@@ -317,4 +316,40 @@ main.addEventListener('click', ({ target }) => {
   sound.play()
 
   app.recalculate()
+})
+
+// No sé dónde poner esto que sigue, así que lo pongo aquí…
+;[2024, 2023, 2022, 2021, 2020, 2019, 2018].forEach((period) => {
+  const sum = database.records
+    .filter(({ euros, year }) => year === period && euros)
+    .reduce((sum, current) => sum + current.euros, 0)
+
+  console.log(
+    `Inversión total en ${period}: ${Math.round(sum).toLocaleString(
+      'es-ES',
+    )} €.`,
+  )
+
+  console.log(
+    `Clasificación de contratistas por volumen de contratación en ${period}:`,
+  )
+
+  const totals = database.records
+    .filter(({ year }) => year === period)
+    .flatMap(({ outlets }) => outlets)
+    .reduce((previous, { canonical, name, euros }) => {
+      const outlet = canonical ?? name
+      previous[outlet] = previous[outlet] ? previous[outlet] + euros : euros
+      return previous
+    }, {})
+
+  const ranking = Object.entries(totals)
+    .sort((a, b) => (a[1] < b[1] ? 1 : -1))
+    .map(([outlet, euros]) => [
+      outlet,
+      euros.toLocaleString('es-ES', { style: 'currency', currency: 'EUR' }),
+    ])
+    .slice(0, 25)
+
+  console.table(ranking)
 })
