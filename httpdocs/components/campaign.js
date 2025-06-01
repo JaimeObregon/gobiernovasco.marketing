@@ -48,8 +48,16 @@ class Campaign extends MyElement {
       display: block;
     }
 
-    :host(.warning) {
+    :host(.warning) article {
       opacity: 0.7;
+      border: 1px solid var(--color-warning);
+      border-color: var(--color-warning);
+    }
+
+    :host(.warning) article:after {
+      content: 'Sumatorio de importes no coincide con el total';
+      font-size: var(--type-x-small);
+      color: var(--color-warning);
     }
 
     article {
@@ -123,6 +131,30 @@ class Campaign extends MyElement {
       text-align: justify;
       hyphens: auto;
       margin: var(--space-x-small) 0 0 0;
+    }
+
+    .clamp {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 4;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .clamp.expanded {
+      -webkit-line-clamp: unset;
+    }
+
+    .toggle-text-btn {
+      appearance: none;
+      border: none;
+      background: none;
+      padding: 0;
+      color: var(--color-accent, #007bff);
+      cursor: pointer;
+      font-size: var(--type-x-small);
+      text-decoration: underline;
+      margin-top: var(--space-x-small);
     }
 
     h3 {
@@ -210,6 +242,36 @@ class Campaign extends MyElement {
       font-variant-numeric: tabular-nums;
       pointer-events: none;
     }
+    
+    .hidden-item {
+      display: none;
+    }
+
+    .toggle-list-wrapper{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .toggle-list-wrapper span{
+      font-size: var(--type-x-small);
+    }
+
+    .toggle-list-btn {
+      margin-top: 0.1rem;
+      margin-bottom: 0.5rem;
+      padding: 0.4rem 0.8rem;
+      font-size: var(--type-x-small);
+      cursor: pointer;
+      background: var(--color-accent);
+      color: var(--color-background);
+      border: none;
+      border-radius: 4px;
+    }
+
+    .toggle-list-btn:hover {
+      opacity: 0.8;
+    }
   `
 
   static html = html`
@@ -225,7 +287,8 @@ class Campaign extends MyElement {
         </a>
       </header>
       <h1></h1>
-      <p></p>
+      <p class="clamp"></p>
+      <button class="toggle-text-btn">Leer más</button>
       <ul></ul>
       <h3></h3>
       <time></time>
@@ -264,7 +327,11 @@ class Campaign extends MyElement {
 
     time.innerText = campaign.date ?? ''
     p.innerText = campaign.description ?? ''
+    const button = this.shadowRoot.querySelector('.toggle-text-btn')
 
+    if ((campaign.description ?? '').length <= 215) {
+      button.style.display = 'none'
+    }
     const total = campaign.outlets.reduce(
       (accumulator, current) => accumulator + current.euros,
       0
@@ -276,9 +343,10 @@ class Campaign extends MyElement {
         const width = (100 * euros) / total
         const delay = i * 50 + 500
         const style = `--width: ${width}%; --delay: ${delay}ms`
+        const hiddenClass = i >= 4 ? 'hidden-item' : ''
 
         return html`
-          <li data-query="${label}">
+          <li data-query="${label}" class="${hiddenClass}">
             <span style="${style}" data-euros="${euros}"></span>
             <a href="/?q=${label}">
               <cite>${label}</cite>
@@ -288,6 +356,34 @@ class Campaign extends MyElement {
         `
       })
       .join('')
+    //Ocultamos a partir del cuarto, ahorro de espacio visual
+    if (campaign.outlets.length > 4) {
+      const button = document.createElement('button')
+      const wrapper = document.createElement('div')
+      const totals = document.createElement('span')
+      wrapper.classList.add('toggle-list-wrapper')
+      totals.innerText = `Campañas totales: ${campaign.outlets.length}`
+      button.innerText = 'Mostrar más'
+      button.classList.add('toggle-list-btn')
+      wrapper.append(button)
+      wrapper.append(totals)
+      ul.after(wrapper)
+   
+
+      button.addEventListener('click', () => {
+        const hiddenItems = ul.querySelectorAll('.hidden-item')
+        const expanded = button.getAttribute('data-expanded') === 'true'
+   
+        hiddenItems.forEach((li) => {
+          li.style.display = expanded ? 'none' : 'block'
+        })
+
+        button.innerText = expanded ? 'Mostrar más' : 'Mostrar menos'
+        button.setAttribute('data-expanded', expanded ? 'false' : 'true')
+        const sound = new Audio(expanded ? '/sounds/deactivate.mp3' : '/sounds/activate.mp3')
+        sound.play()
+      })
+    }
 
     ul.addEventListener('click', (event) => {
       const li = event.target.closest('li')
@@ -307,6 +403,20 @@ class Campaign extends MyElement {
 
       event.preventDefault()
     })
+
+    this.shadowRoot.querySelectorAll('.toggle-text-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const paragraph = button.previousElementSibling.classList.contains('clamp')
+          ? button.previousElementSibling
+          : button.closest('.clamp')
+
+        if (paragraph) {
+          const expanded = paragraph.classList.toggle('expanded')
+          button.textContent = expanded ? 'Leer menos' : 'Leer más'
+        }
+      })
+    })
+
   }
 }
 

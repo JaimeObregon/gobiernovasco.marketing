@@ -201,11 +201,9 @@ section:first-of-type {
 section#summary {
   gap: var(--space-large);
   margin: 0 auto var(--space-large) auto;
-  align-items: flex-start;
 }
 
 section#summary figure {
-  position: sticky;
   top: var(--space-xx-large);
   z-index: 1;
   margin: 0;
@@ -216,6 +214,8 @@ section#summary figure {
 @media (min-width: 960px) {
   section#summary {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 
   section#summary figure {
@@ -225,7 +225,24 @@ section#summary figure {
   }
 
   section#summary ol {
+    display: flex;
+    flex-wrap: wrap;
     margin: 0 !important;
+  }
+
+  section#summary ol li {
+    flex: 0 0 25%;
+    max-width: 25%;
+    box-sizing: border-box;
+  }
+
+  section#summary li label span {
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
   }
 
   section#summary table,
