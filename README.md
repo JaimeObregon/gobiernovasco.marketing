@@ -32,7 +32,7 @@ Se hace automáticamente en Netlify con cada `push` a la rama `main`.
 
 ### Análisis (opcional)
 
-[TODO] La clasificación de contratistas ordenados por su volumen de contratación o la inversión total en un año se muestran en la consola de depuración del navegador (`console.log()`).
+La clasificación de contratistas ordenados por su volumen de contratación o la inversión total en un año se muestran, a título de curiosidad, en la consola de depuración del navegador (`console.log()`).
 
 ### Reconstrucción de la fuente de datos (opcional)
 
