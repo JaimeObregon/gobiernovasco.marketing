@@ -4,7 +4,7 @@
 const parseEuros = (string) => {
   const number = string
     .replace(/<\/?(br|b)>/g, '')
-    .replace(/(\d{3}),\s(\d{2})€/g, '$1,$2')
+    .replace(/(\d{3}),\s(\d{2})\s*€/g, '$1,$2')
     .replace(/€.+/g, '')
     .replace(/\.(\d{3})/g, '$1')
     .replace('€', '')
