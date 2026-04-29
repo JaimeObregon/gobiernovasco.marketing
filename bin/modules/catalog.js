@@ -7,36 +7,67 @@ const catalog = {
       'Desarrollo Económico e Infraestructuras',
     'DESARROLLO ECONÓMICO, SOSTENIBILIDAD Y MEDIO AMBIENTE':
       'Desarrollo Económico, Sostenibilidad y Medio Ambiente',
+    'ECONOMÍA, TRABAJO Y EMPLEO': 'Economía, Trabajo y Empleo',
     'ECONOMÍA Y HACIENDA': 'Economía y Hacienda',
     EDUCACIÓN: 'Educación',
+    'EKONOMIA, LANA ETA ENPLEGUA / ECONOMÍA, TRABAJO Y EMPLEO':
+      'Economía, Trabajo y Empleo',
     'EKONOMÍA ETA OGASUNA': 'Economía y Hacienda',
     'EKONOMIAREN GARAPENA, JASANGARRITASUNA ETA INGURUMENA':
       'Desarrollo Económico, Sostenibilidad y Medio Ambiente',
+    'ETXEBIZITZA ETA HIRI AGENDA / VIVIENDA Y AGENDA URBANA':
+      'Vivienda y Agenda Urbana',
     'EMPLEO Y POLÍTICAS SOCIALES': 'Empleo y Políticas Sociales',
+    'GOBERNANTZA, ADMINISTRAZIO DIGITALA ETA AUTOGOBERNUA / GOBERNANZA, ADMINISTRACIÓN DIGITAL Y AUTOGOBIERNO':
+      'Gobernanza, Administración Digital y Autogobierno',
+    'GOBERNANZA, ADMINISTRACIÓN DIGITAL Y AUTOGOBIERNO':
+      'Gobernanza, Administración Digital y Autogobierno',
     'GOBERNANTZA PUBLIKOA ETA AUTOGOBERNUA':
       'Gobernanza Pública y Autogobierno',
     'GOBERNANZA PÚBLICA Y AUTOGOBIERNO': 'Gobernanza Pública y Autogobierno',
     'HACIENDA Y ECONOMÍA': 'Economía y Hacienda',
+    'HACIENDA Y FINANZAS': 'Hacienda y Finanzas',
     HEZKUNTZA: 'Educación',
+    'HEZKUNTZA / EDUCACIÓN': 'Educación',
     'IGUALDAD, JUSTICIA Y POLÍTICAS SOCIALES':
       'Igualdad, Justicia y Políticas Sociales',
+    'INDUSTRIA, TRANSICIÓN ENERGÉTICA Y SOSTENIBILIDAD':
+      'Industria, Transición Energética y Sostenibilidad',
+    'JUSTICIA Y DERECHOS HUMANOS': 'Justicia y Derechos Humanos',
+    'JUSTIZIA ETA GIZA ESKUBIDEA / JUSTICIA Y DERECHOS HUMANOS':
+      'Justicia y Derechos Humanos',
     'KULTURA ETA HIZKUNTZA POLITIKA': 'Cultura y Política Lingüística',
+    'KULTURA ETA HIZKUNTZA POLITIKA / CULTURA Y POLÍTICA LINGÜÍSTICA':
+      'Cultura y Política Lingüística',
     'LANA ETA ENPLEGUA': 'Trabajo y Empleo',
     LEHENDAKARITZA: 'Presidencia',
+    'LEHENDAKARITZA / PRESIDENCIA': 'Presidencia',
     'LURRALDE PLANGINTZA, ETXEBIZITZA ETA GARRAIOAK':
       'Planificación Territorial, Vivienda y Transportes',
     'MEDIO AMBIENTE, PLANIFICACIÓN TERRITORIAL Y VIVIENDA':
       'Medio Ambiente, Planificación Territorial y Vivienda',
+    'MUGIKORTASUN JASANGARRIA / MOVILIDAD SOSTENIBLE': 'Movilidad Sostenible',
+    'MOVILIDAD SOSTENIBLE': 'Movilidad Sostenible',
+    'OGASUN ETA FINANTZAK / HACIENDA Y FINANZAS': 'Hacienda y Finanzas',
     OSASUNA: 'Salud',
+    'OSASUNA / SALUD': 'Salud',
     'PLANIFICACIÓN TERRITORIAL, VIVIENDA Y TRANSPORTES':
       'Planificación Territorial, Vivienda y Transportes',
     SALUD: 'Salud',
     SEGURIDAD: 'Seguridad',
     SEGURTASUNA: 'Seguridad',
+    'SEGURTASUNA / SEGURIDAD': 'Seguridad',
     'TRABAJO Y EMPLEO': 'Trabajo y Empleo',
     'TRABAJO Y JUSTICIA': 'Trabajo y Justicia',
     'TURISMO, COMERCIO Y CONSUMO': 'Turismo, Comercio y Consumo',
     'TURISMO, MERKATARITZA ETA KONTSUMOA': 'Turismo, Comercio y Consumo',
+    'VIVIENDA Y AGENDA URBANA': 'Vivienda y Agenda Urbana',
+    'ALIMENTACIÓN, DESARROLLO RURAL, AGRICULTURA Y PESCA':
+      'Alimentación, Desarrollo Rural, Agricultura y Pesca',
+    'BIENESTAR, JUVENTUD Y RETO DEMOGRÁFICO':
+      'Bienestar, Juventud y Reto Demográfico',
+    'CIENCIA, UNIVERSIDADES E INNOVACIÓN':
+      'Ciencia, Universidades e Innovación',
   },
   outlets: [
     {
