@@ -69,6 +69,7 @@ const app = {
         2022: { euros: 0, count: 0 },
         2023: { euros: 0, count: 0 },
         2024: { euros: 0, count: 0 },
+        2025: { euros: 0, count: 0 },
       },
     )
 
@@ -83,7 +84,7 @@ const app = {
         </tr>
       </thead>
       <tbody>
-        ${[2018, 2019, 2020, 2021, 2022, 2023, 2024]
+        ${[2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
           .map(
             (year) => html`
               <tr>
@@ -319,7 +320,7 @@ main.addEventListener('click', ({ target }) => {
 })
 
 // No sé dónde poner esto que sigue, así que lo pongo aquí…
-;[2024, 2023, 2022, 2021, 2020, 2019, 2018].forEach((period) => {
+;[2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018].forEach((period) => {
   const sum = database.records
     .filter(({ euros, year }) => year === period && euros)
     .reduce((sum, current) => sum + current.euros, 0)
