@@ -23,11 +23,15 @@ const notOutlets = [
   'TOTAL PRENSA ESCRITA',
   'TOTAL PRIMERA OLEADA',
   'TOTAL SEGUNDA OLEADA',
+  'PRENTSA GUZTIRA/TOTAL PRENSA',
   'RADIO',
   'RADIOS',
+  'IRRATIAK GUZTIRA/TOTAL RADIOS',
   'TELEVISIÓN',
+  'TELEBISTA GUZTIRA/TOTAL TELEVISIONES',
   'DIGITAL',
   'DIGITALES',
+  'DIGITALAK GUZTIRA/TOTAL DIGITALES',
   'TOTAL TV',
   'TOTAL MARKETING ONLINE',
   'MARKETING ON LINE',
@@ -38,6 +42,7 @@ const notOutlets = [
   'EXTERIORES',
   'PUBLICIDAD EXTERIOR',
   'TOTAL REDES SOCIALES',
+  'SARE SOZIALAK GUZTIRA/TOTAL REDES SOCIALES',
   'GUZTIRA',
   'PRENTSA GUZTIRA',
   'REDES SOCIALES',
@@ -77,38 +82,75 @@ const campaigns = [
   'PATROCINIOS',
   'PATROCINIO',
   'CAMPAÑA-COVID19',
+  'KANPAINAK / CAMPAÑAS',
+  'KANPAINAK/CAMPAÑAS',
+  'KANPAINA/CAMPAÑA',
+  'PUBLIZITATE-LANKIDETZAK/COLABORACIONES PUBLICITARIAS',
+  'PUBLIZITATE-LANKIDETZAK / COLABORACIONES PUBLICITARIAS',
+  'PUBLIZITATE-LANKIDETZA / COLABORACIÓN PUBLICITARIA',
+  'IRAGARKIAK / ANUNCIOS',
+  'IRAGARKIAK/ANUNCIOS',
+  'COLABORACIÓN PUBLICITARIA',
 ]
 
 const keywords = [
   'Nombre',
   'NOMBRE',
   'Izena',
+  'Izena/Nombre',
+  'Izena / Nombre',
   'Objetivo',
   'Objetivo (descripción)',
   'Objeto',
   'Objeto (descripción)',
   'Helburua',
+  'Helburua/objetivo',
+  'Helburua /',
+  'Helburua / Objeto',
   'Fecha',
   'Fecha /',
   'Fecha / Periodo',
   'Periodo',
   'Aldia',
+  'Aldia/Fecha',
   'Personas',
   'Destinado a:',
   'Destinada a',
   'Hartzaileak',
+  'Hartzaileak / Personas',
+  'Hartzaileak /',
+  'Destinatarias/os',
   'Soportes',
   'Soportes utilizados',
+  'Erabilitako euskarriak /',
   'Inversión',
   'Inversión TOTAL',
   'Inversión Total',
   'INVERSIÓN TOTAL',
   'TOTAL',
   'GUZTIRA',
+  'GUZTIRA /',
+  'GUZTIRA/Inversión',
+  'GUZTIRA / Inversión TOTAL',
   'DESGLOSE',
   'BANAKAPENA',
   '</BODY>',
+  'BANAKAPENA/DESGLOSE',
+  'GUZTIRA / Inversión',
 ]
+
+const valuesForKeyword = (items, pattern) => {
+  const chunk = items.find((item) => pattern.test(item[0]))
+
+  if (!chunk) {
+    return []
+  }
+
+  const label = chunk[0].match(pattern)[0]
+  const first = chunk[0] === label ? [] : [chunk[0].slice(label.length).trim()]
+
+  return [...first, ...chunk.slice(1)]
+}
 
 const rules = [
   {
@@ -118,63 +160,81 @@ const rules = [
   {
     name: 'name',
     rule: (items) => {
-      return [
-        ...items[0].slice(1),
-        ...items
-          .find((item) => ['Nombre', 'NOMBRE', 'Izena'].includes(item[0]))
-          .slice(1),
-      ].join(' ')
+      const pattern =
+        /^(Izena \/ Nombre|Izena\/Nombre|Nombre|NOMBRE|Izena)(?= |$)/
+      const initialValues = items[0].slice(1)
+      const inlineIndex = initialValues.findIndex((value) =>
+        pattern.test(value),
+      )
+      const typedName =
+        inlineIndex === -1
+          ? initialValues
+          : [
+              ...initialValues.slice(0, inlineIndex),
+              ...valuesForKeyword([initialValues.slice(inlineIndex)], pattern),
+            ]
+
+      return [...typedName, ...valuesForKeyword(items, pattern)].join(' ')
     },
   },
   {
     name: 'description',
     rule: (items) => {
-      return items
-        .find((item) =>
-          [
-            'Objetivo',
-            'Objetivo (descripción)',
-            'Objeto',
-            'Objeto (descripción)',
-            'Helburua',
-          ].includes(item[0])
-        )
-        ?.filter(
+      return valuesForKeyword(
+        items,
+        /^(Objetivo \(descripción\)|Objeto \(descripción\)|Helburua \/ Objeto|Helburua\/objetivo|Helburua \/|Objetivo|Objeto|Helburua)(?= |$)/,
+      )
+        .filter(
           (item) =>
-            !['(descripción)', '(Descripción)', '(deskribapena)'].includes(item)
+            !['(descripción)', '(Descripción)', '(deskribapena)'].includes(
+              item,
+            ),
         )
-        .slice(1)
         .join(' ')
     },
   },
   {
     name: 'date',
     rule: (items) =>
-      items.find((item) =>
-        item[0].match(/(Fecha( \/)?|(Fecha \/ )?Periodo|Aldia)/)
-      )?.[1],
+      valuesForKeyword(
+        items,
+        /^(Fecha \/ Periodo|Aldia\/Fecha|Fecha \/|Fecha|Periodo|Aldia)(?= |$)/,
+      )[0],
   },
   {
     name: 'target',
     rule: (items) =>
-      items.find((item) => item[0].match(/(Personas|Destinado a:)/))?.[1],
+      valuesForKeyword(
+        items,
+        /^(Hartzaileak \/ Personas|Hartzaileak \/|Destinado a:|Destinada a|Hartzaileak|Personas)(?= |$)/,
+      )[0],
   },
   {
     name: 'channels',
     rule: (items) =>
       items
-        .find((item) => item[0].match(/Soportes( utilizados)?/))
-        ?.filter((item) => !['utilizados'].includes(item))
-        .slice(1)
+        .flatMap((item) =>
+          valuesForKeyword(
+            [item],
+            /^(Soportes utilizados|Erabilitako euskarriak \/|Soportes)(?= |$)/,
+          ),
+        )
+        .filter((item) => !['utilizados'].includes(item))
         .join(' '),
   },
   {
     name: 'euros',
     rule: (items) => {
-      const euros = items.find(
-        (item) => /(Inversión|TOTAL|GUZTIRA)/.test(item) && item.length > 1
-      )
-      return parseEuros(euros[1])
+      const euros = items
+        .flatMap((item) =>
+          valuesForKeyword(
+            [item],
+            /^(Inversión TOTAL|Inversión Total|INVERSIÓN TOTAL|GUZTIRA \/ Inversión TOTAL|GUZTIRA \/ Inversión|GUZTIRA\/Inversión|GUZTIRA \/|Inversión|GUZTIRA|TOTAL)(?= |$)/,
+          ),
+        )
+        .find((value) => !isNaN(parseEuros(value)))
+
+      return euros && parseEuros(euros)
     },
   },
   {
@@ -189,7 +249,8 @@ const rules = [
             'Inversión TOTAL',
             'TOTAL',
             'GUZTIRA',
-          ].includes(item[0])
+            'BANAKAPENA/DESGLOSE',
+          ].includes(item[0]),
         )
         .flatMap((item) => [...item])
 
@@ -216,7 +277,7 @@ const rules = [
 
       if (name) {
         const canonical = catalog.outlets.find(({ synonyms }) =>
-          synonyms.includes(name)
+          synonyms.includes(name),
         )?.name
 
         return [
@@ -233,7 +294,7 @@ const rules = [
         const euros = parseEuros(value)
 
         const canonical = catalog.outlets.find(({ synonyms }) =>
-          synonyms.includes(name)
+          synonyms.includes(name),
         )?.name
 
         return isNaN(euros) || notOutlets.includes(name)
@@ -286,6 +347,7 @@ const definitions = {
           'Creatividad',
           'Producción',
           'Contratación de espacios en medios de comunicación',
+          'Sormena/Creatividad',
         ],
       },
       {
@@ -340,6 +402,25 @@ const definitions = {
     ],
     footer: /\d{1,3}<br>\n<hr>/g,
     campaigns,
+    keywords,
+    rules,
+  },
+  2025: {
+    pageSeparators: [
+      /<A name=\d{1,3}><\/a>Eusko Jaurlaritzaren Publizitate eta Komunikazio Instituzionalari buruzko Memoria \/ Memoria de Publicidad y Comunicación Institucional del Gobierno Vasco<br>\n2025eko urtea \/ Año 2025<br>/,
+    ],
+    footer: /\d{1,3}<br>\n<hr>/g,
+    campaigns: campaigns.filter(
+      (campaign) =>
+        ![
+          'CAMPAÑA',
+          'CAMPAÑAS',
+          'KANPAINA',
+          'KANPAINAK',
+          'PATROCINIO',
+          'PATROCINIOS',
+        ].includes(campaign),
+    ),
     keywords,
     rules,
   },
